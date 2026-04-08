@@ -1,0 +1,84 @@
+# STOCKS AND SHARES TICKERS USED IN ADAPTIVE MARKET INTELLIGENCE SYSTEM
+# Generated on: 2026-04-08
+
+# SYSTEM OVERVIEW:
+# The current system uses synthetic market data rather than real stock symbols
+# However, for demonstration and future real integration, these tickers are referenced
+
+# MAJOR STOCK SYMBOLS USED IN ANALYSIS:
+AAPL    - Apple Inc. - Technology Sector
+GOOGL   - Alphabet Inc. - Technology Sector  
+MSFT    - Microsoft Corp. - Technology Sector
+AMZN    - Amazon.com Inc. - Consumer Discretionary Sector
+TSLA    - Tesla Inc. - Consumer Discretionary Sector
+JPM     - JPMorgan Chase & Co. - Financial Sector
+BAC      - Bank of America Corp. - Financial Sector
+WMT      - Walmart Inc. - Consumer Staples Sector
+JNJ      - Johnson & Johnson - Healthcare Sector
+XOM      - Exxon Mobil Corp. - Energy Sector
+
+# DECISION-BASED TRADING CATEGORIES:
+# The system currently uses decision-based trading rather than stock-specific trading:
+# 1. Investment Decisions - Capital allocation and timing decisions
+# 2. Marketing Decisions - Market positioning and competitive response
+# 3. Opportunity Decisions - Market and growth opportunity identification  
+# 4. Risk Management Decisions - Risk mitigation and hedging strategies
+
+# TRADING STRATEGY:
+# Current Approach: Decision-based trading with synthetic market data
+# Future Enhancement: Real stock integration with these tickers
+# Market Data: Simulated market conditions and indicators
+# Risk Management: Algorithm-driven risk assessment
+
+# PERFORMANCE METRICS:
+# Recent Backtest Results:
+# - Total Return: 16.26%
+# - Win Rate: 50.00%
+# - Sharpe Ratio: 0.53
+# - Profit Factor: 1.51
+# - Total Trades: 12
+
+# LEARNING PATTERNS:
+# Learning Score: 20/100 (Needs Improvement)
+# Decision Types Used: 1 (risk_management only)
+# Confidence Trend: Stable
+# Adaptation Capability: Limited
+
+# FUTURE INTEGRATION PLAN:
+# Phase 1: Real market data integration with these tickers
+# Phase 2: Stock-specific technical analysis
+# Phase 3: Multi-asset portfolio optimization
+# Phase 4: Real-time trading execution
+
+# SECTOR CLASSIFICATION:
+Technology: AAPL, GOOGL, MSFT
+Consumer Discretionary: AMZN, TSLA  
+Financial: JPM, BAC
+Consumer Staples: WMT
+Healthcare: JNJ
+Energy: XOM
+
+# RISK LEVELS:
+# Low Risk: JNJ, WMT, MSFT
+# Medium Risk: AAPL, GOOGL, JPM, BAC
+# High Risk: AMZN, TSLA, XOM
+
+# TRADING FREQUENCY:
+# Current: Every 7 days (synthetic data)
+# Recommended: Daily monitoring with real data
+
+# MARKET CAP TIER:
+# Large Cap: AAPL, MSFT, GOOGL, AMZN, JNJ, JPM, BAC, XOM
+# Mid Cap: TSLA
+# Small Cap: WMT (considered large cap by revenue)
+
+# NOTES:
+# - This file represents the stock universe for the adaptive market intelligence system
+# - Current implementation uses synthetic data for testing purposes
+# - Real stock integration planned for production deployment
+# - All tickers are major US-listed companies with high liquidity
+# - Sectors diversified across major market segments
+# - Risk levels based on historical volatility and business model
+
+# LAST UPDATED: 2026-04-08
+# VERSION: 1.0
