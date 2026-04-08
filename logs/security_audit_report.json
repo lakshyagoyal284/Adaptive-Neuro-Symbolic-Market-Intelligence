@@ -1,0 +1,5006 @@
+{
+  "security_vulnerabilities": [
+    {
+      "type": "DESERIALIZATION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 229,
+      "code": "model_data = pickle.load(f)",
+      "description": "Unsafe pickle deserialization - arbitrary code execution risk",
+      "recommendation": "Use safe serialization formats like JSON"
+    },
+    {
+      "type": "AUTHENTICATION",
+      "severity": "HIGH",
+      "file": "SYSTEM",
+      "line": 0,
+      "code": "No authentication system found",
+      "description": "No authentication or authorization mechanisms implemented",
+      "recommendation": "Implement proper authentication and authorization"
+    }
+  ],
+  "bugs_detected": [
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 72,
+      "code": "context: Dict[str, float]",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 79,
+      "code": "market_state: Dict[str, Any]",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 80,
+      "code": "technical_indicators: Dict[str, float]",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 81,
+      "code": "rule_triggers: List[str]",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 108,
+      "code": "self.experiences = []",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 234,
+      "code": "self.experiences = model_data.get('experiences', [])",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 249,
+      "code": "'experiences': self.experiences[-1000:],  # Keep last 1000 experiences",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 261,
+      "code": "context: Dict[str, float],",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 265,
+      "code": "market_state: Dict[str, Any],",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 266,
+      "code": "technical_indicators: Dict[str, float],",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 267,
+      "code": "rule_triggers: List[str],",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 310,
+      "code": "context: Dict[str, float],",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 361,
+      "code": "confidence: float) -> Tuple[float, float]:",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 434,
+      "code": "rule_perf = self.rule_performance[rule_id]",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 437,
+      "code": "rule_perf['usage_count'] += 1",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 449,
+      "code": "rule_perf['accuracy'] = (alpha * new_accuracy + (1 - alpha) * rule_perf['accuracy'])",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 453,
+      "code": "rule_perf['confidence'] = min(1.0, rule_perf['confidence'] + 0.05)",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 455,
+      "code": "rule_perf['confidence'] = max(0.1, rule_perf['confidence'] - 0.1)",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 460,
+      "code": "'usage_count': rule_perf['usage_count'],",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 461,
+      "code": "'accuracy': rule_perf['accuracy'],",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 462,
+      "code": "'confidence': rule_perf['confidence'],",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 502,
+      "code": "old_weight = old_weights[weight_feature]",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 503,
+      "code": "self.learning_weights[weight_feature] += weight_adjustment",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 506,
+      "code": "self.learning_weights[weight_feature] = max(0.01, min(1.0, self.learning_weights[weight_feature]))",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 509,
+      "code": "weight_changes[weight_feature] = {",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 511,
+      "code": "'new_weight': self.learning_weights[weight_feature],",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 522,
+      "code": "self.learning_weights[feature] /= total_weight",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 529,
+      "code": "total_change = sum(abs(change['change']) for change in weight_changes.values())",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 552,
+      "code": "self.context_patterns[context_key] = {",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 553,
+      "code": "'experiences': [],",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 559,
+      "code": "pattern = self.context_patterns[context_key]",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 560,
+      "code": "pattern['experiences'].append(experience)",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 564,
+      "code": "recent_experiences = pattern['experiences'][-20:]  # Last 20 experiences",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 568,
+      "code": "pattern['success_rate'] = correct_count / len(recent_experiences)",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 574,
+      "code": "pattern['avg_outcome'] = np.mean(outcomes)",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 579,
+      "code": "pattern['confidence'] = min(1.0, max(0.1, consistency))",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 584,
+      "code": "def _create_context_key(self, context: Dict[str, float], technical_indicators: Dict[str, float]) -> str:",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 588,
+      "code": "key_parts = []",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 634,
+      "code": "def get_adaptive_decision_weights(self, context: Dict[str, float]) -> Dict[str, float]:",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 644,
+      "code": "pattern = self.context_patterns[context_key]",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 649,
+      "code": "boost_factor = pattern['success_rate']",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 652,
+      "code": "adaptive_weights[feature] *= boost_factor",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 656,
+      "code": "reduction_factor = pattern['success_rate']",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 659,
+      "code": "adaptive_weights[feature] *= reduction_factor",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 671,
+      "code": "rule_perf = self.rule_performance[rule_id]",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 674,
+      "code": "accuracy_boost = (rule_perf['accuracy'] - 0.5) * 2  # Range: -1 to 1",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 677,
+      "code": "usage_factor = min(1.0, rule_perf['usage_count'] / 100.0)",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 680,
+      "code": "adjustment = accuracy_boost * usage_factor * rule_perf['confidence']",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 708,
+      "code": "recent_experiences = self.experiences[-100:]  # Last 100 experiences",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 715,
+      "code": "avg_reward = np.mean([exp.reward for exp in recent_experiences])",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 716,
+      "code": "avg_punishment = np.mean([exp.punishment for exp in recent_experiences])",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 757,
+      "code": "self.experiences = self.experiences[-2000:]",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 767,
+      "code": "def export_learning_report(self) -> Dict[str, Any]:",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 793,
+      "code": "def _get_top_rules(self) -> List[Dict[str, Any]]:",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 796,
+      "code": "rules = []",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 801,
+      "code": "'accuracy': perf['accuracy'],",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 802,
+      "code": "'confidence': perf['confidence'],",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 803,
+      "code": "'usage_count': perf['usage_count'],",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 804,
+      "code": "'performance_score': perf['accuracy'] * perf['confidence']",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 808,
+      "code": "rules.sort(key=lambda x: x['performance_score'], reverse=True)",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 809,
+      "code": "return rules[:5]  # Top 5 rules",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 813,
+      "code": "return []",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 815,
+      "code": "def _analyze_learning_progress(self) -> Dict[str, Any]:",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 825,
+      "code": "quarters = []",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 829,
+      "code": "quarter_exps = self.experiences[start_idx:end_idx]",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 833,
+      "code": "avg_reward = np.mean([exp.reward for exp in quarter_exps])",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 843,
+      "code": "early_accuracy = quarters[0]['accuracy']",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 844,
+      "code": "recent_accuracy = quarters[-1]['accuracy']",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 859,
+      "code": "def _generate_learning_recommendations(self) -> List[str]:",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 862,
+      "code": "recommendations = []",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 866,
+      "code": "return [\"Insufficient data for recommendations\"]",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 898,
+      "code": "return [\"Error generating recommendations\"]",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 921,
+      "code": "'rule_triggers': ['high_growth_investment', 'positive_sentiment_investment'],",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 932,
+      "code": "'rule_triggers': ['volatility_risk_alert', 'negative_sentiment_alert'],",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 943,
+      "code": "'rule_triggers': ['high_demand_opportunity'],",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 951,
+      "code": "print(f\"\\n\ud83d\udd04 Processing Experience {i}: {exp_data['decision_type']}\")",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 982,
+      "code": "for rule_id in ['high_growth_investment', 'volatility_risk_alert', 'high_demand_opportunity']:",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 996,
+      "code": "for rec in report['recommendations']:",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "symbolic_engine/rules.py",
+      "line": 53,
+      "code": "parameters: Optional[Dict] = None):",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "symbolic_engine/rules.py",
+      "line": 85,
+      "code": "def evaluate_condition(self, context: Dict[str, Any]) -> bool:",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "symbolic_engine/rules.py",
+      "line": 119,
+      "code": "def _create_safe_context(self, context: Dict[str, Any]) -> Dict[str, Any]:",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "symbolic_engine/rules.py",
+      "line": 142,
+      "code": "'is_increasing': lambda seq: all(seq[i] <= seq[i+1] for i in range(len(seq)-1)),",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "symbolic_engine/rules.py",
+      "line": 143,
+      "code": "'is_decreasing': lambda seq: all(seq[i] >= seq[i+1] for i in range(len(seq)-1)),",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "symbolic_engine/rules.py",
+      "line": 161,
+      "code": "def execute_action(self, context: Dict[str, Any]) -> Dict[str, Any]:",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "symbolic_engine/rules.py",
+      "line": 198,
+      "code": "def _parse_action_template(self, context: Dict[str, Any]) -> str:",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "symbolic_engine/rules.py",
+      "line": 217,
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "symbolic_engine/rules.py",
+      "line": 243,
+      "code": "self.rules: Dict[str, MarketRule] = {}",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "symbolic_engine/rules.py",
+      "line": 245,
+      "code": "'investment': [],",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "symbolic_engine/rules.py",
+      "line": 246,
+      "code": "'marketing': [],",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "symbolic_engine/rules.py",
+      "line": 247,
+      "code": "'competitive': [],",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "symbolic_engine/rules.py",
+      "line": 248,
+      "code": "'trend': [],",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "symbolic_engine/rules.py",
+      "line": 249,
+      "code": "'risk': []",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "symbolic_engine/rules.py",
+      "line": 251,
+      "code": "self.execution_history: List[Dict] = []",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "symbolic_engine/rules.py",
+      "line": 358,
+      "code": "self.rules[rule.rule_id] = rule",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "symbolic_engine/rules.py",
+      "line": 360,
+      "code": "self.rules[rule.rule_id] = rule",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "symbolic_engine/rules.py",
+      "line": 375,
+      "code": "'investment': ['investment', 'growth', 'buy', 'sell'],",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "symbolic_engine/rules.py",
+      "line": 376,
+      "code": "'marketing': ['marketing', 'sentiment', 'brand'],",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "symbolic_engine/rules.py",
+      "line": 377,
+      "code": "'competitive': ['competitor', 'competition', 'market share'],",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "symbolic_engine/rules.py",
+      "line": 378,
+      "code": "'trend': ['trend', 'demand', 'opportunity'],",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "symbolic_engine/rules.py",
+      "line": 379,
+      "code": "'risk': ['risk', 'volatility', 'alert']",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "symbolic_engine/rules.py",
+      "line": 387,
+      "code": "self.rule_categories[category].append(rule.rule_id)",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "symbolic_engine/rules.py",
+      "line": 410,
+      "code": "del self.rules[rule_id]",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "symbolic_engine/rules.py",
+      "line": 419,
+      "code": "def get_rule(self, rule_id: str) -> Optional[MarketRule]:",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "symbolic_engine/rules.py",
+      "line": 421,
+      "code": "return self.rules.get(rule_id)",
+      "description": "Dictionary access without default",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "symbolic_engine/rules.py",
+      "line": 423,
+      "code": "def get_rules_by_category(self, category: str) -> List[MarketRule]:",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "symbolic_engine/rules.py",
+      "line": 425,
+      "code": "rule_ids = self.rule_categories.get(category, [])",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "symbolic_engine/rules.py",
+      "line": 428,
+      "code": "def get_active_rules(self) -> List[MarketRule]:",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "symbolic_engine/rules.py",
+      "line": 432,
+      "code": "def evaluate_rules(self, context: Dict[str, Any]) -> List[Dict[str, Any]]:",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "symbolic_engine/rules.py",
+      "line": 442,
+      "code": "results = []",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "symbolic_engine/rules.py",
+      "line": 480,
+      "code": "def get_rule_statistics(self) -> Dict[str, Any]:",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "symbolic_engine/rules.py",
+      "line": 498,
+      "code": "category_stats[category] = {",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "symbolic_engine/rules.py",
+      "line": 505,
+      "code": "top_rules = sorted(self.rules.values(), key=lambda r: r.get_success_rate(), reverse=True)[:5]",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "symbolic_engine/rules.py",
+      "line": 514,
+      "code": "'top_performing_rules': [r.to_dict() for r in top_rules],",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "symbolic_engine/rules.py",
+      "line": 522,
+      "code": "def export_rules(self) -> Dict[str, Any]:",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "symbolic_engine/rules.py",
+      "line": 530,
+      "code": "def import_rules(self, rules_data: Dict[str, Any]) -> bool:",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "symbolic_engine/rules.py",
+      "line": 537,
+      "code": "rule_type = RuleType(rule_dict['rule_type'])",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "symbolic_engine/rules.py",
+      "line": 538,
+      "code": "priority = RulePriority(rule_dict['priority'])",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "symbolic_engine/rules.py",
+      "line": 539,
+      "code": "status = RuleStatus(rule_dict['status'])",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "symbolic_engine/rules.py",
+      "line": 543,
+      "code": "rule_id=rule_dict['rule_id'],",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "symbolic_engine/rules.py",
+      "line": 544,
+      "code": "name=rule_dict['name'],",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "symbolic_engine/rules.py",
+      "line": 545,
+      "code": "description=rule_dict['description'],",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "symbolic_engine/rules.py",
+      "line": 546,
+      "code": "condition=rule_dict['condition'],",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "symbolic_engine/rules.py",
+      "line": 547,
+      "code": "action=rule_dict['action'],",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "symbolic_engine/rules.py",
+      "line": 559,
+      "code": "rule.last_executed = datetime.fromisoformat(rule_dict['last_executed'])",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "symbolic_engine/rules.py",
+      "line": 562,
+      "code": "rule.created_at = datetime.fromisoformat(rule_dict['created_at'])",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "symbolic_engine/rules.py",
+      "line": 565,
+      "code": "rule.updated_at = datetime.fromisoformat(rule_dict['updated_at'])",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "symbolic_engine/rules.py",
+      "line": 598,
+      "code": "print(f\"- {result['rule_name']}: {result['action']}\")",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "symbolic_engine/rules.py",
+      "line": 603,
+      "code": "print(f\"Total rules: {stats['total_rules']}\")",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "symbolic_engine/rules.py",
+      "line": 604,
+      "code": "print(f\"Active rules: {stats['active_rules']}\")",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "symbolic_engine/rules.py",
+      "line": 605,
+      "code": "print(f\"Overall success rate: {stats['overall_success_rate']:.1f}%\")",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "symbolic_engine/rules.py",
+      "line": 622,
+      "code": "high_growth_context['market_growth'] = 55",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 72,
+      "code": "self.decision_history = []",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 73,
+      "code": "self.market_data_history = []",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 74,
+      "code": "self.portfolio_value = []",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 75,
+      "code": "self.trades = []",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 154,
+      "code": "def generate_historical_data(self, days: int = 365) -> List[Dict]:",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 159,
+      "code": "historical_data = []",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 195,
+      "code": "return []",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 279,
+      "code": "portfolio_values = [initial_capital]",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 280,
+      "code": "decisions = []",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 281,
+      "code": "trades = []",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 298,
+      "code": "'market_growth': data_point['market_growth'],",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 299,
+      "code": "'sentiment_score': data_point['sentiment_score'],",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 300,
+      "code": "'negative_sentiment': data_point['negative_sentiment'],",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 301,
+      "code": "'trend_demand': data_point['trend_demand'],",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 302,
+      "code": "'market_volatility': data_point['market_volatility']",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 308,
+      "code": "'average_sentiment': data_point['sentiment_score'],",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 312,
+      "code": "'volatility': data_point['market_volatility'] / 100,",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 313,
+      "code": "'growth_rate': data_point['market_growth']",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 323,
+      "code": "'date': data_point['date'],",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 325,
+      "code": "'market_growth': context['market_growth'],",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 326,
+      "code": "'sentiment_score': context['sentiment_score']",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 339,
+      "code": "capital_change = current_capital * (execution_result['return_rate'] / 100)",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 344,
+      "code": "'date': data_point['date'],",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 347,
+      "code": "'return_rate': execution_result['return_rate'],",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 351,
+      "code": "'success': execution_result['success'],",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 352,
+      "code": "'confidence': execution_result['confidence']",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 365,
+      "code": "'date': data_point['date'],",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 422,
+      "code": "def _calculate_metrics(self, decisions: List[Dict], trades: List[Dict],",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 423,
+      "code": "portfolio_values: List[float], initial_capital: float) -> BacktestMetrics:",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 441,
+      "code": "avg_confidence = np.mean([d.get('execution', {}).get('confidence', 0) for d in decisions])",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 508,
+      "code": "def generate_backtest_report(self) -> Dict[str, Any]:",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 541,
+      "code": "\"detailed_trades\": self.trades[:10],  # First 10 trades",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 551,
+      "code": "def _analyze_performance(self) -> Dict[str, Any]:",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 562,
+      "code": "performance_by_type[decision_type] = {",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 569,
+      "code": "performance_by_type[decision_type]['trades'] += 1",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 570,
+      "code": "performance_by_type[decision_type]['total_return'] += trade.get('return_rate', 0)",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 572,
+      "code": "performance_by_type[decision_type]['wins'] += 1",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 577,
+      "code": "data['avg_return'] = data['total_return'] / data['trades']",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 578,
+      "code": "data['win_rate'] = (data['wins'] / data['trades']) * 100",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 583,
+      "code": "trade_date = trade.get('date')",
+      "description": "Dictionary access without default",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 589,
+      "code": "monthly_performance[month_key] = {'returns': [], 'count': 0}",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 591,
+      "code": "monthly_performance[month_key]['returns'].append(trade.get('return_rate', 0))",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 592,
+      "code": "monthly_performance[month_key]['count'] += 1",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 597,
+      "code": "data['avg_return'] = np.mean(data['returns'])",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 598,
+      "code": "data['total_return'] = np.sum(data['returns'])",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 609,
+      "code": "def _generate_recommendations(self) -> List[str]:",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 612,
+      "code": "recommendations = []",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 615,
+      "code": "return [\"No recommendations available - run backtest first\"]",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 657,
+      "code": "return [\"Error generating recommendations\"]",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 676,
+      "code": "print(f\"Final Capital: ${backtester.portfolio_value[-1]:,.2f}\")",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "NULL_POINTER",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 710,
+      "code": "for i, rec in enumerate(report['recommendations'], 1):",
+      "description": "List/dict access without bounds check",
+      "recommendation": "Add null checks before accessing data"
+    },
+    {
+      "type": "RESOURCE_LEAK",
+      "severity": "MEDIUM",
+      "file": "market_data_processor.py",
+      "line": 103,
+      "code": "df = pd.read_csv(csv_file)",
+      "description": "Memory leak",
+      "recommendation": "Use context managers or explicit resource cleanup"
+    },
+    {
+      "type": "RESOURCE_LEAK",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 163,
+      "code": "for i in range(days):",
+      "description": "Large loop risk",
+      "recommendation": "Use context managers or explicit resource cleanup"
+    },
+    {
+      "type": "RESOURCE_LEAK",
+      "severity": "MEDIUM",
+      "file": "aggressive_profit_backtester.py",
+      "line": 88,
+      "code": "for i in range(0, len(df_sample), 10):  # Every 10th point for more trades",
+      "description": "Large loop risk",
+      "recommendation": "Use context managers or explicit resource cleanup"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 107,
+      "code": "self.model_path = model_path",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 108,
+      "code": "self.experiences = []",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 109,
+      "code": "self.learning_weights = {}",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 110,
+      "code": "self.rule_performance = {}",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 111,
+      "code": "self.context_patterns = {}",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 112,
+      "code": "self.model_version = 1",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 113,
+      "code": "self.learning_rate = 0.3  # Increased from 0.1 - more aggressive learning",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 114,
+      "code": "self.decay_rate = 0.95",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 115,
+      "code": "self.reward_scale = 3.0  # Increased from 1.0 - stronger rewards",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 116,
+      "code": "self.punishment_scale = 5.0  # Increased from 2.0 - harsher punishment",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 119,
+      "code": "self._initialize_learning_system()",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 122,
+      "code": "self.setup_learning_logging()",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 126,
+      "code": "self.learning_start_time = datetime.now()",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 129,
+      "code": "logger.info(f\"Start Time: {self.learning_start_time}\")",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 130,
+      "code": "logger.info(f\"Model Path: {self.model_path}\")",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 131,
+      "code": "logger.info(f\"Initial Model Version: {self.model_version}\")",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 132,
+      "code": "logger.info(f\"Learning Rate: {self.learning_rate}\")",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 133,
+      "code": "logger.info(f\"Reward Scale: {self.reward_scale}\")",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 134,
+      "code": "logger.info(f\"Punishment Scale: {self.punishment_scale}\")",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 158,
+      "code": "self.log_learning_event(\"EXPERIENCE_PROCESSED\", experience_data)",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 162,
+      "code": "self.log_learning_event(\"WEIGHT_UPDATE\", weight_changes)",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 166,
+      "code": "self.log_learning_event(f\"RULE_PERFORMANCE_{rule_id.upper()}\", performance_data)",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 170,
+      "code": "logger.info(f\"MODEL ADAPTATION - Version {self.model_version}:\")",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 189,
+      "code": "if os.path.exists(self.model_path):",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 190,
+      "code": "self._load_model()",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 192,
+      "code": "self._create_initial_model()",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 194,
+      "code": "logger.info(f\"LLM Learning Engine initialized - Model Version: {self.model_version}\")",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 198,
+      "code": "self._create_initial_model()",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 202,
+      "code": "self.learning_weights = {",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 212,
+      "code": "self.rule_performance = {",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 223,
+      "code": "self.context_patterns = {}",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 228,
+      "code": "with open(self.model_path, 'rb') as f:",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 230,
+      "code": "self.learning_weights = model_data.get('learning_weights', self.learning_weights)",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 231,
+      "code": "self.rule_performance = model_data.get('rule_performance', self.rule_performance)",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 232,
+      "code": "self.context_patterns = model_data.get('context_patterns', self.context_patterns)",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 233,
+      "code": "self.model_version = model_data.get('model_version', 1)",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 234,
+      "code": "self.experiences = model_data.get('experiences', [])",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 235,
+      "code": "logger.info(f\"Loaded existing model version {self.model_version}\")",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 238,
+      "code": "self._create_initial_model()",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 243,
+      "code": "os.makedirs(os.path.dirname(self.model_path), exist_ok=True)",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 245,
+      "code": "'learning_weights': self.learning_weights,",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 246,
+      "code": "'rule_performance': self.rule_performance,",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 247,
+      "code": "'context_patterns': self.context_patterns,",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 248,
+      "code": "'model_version': self.model_version,",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 249,
+      "code": "'experiences': self.experiences[-1000:],  # Keep last 1000 experiences",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 253,
+      "code": "with open(self.model_path, 'wb') as f:",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 256,
+      "code": "logger.info(f\"Model saved - Version {self.model_version}\")",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 280,
+      "code": "outcome = self._determine_outcome(context, action_taken, actual_result, expected_result, relative_error)",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 283,
+      "code": "reward, punishment = self._calculate_reward_punishment(outcome, relative_error, confidence)",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 369,
+      "code": "reward = self.reward_scale * (1.0 + confidence)  # Higher reward for higher confidence",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 374,
+      "code": "reward = self.reward_scale * 0.3 * confidence",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 375,
+      "code": "punishment = self.punishment_scale * 0.2 * (1 - confidence)",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 380,
+      "code": "punishment = self.punishment_scale * (1.0 + relative_error) * (1 + confidence)",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 396,
+      "code": "self.log_experience_processed(experience)",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 399,
+      "code": "self.experiences.append(experience)",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 403,
+      "code": "if rule_id in self.rule_performance:",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 404,
+      "code": "self._update_rule_performance(rule_id, experience)",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 407,
+      "code": "self._update_learning_weights(experience)",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 410,
+      "code": "self._update_context_patterns(experience)",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 413,
+      "code": "if len(self.experiences) % 10 == 0:",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 414,
+      "code": "self._save_model()",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 418,
+      "code": "'total_experiences': len(self.experiences),",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 423,
+      "code": "'model_version': self.model_version",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 425,
+      "code": "self.log_learning_event(\"LEARNING_SUMMARY\", learning_summary)",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 428,
+      "code": "self.log_learning_event(\"LEARNING_ERROR\", {'error': str(e), 'experience': str(experience)})",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 434,
+      "code": "rule_perf = self.rule_performance[rule_id]",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 464,
+      "code": "'experience_count': len(self.experiences)",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 466,
+      "code": "self.log_rule_performance_update(rule_id, performance_data)",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 482,
+      "code": "old_weights = self.learning_weights.copy()",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 497,
+      "code": "if weight_feature in self.learning_weights:",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 499,
+      "code": "weight_adjustment = self.learning_rate * net_signal * context_value",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 503,
+      "code": "self.learning_weights[weight_feature] += weight_adjustment",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 506,
+      "code": "self.learning_weights[weight_feature] = max(0.01, min(1.0, self.learning_weights[weight_feature]))",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 511,
+      "code": "'new_weight': self.learning_weights[weight_feature],",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 519,
+      "code": "total_weight = sum(self.learning_weights.values())",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 521,
+      "code": "for feature in self.learning_weights:",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 522,
+      "code": "self.learning_weights[feature] /= total_weight",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 526,
+      "code": "self.log_weight_update(weight_changes)",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 531,
+      "code": "self.model_version += 1",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 539,
+      "code": "self.log_model_adaptation(adaptation_data)",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 540,
+      "code": "self._save_model()  # Save updated model",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 549,
+      "code": "context_key = self._create_context_key(experience.context, experience.technical_indicators)",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 551,
+      "code": "if context_key not in self.context_patterns:",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 552,
+      "code": "self.context_patterns[context_key] = {",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 559,
+      "code": "pattern = self.context_patterns[context_key]",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 638,
+      "code": "adaptive_weights = self.learning_weights.copy()",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 641,
+      "code": "context_key = self._create_context_key(context, {})",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 643,
+      "code": "if context_key in self.context_patterns:",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 644,
+      "code": "pattern = self.context_patterns[context_key]",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 665,
+      "code": "return self.learning_weights",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 670,
+      "code": "if rule_id in self.rule_performance:",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 671,
+      "code": "rule_perf = self.rule_performance[rule_id]",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 693,
+      "code": "if not self.experiences:",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 703,
+      "code": "model_version=self.model_version,",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 708,
+      "code": "recent_experiences = self.experiences[-100:]  # Last 100 experiences",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 727,
+      "code": "adaptation_rate = len(self.context_patterns) / max(1, total_decisions)",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 738,
+      "code": "model_version=self.model_version,",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 749,
+      "code": "self.model_version += 1",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 752,
+      "code": "for exp in self.experiences:",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 753,
+      "code": "exp.learning_weight *= self.decay_rate",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 756,
+      "code": "if len(self.experiences) > 5000:",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 757,
+      "code": "self.experiences = self.experiences[-2000:]",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 760,
+      "code": "self._save_model()",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 762,
+      "code": "logger.info(f\"Model updated to version {self.model_version}\")",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 770,
+      "code": "metrics = self.get_learning_metrics()",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 774,
+      "code": "\"model_version\": self.model_version,",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 775,
+      "code": "\"total_experiences\": len(self.experiences),",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 779,
+      "code": "\"rule_performance\": self.rule_performance,",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 780,
+      "code": "\"learning_weights\": self.learning_weights,",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 781,
+      "code": "\"context_patterns_count\": len(self.context_patterns),",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 782,
+      "code": "\"top_performing_rules\": self._get_top_rules(),",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 783,
+      "code": "\"learning_progress\": self._analyze_learning_progress(),",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 784,
+      "code": "\"recommendations\": self._generate_learning_recommendations()",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 797,
+      "code": "for rule_id, perf in self.rule_performance.items():",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 818,
+      "code": "if len(self.experiences) < 50:",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 822,
+      "code": "total_exp = len(self.experiences)",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 829,
+      "code": "quarter_exps = self.experiences[start_idx:end_idx]",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 863,
+      "code": "metrics = self.get_learning_metrics()",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 72,
+      "code": "self.decision_history = []",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 73,
+      "code": "self.market_data_history = []",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 74,
+      "code": "self.portfolio_value = []",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 75,
+      "code": "self.trades = []",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 76,
+      "code": "self.metrics = None",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 79,
+      "code": "self.setup_instance_logging()",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 83,
+      "code": "self.log_start_time = datetime.now()",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 86,
+      "code": "logger.info(f\"Start Time: {self.log_start_time}\")",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 267,
+      "code": "self.log_test_start(\"COMPREHENSIVE BACKTEST\", test_params)",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 272,
+      "code": "historical_data = self.generate_historical_data(days)",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 328,
+      "code": "self.log_decision_made(decision_data)",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 334,
+      "code": "execution_result = self.simulate_decision_execution(",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 357,
+      "code": "self.log_trade_executed(trade)",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 361,
+      "code": "self.log_performance_update(current_capital, len(trades), win_rate)",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 379,
+      "code": "metrics = self._calculate_metrics(",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 383,
+      "code": "self.decision_history = decisions",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 384,
+      "code": "self.trades = trades",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 385,
+      "code": "self.portfolio_value = portfolio_values",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 386,
+      "code": "self.metrics = metrics",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 399,
+      "code": "self.log_test_completion(\"COMPREHENSIVE BACKTEST\", final_results)",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 410,
+      "code": "self.save_detailed_log(\"comprehensive_backtest\", all_data)",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 511,
+      "code": "if not self.metrics:",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 517,
+      "code": "\"final_capital\": self.portfolio_value[-1] if self.portfolio_value else 10000,",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 518,
+      "code": "\"total_return\": self.metrics.total_return,",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 519,
+      "code": "\"max_drawdown\": self.metrics.max_drawdown,",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 520,
+      "code": "\"sharpe_ratio\": self.metrics.sharpe_ratio,",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 521,
+      "code": "\"backtest_period\": f\"{len(self.portfolio_value)} days\"",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 524,
+      "code": "\"total_decisions\": self.metrics.total_decisions,",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 525,
+      "code": "\"successful_decisions\": self.metrics.successful_decisions,",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 526,
+      "code": "\"failed_decisions\": self.metrics.failed_decisions,",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 527,
+      "code": "\"success_rate\": self.metrics.success_rate,",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 528,
+      "code": "\"avg_confidence\": self.metrics.avg_confidence",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 531,
+      "code": "\"total_trades\": self.metrics.total_trades,",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 532,
+      "code": "\"winning_trades\": self.metrics.winning_trades,",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 533,
+      "code": "\"losing_trades\": self.metrics.losing_trades,",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 534,
+      "code": "\"win_rate\": self.metrics.win_rate,",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 535,
+      "code": "\"avg_win\": self.metrics.avg_win,",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 536,
+      "code": "\"avg_loss\": self.metrics.avg_loss,",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 537,
+      "code": "\"profit_factor\": self.metrics.profit_factor",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 539,
+      "code": "\"performance_analysis\": self._analyze_performance(),",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 540,
+      "code": "\"recommendations\": self._generate_recommendations(),",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 541,
+      "code": "\"detailed_trades\": self.trades[:10],  # First 10 trades",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 554,
+      "code": "if not self.trades:",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 559,
+      "code": "for trade in self.trades:",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 582,
+      "code": "for trade in self.trades:",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 614,
+      "code": "if not self.metrics:",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 618,
+      "code": "if self.metrics.success_rate < 50:",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 620,
+      "code": "elif self.metrics.success_rate > 75:",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 624,
+      "code": "if self.metrics.max_drawdown > 20:",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 626,
+      "code": "elif self.metrics.max_drawdown < 5:",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 630,
+      "code": "if self.metrics.total_return < 0:",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 632,
+      "code": "elif self.metrics.total_return > 20:",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 636,
+      "code": "if self.metrics.sharpe_ratio < 1:",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 638,
+      "code": "elif self.metrics.sharpe_ratio > 2:",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 642,
+      "code": "if self.metrics.win_rate < 40:",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 644,
+      "code": "elif self.metrics.win_rate > 60:",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 648,
+      "code": "if self.metrics.profit_factor < 1:",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "RACE_CONDITION",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 650,
+      "code": "elif self.metrics.profit_factor > 2:",
+      "description": "Shared state access",
+      "recommendation": "Implement proper synchronization mechanisms"
+    },
+    {
+      "type": "INFINITE_LOOP",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 163,
+      "code": "for i in range(days):",
+      "description": "Potentially large for loop",
+      "recommendation": "Add proper break conditions"
+    },
+    {
+      "type": "INFINITE_LOOP",
+      "severity": "HIGH",
+      "file": "aggressive_profit_backtester.py",
+      "line": 88,
+      "code": "for i in range(0, len(df_sample), 10):  # Every 10th point for more trades",
+      "description": "Potentially large for loop",
+      "recommendation": "Add proper break conditions"
+    },
+    {
+      "type": "INFINITE_LOOP",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 826,
+      "code": "for i in range(4):",
+      "description": "Potentially large for loop",
+      "recommendation": "Add proper break conditions"
+    },
+    {
+      "type": "MEMORY_CORRUPTION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 398,
+      "code": "# Add to experience buffer",
+      "description": "Buffer operations",
+      "recommendation": "Use safe memory management"
+    }
+  ],
+  "performance_issues": [
+    {
+      "type": "INFINITE_RECURSION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 22,
+      "code": "def setup_learning_logger():",
+      "description": "Recursive function setup_learning_logger without base case",
+      "recommendation": "Add proper base case for recursion"
+    },
+    {
+      "type": "INFINITE_RECURSION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 137,
+      "code": "def log_learning_event(self, event_type: str, data: Dict):",
+      "description": "Recursive function log_learning_event without base case",
+      "recommendation": "Add proper base case for recursion"
+    },
+    {
+      "type": "INFINITE_RECURSION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 137,
+      "code": "def log_learning_event(self, event_type: str, data: Dict):",
+      "description": "Recursive function log_learning_event without base case",
+      "recommendation": "Add proper base case for recursion"
+    },
+    {
+      "type": "INFINITE_RECURSION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 137,
+      "code": "def log_learning_event(self, event_type: str, data: Dict):",
+      "description": "Recursive function log_learning_event without base case",
+      "recommendation": "Add proper base case for recursion"
+    },
+    {
+      "type": "INFINITE_RECURSION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 200,
+      "code": "def _create_initial_model(self):",
+      "description": "Recursive function _create_initial_model without base case",
+      "recommendation": "Add proper base case for recursion"
+    },
+    {
+      "type": "INEFFICIENT_ALGORITHM",
+      "severity": "MEDIUM",
+      "file": "aggressive_profit_backtester.py",
+      "line": 160,
+      "code": "for symbol in list(self.backtester.positions.keys()):",
+      "description": "Inefficient key access",
+      "recommendation": "Optimize algorithm complexity"
+    }
+  ],
+  "logic_flaws": [
+    {
+      "type": "BUSINESS_LOGIC",
+      "severity": "MEDIUM",
+      "file": "aggressive_profit_backtester.py",
+      "line": 99,
+      "code": "if signal[\"signal\"] != \"hold\" and signal[\"confidence\"] > 0.6:",
+      "description": "Assignment in conditional",
+      "recommendation": "Use == for comparison"
+    },
+    {
+      "type": "BUSINESS_LOGIC",
+      "severity": "MEDIUM",
+      "file": "aggressive_profit_backtester.py",
+      "line": 99,
+      "code": "if signal[\"signal\"] != \"hold\" and signal[\"confidence\"] > 0.6:",
+      "description": "Assignment in conditional",
+      "recommendation": "Use == for comparison"
+    },
+    {
+      "type": "BUSINESS_LOGIC",
+      "severity": "MEDIUM",
+      "file": "aggressive_profit_backtester.py",
+      "line": 106,
+      "code": "if old_capital != self.backtester.current_capital:",
+      "description": "Assignment in conditional",
+      "recommendation": "Use == for comparison"
+    },
+    {
+      "type": "BUSINESS_LOGIC",
+      "severity": "MEDIUM",
+      "file": "aggressive_profit_backtester.py",
+      "line": 120,
+      "code": "if signal[\"signal\"] != \"hold\":",
+      "description": "Assignment in conditional",
+      "recommendation": "Use == for comparison"
+    },
+    {
+      "type": "TRADING_LOGIC",
+      "severity": "HIGH",
+      "file": "aggressive_profit_backtester.py",
+      "line": 40,
+      "code": "self.min_trade_threshold = 0.02  # 2% minimum movement to trigger trade",
+      "description": "Double trade execution",
+      "recommendation": "Review trading logic for double execution"
+    },
+    {
+      "type": "TRADING_LOGIC",
+      "severity": "HIGH",
+      "file": "aggressive_profit_backtester.py",
+      "line": 41,
+      "code": "self.max_positions = 5  # Maximum concurrent positions",
+      "description": "Double position",
+      "recommendation": "Review trading logic for double execution"
+    },
+    {
+      "type": "TRADING_LOGIC",
+      "severity": "HIGH",
+      "file": "aggressive_profit_backtester.py",
+      "line": 42,
+      "code": "self.position_size = 0.2  # 20% of capital per position",
+      "description": "Double position",
+      "recommendation": "Review trading logic for double execution"
+    },
+    {
+      "type": "TRADING_LOGIC",
+      "severity": "HIGH",
+      "file": "aggressive_profit_backtester.py",
+      "line": 101,
+      "code": "if len(self.backtester.positions) < self.max_positions:",
+      "description": "Double position",
+      "recommendation": "Review trading logic for double execution"
+    },
+    {
+      "type": "TRADING_LOGIC",
+      "severity": "HIGH",
+      "file": "aggressive_profit_backtester.py",
+      "line": 111,
+      "code": "last_trade = self.backtester.trades[-1]",
+      "description": "Double trade execution",
+      "recommendation": "Review trading logic for double execution"
+    },
+    {
+      "type": "TRADING_LOGIC",
+      "severity": "HIGH",
+      "file": "aggressive_profit_backtester.py",
+      "line": 155,
+      "code": "current_positions = len(self.backtester.positions)",
+      "description": "Double position",
+      "recommendation": "Review trading logic for double execution"
+    },
+    {
+      "type": "TRADING_LOGIC",
+      "severity": "HIGH",
+      "file": "aggressive_profit_backtester.py",
+      "line": 156,
+      "code": "trading_stats['max_positions_held'] = max(trading_stats['max_positions_held'], current_positions)",
+      "description": "Double position",
+      "recommendation": "Review trading logic for double execution"
+    },
+    {
+      "type": "TRADING_LOGIC",
+      "severity": "HIGH",
+      "file": "aggressive_profit_backtester.py",
+      "line": 161,
+      "code": "position = self.backtester.positions[symbol]",
+      "description": "Double position",
+      "recommendation": "Review trading logic for double execution"
+    },
+    {
+      "type": "TRADING_LOGIC",
+      "severity": "HIGH",
+      "file": "aggressive_profit_backtester.py",
+      "line": 169,
+      "code": "trading_stats['win_rate'] = (trading_stats['profitable_trades'] / trading_stats['trades_taken']) * 100",
+      "description": "Double trade execution",
+      "recommendation": "Review trading logic for double execution"
+    },
+    {
+      "type": "TRADING_LOGIC",
+      "severity": "HIGH",
+      "file": "aggressive_profit_backtester.py",
+      "line": 178,
+      "code": "holding_periods = [trade.holding_period for trade in self.backtester.trades]",
+      "description": "Double trade execution",
+      "recommendation": "Review trading logic for double execution"
+    },
+    {
+      "type": "TRADING_LOGIC",
+      "severity": "HIGH",
+      "file": "aggressive_profit_backtester.py",
+      "line": 194,
+      "code": "print(f\"Trades Taken: {trading_stats['trades_taken']}\")",
+      "description": "Double trade execution",
+      "recommendation": "Review trading logic for double execution"
+    },
+    {
+      "type": "TRADING_LOGIC",
+      "severity": "HIGH",
+      "file": "aggressive_profit_backtester.py",
+      "line": 195,
+      "code": "print(f\"Trade Participation: {trading_stats['trades_taken']/trading_stats['total_opportunities']*100:.1f}%\")",
+      "description": "Double trade execution",
+      "recommendation": "Review trading logic for double execution"
+    },
+    {
+      "type": "TRADING_LOGIC",
+      "severity": "HIGH",
+      "file": "aggressive_profit_backtester.py",
+      "line": 196,
+      "code": "print(f\"Max Positions Held: {trading_stats['max_positions_held']}\")",
+      "description": "Double position",
+      "recommendation": "Review trading logic for double execution"
+    },
+    {
+      "type": "TRADING_LOGIC",
+      "severity": "HIGH",
+      "file": "aggressive_profit_backtester.py",
+      "line": 201,
+      "code": "print(f\"Profitable Trades: {trading_stats['profitable_trades']}\")",
+      "description": "Double trade execution",
+      "recommendation": "Review trading logic for double execution"
+    },
+    {
+      "type": "TRADING_LOGIC",
+      "severity": "HIGH",
+      "file": "aggressive_profit_backtester.py",
+      "line": 202,
+      "code": "print(f\"Losing Trades: {trading_stats['losing_trades']}\")",
+      "description": "Double trade execution",
+      "recommendation": "Review trading logic for double execution"
+    },
+    {
+      "type": "TRADING_LOGIC",
+      "severity": "HIGH",
+      "file": "aggressive_profit_backtester.py",
+      "line": 252,
+      "code": "signal_type = \"buy\" if price_change_pct > 0 else \"sell\"",
+      "description": "Simultaneous buy/sell",
+      "recommendation": "Review trading logic for double execution"
+    },
+    {
+      "type": "TRADING_LOGIC",
+      "severity": "HIGH",
+      "file": "aggressive_profit_backtester.py",
+      "line": 329,
+      "code": "\"trades_taken\": trading_stats['trades_taken'],",
+      "description": "Double trade execution",
+      "recommendation": "Review trading logic for double execution"
+    },
+    {
+      "type": "TRADING_LOGIC",
+      "severity": "HIGH",
+      "file": "aggressive_profit_backtester.py",
+      "line": 330,
+      "code": "\"trade_participation_pct\": trading_stats['trades_taken'] / trading_stats['total_opportunities'] * 100,",
+      "description": "Double trade execution",
+      "recommendation": "Review trading logic for double execution"
+    },
+    {
+      "type": "TRADING_LOGIC",
+      "severity": "HIGH",
+      "file": "aggressive_profit_backtester.py",
+      "line": 331,
+      "code": "\"max_positions_held\": trading_stats['max_positions_held'],",
+      "description": "Double position",
+      "recommendation": "Review trading logic for double execution"
+    },
+    {
+      "type": "TRADING_LOGIC",
+      "severity": "HIGH",
+      "file": "aggressive_profit_backtester.py",
+      "line": 336,
+      "code": "\"profitable_trades\": trading_stats['profitable_trades'],",
+      "description": "Double trade execution",
+      "recommendation": "Review trading logic for double execution"
+    },
+    {
+      "type": "TRADING_LOGIC",
+      "severity": "HIGH",
+      "file": "aggressive_profit_backtester.py",
+      "line": 337,
+      "code": "\"losing_trades\": trading_stats['losing_trades'],",
+      "description": "Double trade execution",
+      "recommendation": "Review trading logic for double execution"
+    },
+    {
+      "type": "TRADING_LOGIC",
+      "severity": "HIGH",
+      "file": "aggressive_profit_backtester.py",
+      "line": 379,
+      "code": "recommendations.append(\"\ud83d\udc22 Low trade participation. Reduce thresholds to generate more trades.\")",
+      "description": "Double trade execution",
+      "recommendation": "Review trading logic for double execution"
+    },
+    {
+      "type": "TRADING_LOGIC",
+      "severity": "HIGH",
+      "file": "aggressive_profit_backtester.py",
+      "line": 438,
+      "code": "print(f\"\ud83d\udcc8 Trade Participation: {profit_report['aggressive_trading_summary']['trade_participation_pct']:.1f}%\")",
+      "description": "Double trade execution",
+      "recommendation": "Review trading logic for double execution"
+    },
+    {
+      "type": "TRADING_LOGIC",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 107,
+      "code": "def log_trade_executed(self, trade_data: Dict):",
+      "description": "Double trade execution",
+      "recommendation": "Review trading logic for double execution"
+    },
+    {
+      "type": "TRADING_LOGIC",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 121,
+      "code": "logger.info(f\"  Trade Count: {trade_count}\")",
+      "description": "Double trade execution",
+      "recommendation": "Review trading logic for double execution"
+    },
+    {
+      "type": "TRADING_LOGIC",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 354,
+      "code": "trades.append(trade)",
+      "description": "Double trade execution",
+      "recommendation": "Review trading logic for double execution"
+    },
+    {
+      "type": "TRADING_LOGIC",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 357,
+      "code": "self.log_trade_executed(trade)",
+      "description": "Double trade execution",
+      "recommendation": "Review trading logic for double execution"
+    },
+    {
+      "type": "TRADING_LOGIC",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 360,
+      "code": "win_rate = len([t for t in trades if t['success']]) / len(trades) * 100 if trades else 0",
+      "description": "Double trade execution",
+      "recommendation": "Review trading logic for double execution"
+    },
+    {
+      "type": "TRADING_LOGIC",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 384,
+      "code": "self.trades = trades",
+      "description": "Double trade execution",
+      "recommendation": "Review trading logic for double execution"
+    },
+    {
+      "type": "TRADING_LOGIC",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 393,
+      "code": "'total_trades': metrics.total_trades,",
+      "description": "Double trade execution",
+      "recommendation": "Review trading logic for double execution"
+    },
+    {
+      "type": "TRADING_LOGIC",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 405,
+      "code": "'trades': trades,",
+      "description": "Double trade execution",
+      "recommendation": "Review trading logic for double execution"
+    },
+    {
+      "type": "TRADING_LOGIC",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 432,
+      "code": "total_trades=0, winning_trades=0, losing_trades=0",
+      "description": "Double trade execution",
+      "recommendation": "Review trading logic for double execution"
+    },
+    {
+      "type": "TRADING_LOGIC",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 464,
+      "code": "total_trades = len(trades)",
+      "description": "Double trade execution",
+      "recommendation": "Review trading logic for double execution"
+    },
+    {
+      "type": "TRADING_LOGIC",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 465,
+      "code": "winning_trades = sum(1 for t in trades if t.get('success', False))",
+      "description": "Double trade execution",
+      "recommendation": "Review trading logic for double execution"
+    },
+    {
+      "type": "TRADING_LOGIC",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 466,
+      "code": "losing_trades = total_trades - winning_trades",
+      "description": "Double trade execution",
+      "recommendation": "Review trading logic for double execution"
+    },
+    {
+      "type": "TRADING_LOGIC",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 467,
+      "code": "win_rate = (winning_trades / total_trades * 100) if total_trades > 0 else 0",
+      "description": "Double trade execution",
+      "recommendation": "Review trading logic for double execution"
+    },
+    {
+      "type": "TRADING_LOGIC",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 494,
+      "code": "total_trades=total_trades,",
+      "description": "Double trade execution",
+      "recommendation": "Review trading logic for double execution"
+    },
+    {
+      "type": "TRADING_LOGIC",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 495,
+      "code": "winning_trades=winning_trades,",
+      "description": "Double trade execution",
+      "recommendation": "Review trading logic for double execution"
+    },
+    {
+      "type": "TRADING_LOGIC",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 496,
+      "code": "losing_trades=losing_trades",
+      "description": "Double trade execution",
+      "recommendation": "Review trading logic for double execution"
+    },
+    {
+      "type": "TRADING_LOGIC",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 505,
+      "code": "total_trades=0, winning_trades=0, losing_trades=0",
+      "description": "Double trade execution",
+      "recommendation": "Review trading logic for double execution"
+    },
+    {
+      "type": "TRADING_LOGIC",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 531,
+      "code": "\"total_trades\": self.metrics.total_trades,",
+      "description": "Double trade execution",
+      "recommendation": "Review trading logic for double execution"
+    },
+    {
+      "type": "TRADING_LOGIC",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 532,
+      "code": "\"winning_trades\": self.metrics.winning_trades,",
+      "description": "Double trade execution",
+      "recommendation": "Review trading logic for double execution"
+    },
+    {
+      "type": "TRADING_LOGIC",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 533,
+      "code": "\"losing_trades\": self.metrics.losing_trades,",
+      "description": "Double trade execution",
+      "recommendation": "Review trading logic for double execution"
+    },
+    {
+      "type": "TRADING_LOGIC",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 541,
+      "code": "\"detailed_trades\": self.trades[:10],  # First 10 trades",
+      "description": "Double trade execution",
+      "recommendation": "Review trading logic for double execution"
+    },
+    {
+      "type": "TRADING_LOGIC",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 559,
+      "code": "for trade in self.trades:",
+      "description": "Double trade execution",
+      "recommendation": "Review trading logic for double execution"
+    },
+    {
+      "type": "TRADING_LOGIC",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 582,
+      "code": "for trade in self.trades:",
+      "description": "Double trade execution",
+      "recommendation": "Review trading logic for double execution"
+    },
+    {
+      "type": "TRADING_LOGIC",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 583,
+      "code": "trade_date = trade.get('date')",
+      "description": "Double trade execution",
+      "recommendation": "Review trading logic for double execution"
+    },
+    {
+      "type": "TRADING_LOGIC",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 585,
+      "code": "trade_date = datetime.fromisoformat(trade_date.replace('Z', '+00:00'))",
+      "description": "Double trade execution",
+      "recommendation": "Review trading logic for double execution"
+    },
+    {
+      "type": "TRADING_LOGIC",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 688,
+      "code": "print(f\"Total Trades: {metrics.total_trades}\")",
+      "description": "Double trade execution",
+      "recommendation": "Review trading logic for double execution"
+    },
+    {
+      "type": "TRADING_LOGIC",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 689,
+      "code": "print(f\"Winning Trades: {metrics.winning_trades}\")",
+      "description": "Double trade execution",
+      "recommendation": "Review trading logic for double execution"
+    },
+    {
+      "type": "TRADING_LOGIC",
+      "severity": "HIGH",
+      "file": "backtesting.py",
+      "line": 690,
+      "code": "print(f\"Losing Trades: {metrics.losing_trades}\")",
+      "description": "Double trade execution",
+      "recommendation": "Review trading logic for double execution"
+    },
+    {
+      "type": "LEARNING_SYSTEM",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 106,
+      "code": "def __init__(self, model_path: str = \"models/llm_learning_model.pkl\"):",
+      "description": "Model version conflict",
+      "recommendation": "Review learning parameters"
+    },
+    {
+      "type": "LEARNING_SYSTEM",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 107,
+      "code": "self.model_path = model_path",
+      "description": "Model version conflict",
+      "recommendation": "Review learning parameters"
+    },
+    {
+      "type": "LEARNING_SYSTEM",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 160,
+      "code": "def log_weight_update(self, weight_changes: Dict):",
+      "description": "Weight update conflict",
+      "recommendation": "Review learning parameters"
+    },
+    {
+      "type": "LEARNING_SYSTEM",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 208,
+      "code": "'profit_weight': 0.05,      # NEW: Profit potential weight",
+      "description": "Weight update conflict",
+      "recommendation": "Review learning parameters"
+    },
+    {
+      "type": "LEARNING_SYSTEM",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 209,
+      "code": "'risk_weight': 0.05          # NEW: Risk management weight",
+      "description": "Weight update conflict",
+      "recommendation": "Review learning parameters"
+    },
+    {
+      "type": "LEARNING_SYSTEM",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 230,
+      "code": "self.learning_weights = model_data.get('learning_weights', self.learning_weights)",
+      "description": "Weight update conflict",
+      "recommendation": "Review learning parameters"
+    },
+    {
+      "type": "LEARNING_SYSTEM",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 233,
+      "code": "self.model_version = model_data.get('model_version', 1)",
+      "description": "Model version conflict",
+      "recommendation": "Review learning parameters"
+    },
+    {
+      "type": "LEARNING_SYSTEM",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 235,
+      "code": "logger.info(f\"Loaded existing model version {self.model_version}\")",
+      "description": "Model version conflict",
+      "recommendation": "Review learning parameters"
+    },
+    {
+      "type": "LEARNING_SYSTEM",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 245,
+      "code": "'learning_weights': self.learning_weights,",
+      "description": "Weight update conflict",
+      "recommendation": "Review learning parameters"
+    },
+    {
+      "type": "LEARNING_SYSTEM",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 248,
+      "code": "'model_version': self.model_version,",
+      "description": "Model version conflict",
+      "recommendation": "Review learning parameters"
+    },
+    {
+      "type": "LEARNING_SYSTEM",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 423,
+      "code": "'model_version': self.model_version",
+      "description": "Model version conflict",
+      "recommendation": "Review learning parameters"
+    },
+    {
+      "type": "LEARNING_SYSTEM",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 482,
+      "code": "old_weights = self.learning_weights.copy()",
+      "description": "Weight update conflict",
+      "recommendation": "Review learning parameters"
+    },
+    {
+      "type": "LEARNING_SYSTEM",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 497,
+      "code": "if weight_feature in self.learning_weights:",
+      "description": "Weight update conflict",
+      "recommendation": "Review learning parameters"
+    },
+    {
+      "type": "LEARNING_SYSTEM",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 502,
+      "code": "old_weight = old_weights[weight_feature]",
+      "description": "Weight update conflict",
+      "recommendation": "Review learning parameters"
+    },
+    {
+      "type": "LEARNING_SYSTEM",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 503,
+      "code": "self.learning_weights[weight_feature] += weight_adjustment",
+      "description": "Weight update conflict",
+      "recommendation": "Review learning parameters"
+    },
+    {
+      "type": "LEARNING_SYSTEM",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 506,
+      "code": "self.learning_weights[weight_feature] = max(0.01, min(1.0, self.learning_weights[weight_feature]))",
+      "description": "Weight update conflict",
+      "recommendation": "Review learning parameters"
+    },
+    {
+      "type": "LEARNING_SYSTEM",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 509,
+      "code": "weight_changes[weight_feature] = {",
+      "description": "Weight update conflict",
+      "recommendation": "Review learning parameters"
+    },
+    {
+      "type": "LEARNING_SYSTEM",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 510,
+      "code": "'old_weight': old_weight,",
+      "description": "Weight update conflict",
+      "recommendation": "Review learning parameters"
+    },
+    {
+      "type": "LEARNING_SYSTEM",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 511,
+      "code": "'new_weight': self.learning_weights[weight_feature],",
+      "description": "Weight update conflict",
+      "recommendation": "Review learning parameters"
+    },
+    {
+      "type": "LEARNING_SYSTEM",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 519,
+      "code": "total_weight = sum(self.learning_weights.values())",
+      "description": "Weight update conflict",
+      "recommendation": "Review learning parameters"
+    },
+    {
+      "type": "LEARNING_SYSTEM",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 522,
+      "code": "self.learning_weights[feature] /= total_weight",
+      "description": "Weight update conflict",
+      "recommendation": "Review learning parameters"
+    },
+    {
+      "type": "LEARNING_SYSTEM",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 526,
+      "code": "self.log_weight_update(weight_changes)",
+      "description": "Weight update conflict",
+      "recommendation": "Review learning parameters"
+    },
+    {
+      "type": "LEARNING_SYSTEM",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 540,
+      "code": "self._save_model()  # Save updated model",
+      "description": "Model version conflict",
+      "recommendation": "Review learning parameters"
+    },
+    {
+      "type": "LEARNING_SYSTEM",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 638,
+      "code": "adaptive_weights = self.learning_weights.copy()",
+      "description": "Weight update conflict",
+      "recommendation": "Review learning parameters"
+    },
+    {
+      "type": "LEARNING_SYSTEM",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 703,
+      "code": "model_version=self.model_version,",
+      "description": "Model version conflict",
+      "recommendation": "Review learning parameters"
+    },
+    {
+      "type": "LEARNING_SYSTEM",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 738,
+      "code": "model_version=self.model_version,",
+      "description": "Model version conflict",
+      "recommendation": "Review learning parameters"
+    },
+    {
+      "type": "LEARNING_SYSTEM",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 774,
+      "code": "\"model_version\": self.model_version,",
+      "description": "Model version conflict",
+      "recommendation": "Review learning parameters"
+    },
+    {
+      "type": "LEARNING_SYSTEM",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 780,
+      "code": "\"learning_weights\": self.learning_weights,",
+      "description": "Weight update conflict",
+      "recommendation": "Review learning parameters"
+    },
+    {
+      "type": "LEARNING_SYSTEM",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 974,
+      "code": "adaptive_weights = learning_engine.get_adaptive_decision_weights(",
+      "description": "Weight update conflict",
+      "recommendation": "Review learning parameters"
+    },
+    {
+      "type": "LEARNING_SYSTEM",
+      "severity": "MEDIUM",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 977,
+      "code": "for feature, weight in adaptive_weights.items():",
+      "description": "Weight update conflict",
+      "recommendation": "Review learning parameters"
+    },
+    {
+      "type": "RISK_MANAGEMENT",
+      "severity": "HIGH",
+      "file": "aggressive_profit_backtester.py",
+      "line": 42,
+      "code": "self.position_size = 0.2  # 20% of capital per position",
+      "description": "Position sizing without limits",
+      "recommendation": "Implement proper risk limits"
+    }
+  ],
+  "data_integrity_issues": [
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "aggressive_profit_backtester.py",
+      "line": 47,
+      "code": "print(\"\ud83d\udcb0 Aggressive Profit-Focused Backtesting\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "aggressive_profit_backtester.py",
+      "line": 48,
+      "code": "print(\"=\" * 70)",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "aggressive_profit_backtester.py",
+      "line": 49,
+      "code": "print(\"\ud83c\udfaf Objective: Generate maximum trades and profits\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "aggressive_profit_backtester.py",
+      "line": 52,
+      "code": "print(\"\ud83d\udcca Loading real market data...\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "aggressive_profit_backtester.py",
+      "line": 58,
+      "code": "print(f\"\u2705 Loaded {len(market_data)} symbols\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "aggressive_profit_backtester.py",
+      "line": 83,
+      "code": "print(f\"\\n\ud83d\ude80 Aggressive Trading {symbol}...\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "aggressive_profit_backtester.py",
+      "line": 136,
+      "code": "'competitor_activity_count': np.random.randint(1, 10)",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "aggressive_profit_backtester.py",
+      "line": 159,
+      "code": "print(\"\\n\ud83d\udd04 Closing all positions...\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "aggressive_profit_backtester.py",
+      "line": 174,
+      "code": "trading_stats['profit_factor'] = float('inf') if trading_stats['total_profit'] > 0 else 0",
+      "description": "Missing Numeric conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "aggressive_profit_backtester.py",
+      "line": 184,
+      "code": "print(f\"\\n\ud83d\udcb0 AGGRESSIVE TRADING RESULTS\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "aggressive_profit_backtester.py",
+      "line": 185,
+      "code": "print(\"=\" * 60)",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "aggressive_profit_backtester.py",
+      "line": 186,
+      "code": "print(f\"Initial Capital: ${initial_capital:,.2f}\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "aggressive_profit_backtester.py",
+      "line": 187,
+      "code": "print(f\"Final Capital: ${results.final_capital:,.2f}\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "aggressive_profit_backtester.py",
+      "line": 188,
+      "code": "print(f\"Total Return: ${results.total_return:,.2f}\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "aggressive_profit_backtester.py",
+      "line": 189,
+      "code": "print(f\"Return %: {results.total_return_pct:.2f}%\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "aggressive_profit_backtester.py",
+      "line": 191,
+      "code": "print(f\"\\n\ud83c\udfaf TRADING ACTIVITY\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "aggressive_profit_backtester.py",
+      "line": 192,
+      "code": "print(\"=\" * 60)",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "aggressive_profit_backtester.py",
+      "line": 193,
+      "code": "print(f\"Total Opportunities: {trading_stats['total_opportunities']}\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "aggressive_profit_backtester.py",
+      "line": 194,
+      "code": "print(f\"Trades Taken: {trading_stats['trades_taken']}\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "aggressive_profit_backtester.py",
+      "line": 195,
+      "code": "print(f\"Trade Participation: {trading_stats['trades_taken']/trading_stats['total_opportunities']*100:.1f}%\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "aggressive_profit_backtester.py",
+      "line": 196,
+      "code": "print(f\"Max Positions Held: {trading_stats['max_positions_held']}\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "aggressive_profit_backtester.py",
+      "line": 198,
+      "code": "print(f\"\\n\ud83d\udcc8 PROFITABILITY\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "aggressive_profit_backtester.py",
+      "line": 199,
+      "code": "print(\"=\" * 60)",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "aggressive_profit_backtester.py",
+      "line": 200,
+      "code": "print(f\"Win Rate: {trading_stats['win_rate']:.1f}%\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "aggressive_profit_backtester.py",
+      "line": 201,
+      "code": "print(f\"Profitable Trades: {trading_stats['profitable_trades']}\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "aggressive_profit_backtester.py",
+      "line": 202,
+      "code": "print(f\"Losing Trades: {trading_stats['losing_trades']}\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "aggressive_profit_backtester.py",
+      "line": 203,
+      "code": "print(f\"Total Profit: ${trading_stats['total_profit']:.2f}\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "aggressive_profit_backtester.py",
+      "line": 204,
+      "code": "print(f\"Total Loss: ${trading_stats['total_loss']:.2f}\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "aggressive_profit_backtester.py",
+      "line": 205,
+      "code": "print(f\"Net Profit: ${trading_stats['total_profit'] - trading_stats['total_loss']:.2f}\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "aggressive_profit_backtester.py",
+      "line": 206,
+      "code": "print(f\"Profit Factor: {trading_stats['profit_factor']:.2f}\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "aggressive_profit_backtester.py",
+      "line": 209,
+      "code": "print(f\"Avg Holding Period: {trading_stats['avg_holding_period']:.1f} minutes\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "aggressive_profit_backtester.py",
+      "line": 211,
+      "code": "print(f\"\\n\ud83e\udde0 LEARNING SYSTEM\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "aggressive_profit_backtester.py",
+      "line": 212,
+      "code": "print(\"=\" * 60)",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "aggressive_profit_backtester.py",
+      "line": 213,
+      "code": "print(f\"Model Version: {self.learning_engine.model_version}\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "aggressive_profit_backtester.py",
+      "line": 214,
+      "code": "print(f\"Learning Events: {len(trading_stats['learning_events'])}\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "aggressive_profit_backtester.py",
+      "line": 416,
+      "code": "print(\"\ud83d\udcb0 Aggressive Profit-Focused Backtesting System\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "aggressive_profit_backtester.py",
+      "line": 417,
+      "code": "print(\"=\" * 70)",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "aggressive_profit_backtester.py",
+      "line": 431,
+      "code": "print(f\"\\n\ud83d\udca1 Profit-Focused Recommendations:\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "aggressive_profit_backtester.py",
+      "line": 433,
+      "code": "print(f\"  {i}. {rec}\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "aggressive_profit_backtester.py",
+      "line": 435,
+      "code": "print(f\"\\n\ud83c\udf89 Aggressive Profit Backtesting Completed!\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "aggressive_profit_backtester.py",
+      "line": 436,
+      "code": "print(f\"\ud83d\udcb0 Net Profit: ${profit_report['profitability_metrics']['net_profit']:.2f}\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "aggressive_profit_backtester.py",
+      "line": 437,
+      "code": "print(f\"\ud83c\udfaf Win Rate: {profit_report['profitability_metrics']['win_rate']:.1f}%\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "aggressive_profit_backtester.py",
+      "line": 438,
+      "code": "print(f\"\ud83d\udcc8 Trade Participation: {profit_report['aggressive_trading_summary']['trade_participation_pct']:.1f}%\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "aggressive_profit_backtester.py",
+      "line": 439,
+      "code": "print(f\"\ud83d\udcc4 Results saved to 'aggressive_profit_results.json'\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "aggressive_profit_backtester.py",
+      "line": 445,
+      "code": "print(f\"\u274c Failed: {e}\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 113,
+      "code": "def log_market_data_point(self, data_point: Dict):",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 185,
+      "code": "'competitor_activity_count': np.random.randint(1, 10)",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 663,
+      "code": "print(\"\ud83e\uddea Adaptive Neuro-Symbolic Market Intelligence - Backtesting\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 664,
+      "code": "print(\"=\" * 70)",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 670,
+      "code": "print(\"\ud83d\udcca Running backtest simulation...\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 674,
+      "code": "print(\"\\n\ud83d\udcc8 Backtest Results:\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 675,
+      "code": "print(f\"Initial Capital: $10,000.00\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 676,
+      "code": "print(f\"Final Capital: ${backtester.portfolio_value[-1]:,.2f}\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 677,
+      "code": "print(f\"Total Return: {metrics.total_return:.2f}%\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 678,
+      "code": "print(f\"Maximum Drawdown: {metrics.max_drawdown:.2f}%\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 679,
+      "code": "print(f\"Sharpe Ratio: {metrics.sharpe_ratio:.2f}\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 681,
+      "code": "print(\"\\n\ud83c\udfaf Decision Metrics:\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 682,
+      "code": "print(f\"Total Decisions: {metrics.total_decisions}\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 683,
+      "code": "print(f\"Successful Decisions: {metrics.successful_decisions}\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 684,
+      "code": "print(f\"Success Rate: {metrics.success_rate:.2f}%\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 685,
+      "code": "print(f\"Average Confidence: {metrics.avg_confidence:.2f}\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 687,
+      "code": "print(\"\\n\ud83d\udcb0 Trade Metrics:\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 688,
+      "code": "print(f\"Total Trades: {metrics.total_trades}\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 689,
+      "code": "print(f\"Winning Trades: {metrics.winning_trades}\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 690,
+      "code": "print(f\"Losing Trades: {metrics.losing_trades}\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 691,
+      "code": "print(f\"Win Rate: {metrics.win_rate:.2f}%\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 692,
+      "code": "print(f\"Average Win: {metrics.avg_win:.2f}%\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 693,
+      "code": "print(f\"Average Loss: {metrics.avg_loss:.2f}%\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 694,
+      "code": "print(f\"Profit Factor: {metrics.profit_factor:.2f}\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 697,
+      "code": "print(\"\\n\ud83d\udccb Generating detailed report...\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 704,
+      "code": "print(\"\u2705 Backtest completed successfully!\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 705,
+      "code": "print(\"\ud83d\udcc4 Detailed report saved to 'backtest_report.json'\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 709,
+      "code": "print(\"\\n\ud83d\udca1 Recommendations:\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 711,
+      "code": "print(f\"{i}. {rec}\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_VALIDATION",
+      "severity": "MEDIUM",
+      "file": "backtesting.py",
+      "line": 717,
+      "code": "print(f\"\u274c Backtest failed: {e}\")",
+      "description": "Missing Integer conversion validation",
+      "recommendation": "Add proper data validation and error handling"
+    },
+    {
+      "type": "DATA_CORRUPTION",
+      "severity": "HIGH",
+      "file": "market_data_processor.py",
+      "line": 103,
+      "code": "df = pd.read_csv(csv_file)",
+      "description": "CSV file corruption",
+      "recommendation": "Add proper error handling for data operations"
+    },
+    {
+      "type": "DATA_CORRUPTION",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 229,
+      "code": "model_data = pickle.load(f)",
+      "description": "Pickle corruption",
+      "recommendation": "Add proper error handling for data operations"
+    },
+    {
+      "type": "MODEL_TAMPERING",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 190,
+      "code": "self._load_model()",
+      "description": "Model loading",
+      "recommendation": "Add model integrity verification"
+    },
+    {
+      "type": "MODEL_TAMPERING",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 225,
+      "code": "def _load_model(self):",
+      "description": "Model loading",
+      "recommendation": "Add model integrity verification"
+    },
+    {
+      "type": "MODEL_TAMPERING",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 229,
+      "code": "model_data = pickle.load(f)",
+      "description": "Model deserialization",
+      "recommendation": "Add model integrity verification"
+    },
+    {
+      "type": "MODEL_TAMPERING",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 237,
+      "code": "logger.error(f\"Error loading model: {e}\")",
+      "description": "Model loading",
+      "recommendation": "Add model integrity verification"
+    },
+    {
+      "type": "MODEL_TAMPERING",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 240,
+      "code": "def _save_model(self):",
+      "description": "Model saving",
+      "recommendation": "Add model integrity verification"
+    },
+    {
+      "type": "MODEL_TAMPERING",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 254,
+      "code": "pickle.dump(model_data, f)",
+      "description": "Model serialization",
+      "recommendation": "Add model integrity verification"
+    },
+    {
+      "type": "MODEL_TAMPERING",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 256,
+      "code": "logger.info(f\"Model saved - Version {self.model_version}\")",
+      "description": "Model saving",
+      "recommendation": "Add model integrity verification"
+    },
+    {
+      "type": "MODEL_TAMPERING",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 414,
+      "code": "self._save_model()",
+      "description": "Model saving",
+      "recommendation": "Add model integrity verification"
+    },
+    {
+      "type": "MODEL_TAMPERING",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 540,
+      "code": "self._save_model()  # Save updated model",
+      "description": "Model saving",
+      "recommendation": "Add model integrity verification"
+    },
+    {
+      "type": "MODEL_TAMPERING",
+      "severity": "HIGH",
+      "file": "adaptive_module/llm_learning_engine.py",
+      "line": 760,
+      "code": "self._save_model()",
+      "description": "Model saving",
+      "recommendation": "Add model integrity verification"
+    },
+    {
+      "type": "DATA_CONSISTENCY",
+      "severity": "MEDIUM",
+      "file": "market_data_processor.py",
+      "line": 68,
+      "code": "def load_market_data(self, timeframe: TimeFrame = TimeFrame.TEN_MINUTE) -> Dict[str, pd.DataFrame]:",
+      "description": "DataFrame creation",
+      "recommendation": "Add data consistency checks"
+    },
+    {
+      "type": "DATA_CONSISTENCY",
+      "severity": "MEDIUM",
+      "file": "market_data_processor.py",
+      "line": 109,
+      "code": "df = df.sort_values('date')",
+      "description": "DataFrame operations",
+      "recommendation": "Add data consistency checks"
+    },
+    {
+      "type": "DATA_CONSISTENCY",
+      "severity": "MEDIUM",
+      "file": "market_data_processor.py",
+      "line": 129,
+      "code": "def calculate_technical_indicators(self, df: pd.DataFrame) -> pd.DataFrame:",
+      "description": "DataFrame creation",
+      "recommendation": "Add data consistency checks"
+    },
+    {
+      "type": "DATA_CONSISTENCY",
+      "severity": "MEDIUM",
+      "file": "market_data_processor.py",
+      "line": 132,
+      "code": "df = df.copy()",
+      "description": "DataFrame operations",
+      "recommendation": "Add data consistency checks"
+    },
+    {
+      "type": "DATA_CONSISTENCY",
+      "severity": "MEDIUM",
+      "file": "market_data_processor.py",
+      "line": 176,
+      "code": "def calculate_indicators(self, df: pd.DataFrame) -> pd.DataFrame:",
+      "description": "DataFrame creation",
+      "recommendation": "Add data consistency checks"
+    },
+    {
+      "type": "DATA_CONSISTENCY",
+      "severity": "MEDIUM",
+      "file": "market_data_processor.py",
+      "line": 181,
+      "code": "def identify_trends(self, df: pd.DataFrame) -> Dict[str, Any]:",
+      "description": "DataFrame creation",
+      "recommendation": "Add data consistency checks"
+    },
+    {
+      "type": "DATA_CONSISTENCY",
+      "severity": "MEDIUM",
+      "file": "market_data_processor.py",
+      "line": 187,
+      "code": "latest = df.iloc[-1]",
+      "description": "DataFrame operations",
+      "recommendation": "Add data consistency checks"
+    },
+    {
+      "type": "DATA_CONSISTENCY",
+      "severity": "MEDIUM",
+      "file": "market_data_processor.py",
+      "line": 188,
+      "code": "prev = df.iloc[-2]",
+      "description": "DataFrame operations",
+      "recommendation": "Add data consistency checks"
+    }
+  ],
+  "summary": {
+    "total_issues": 554,
+    "critical_issues": 0,
+    "high_issues": 2,
+    "medium_issues": 0,
+    "security_score": 80
+  },
+  "audit_timestamp": "2026-04-05T20:27:41.806352"
+}

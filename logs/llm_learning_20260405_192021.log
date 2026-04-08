@@ -1,0 +1,37 @@
+2026-04-05 19:20:21,494 - llm_learning - INFO - Loaded existing model version 844
+2026-04-05 19:20:21,494 - llm_learning - INFO - LLM Learning Engine initialized - Model Version: 844
+2026-04-05 19:20:21,494 - llm_learning - INFO - ================================================================================
+2026-04-05 19:20:21,494 - llm_learning - INFO - LLM LEARNING ENGINE INITIALIZED
+2026-04-05 19:20:21,495 - llm_learning - INFO - Start Time: 2026-04-05 19:20:21.494605
+2026-04-05 19:20:21,495 - llm_learning - INFO - Model Path: models/llm_learning_model.pkl
+2026-04-05 19:20:21,498 - llm_learning - INFO - Initial Model Version: 844
+2026-04-05 19:20:21,498 - llm_learning - INFO - Learning Rate: 0.3
+2026-04-05 19:20:21,498 - llm_learning - INFO - Reward Scale: 3.0
+2026-04-05 19:20:21,498 - llm_learning - INFO - Punishment Scale: 5.0
+2026-04-05 19:20:21,499 - llm_learning - INFO - ================================================================================
+2026-04-05 19:20:21,499 - llm_learning - INFO - LEARNING EVENT - EXPERIENCE_PROCESSED:
+2026-04-05 19:20:21,499 - llm_learning - INFO -   timestamp: 2026-04-05 19:20:21.499471
+2026-04-05 19:20:21,499 - llm_learning - INFO -   decision_type: test_trading
+2026-04-05 19:20:21,499 - llm_learning - INFO -   action_taken: buy
+2026-04-05 19:20:21,499 - llm_learning - INFO -   outcome: incorrect
+2026-04-05 19:20:21,499 - llm_learning - INFO -   reward: 0.0000
+2026-04-05 19:20:21,499 - llm_learning - INFO -   punishment: 5.0000
+2026-04-05 19:20:21,499 - llm_learning - INFO -   confidence: 0.9000
+2026-04-05 19:20:21,499 - llm_learning - INFO -   error_magnitude: 6.0000
+2026-04-05 19:20:21,499 - llm_learning - INFO - LEARNING EVENT - WEIGHT_UPDATE:
+2026-04-05 19:20:21,499 - llm_learning - INFO -   trend_weight: {'old_weight': 0.15, 'new_weight': 0.01, 'change': -120.0, 'context_value': 80.0, 'context_feature': 'trend_demand', 'net_signal': -5.0}
+2026-04-05 19:20:21,499 - llm_learning - INFO -   volume_weight: {'old_weight': 0.1, 'new_weight': 0.01, 'change': -135.0, 'context_value': 90.0, 'context_feature': 'volume_activity', 'net_signal': -5.0}
+2026-04-05 19:20:21,499 - llm_learning - INFO - MODEL ADAPTATION - Version 845:
+2026-04-05 19:20:21,500 - llm_learning - INFO -   version_increment: True
+2026-04-05 19:20:21,500 - llm_learning - INFO -   total_weight_change: 255.0
+2026-04-05 19:20:21,500 - llm_learning - INFO -   num_features_updated: 2
+2026-04-05 19:20:21,500 - llm_learning - INFO -   net_signal: -5.0
+2026-04-05 19:20:21,500 - llm_learning - INFO -   experience_outcome: incorrect
+2026-04-05 19:20:21,513 - llm_learning - INFO - Model saved - Version 845
+2026-04-05 19:20:21,513 - llm_learning - INFO - LEARNING EVENT - LEARNING_SUMMARY:
+2026-04-05 19:20:21,514 - llm_learning - INFO -   total_experiences: 1001
+2026-04-05 19:20:21,514 - llm_learning - INFO -   decision_type: test_trading
+2026-04-05 19:20:21,514 - llm_learning - INFO -   outcome: incorrect
+2026-04-05 19:20:21,514 - llm_learning - INFO -   reward: 0.0000
+2026-04-05 19:20:21,514 - llm_learning - INFO -   punishment: 5.0000
+2026-04-05 19:20:21,514 - llm_learning - INFO -   model_version: 845

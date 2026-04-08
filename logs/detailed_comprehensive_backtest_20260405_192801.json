@@ -1,0 +1,92 @@
+{
+  "test_parameters": {
+    "days": 7,
+    "initial_capital": 10000,
+    "test_type": "comprehensive_backtest"
+  },
+  "decisions": [
+    {
+      "date": "2026-03-29 19:28:01.989011",
+      "decision": "Decision(decision_id='decision_20260405_135801_negative_sentiment_alert', decision_type=<DecisionType.MARKETING: 'marketing'>, title='Marketing Action Required: Negative Sentiment Alert', description='Negative market sentiment requires immediate attention', recommendation='Implement marketing improvement strategies. Negative sentiment: 113.9594616081803%', priority=<DecisionPriority.HIGH: 2>, confidence=<ConfidenceLevel.HIGH: 'high'>, confidence_score=0.85, supporting_factors=['Low market volatility (8.3%)', 'High market demand (score: 76.4)'], risk_factors=[], data_sources=['market_data', 'sentiment_analysis', 'trend_analysis'], rules_triggered=['negative_sentiment_alert'], timestamp=datetime.datetime(2026, 4, 5, 13, 58, 1, 991194), context_snapshot={'market_growth': 0.66, 'sentiment_score': -0.14, 'trend_demand': 76.4, 'market_volatility': 8.3}, action_items=['Analyze sentiment drivers', 'Develop marketing campaign', 'Monitor competitor responses', 'Measure sentiment improvement'], expected_outcome='Improved brand perception and market sentiment', time_horizon='3-6 months')",
+      "execution": {
+        "success": "True",
+        "return_rate": 8.42,
+        "confidence": 0.6,
+        "decision_type": "marketing",
+        "execution_time": "2026-04-05 19:28:01.991194"
+      }
+    },
+    {
+      "date": "2026-03-29 19:28:01.989011",
+      "decision": "Decision(decision_id='decision_20260405_135801_high_demand_opportunity', decision_type=<DecisionType.OPPORTUNITY: 'opportunity'>, title='Market Opportunity: High Demand Detected', description='Strong market demand indicates expansion opportunity', recommendation='Expand market presence. Demand score: 76.4', priority=<DecisionPriority.HIGH: 2>, confidence=<ConfidenceLevel.HIGH: 'high'>, confidence_score=0.85, supporting_factors=['Low market volatility (8.3%)', 'High market demand (score: 76.4)'], risk_factors=[], data_sources=['market_data', 'sentiment_analysis', 'trend_analysis'], rules_triggered=['high_demand_opportunity'], timestamp=datetime.datetime(2026, 4, 5, 13, 58, 1, 991194), context_snapshot={'market_growth': 0.66, 'sentiment_score': -0.14, 'trend_demand': 76.4, 'market_volatility': 8.3}, action_items=['Assess production capacity', 'Evaluate distribution channels', 'Develop expansion strategy', 'Monitor demand sustainability'], expected_outcome='Increased market share and revenue', time_horizon='3-9 months')",
+      "execution": {
+        "success": "True",
+        "return_rate": 27.78,
+        "confidence": 0.6,
+        "decision_type": "opportunity",
+        "execution_time": "2026-04-05 19:28:01.992251"
+      }
+    }
+  ],
+  "trades": [
+    {
+      "date": "2026-03-29 19:28:01.989011",
+      "decision_type": "marketing",
+      "decision_title": "Marketing Action Required: Negative Sentiment Alert",
+      "return_rate": 8.42,
+      "capital_change": 842.0,
+      "capital_before": 10000.0,
+      "capital_after": 10842.0,
+      "success": "True",
+      "confidence": 0.6
+    },
+    {
+      "date": "2026-03-29 19:28:01.989011",
+      "decision_type": "opportunity",
+      "decision_title": "Market Opportunity: High Demand Detected",
+      "return_rate": 27.78,
+      "capital_change": 3011.9076,
+      "capital_before": 10842.0,
+      "capital_after": 13853.9076,
+      "success": "True",
+      "confidence": 0.6
+    }
+  ],
+  "portfolio_values": [
+    10000,
+    13853.9076,
+    13853.9076,
+    13853.9076,
+    13853.9076,
+    13853.9076,
+    13853.9076,
+    13853.9076
+  ],
+  "metrics": {
+    "total_decisions": 2,
+    "successful_decisions": 2,
+    "failed_decisions": 0,
+    "success_rate": 100.0,
+    "avg_confidence": 0.6,
+    "total_return": 38.53907600000001,
+    "max_drawdown": 0,
+    "sharpe_ratio": 6.48074069840786,
+    "win_rate": 100.0,
+    "avg_win": 18.1,
+    "avg_loss": 0,
+    "profit_factor": 36.2,
+    "total_trades": 2,
+    "winning_trades": 2,
+    "losing_trades": 0
+  },
+  "final_results": {
+    "final_capital": 13853.9076,
+    "total_return": 38.53907600000001,
+    "success_rate": 100.0,
+    "total_trades": 2,
+    "win_rate": 100.0,
+    "profit_factor": 36.2,
+    "sharpe_ratio": 6.48074069840786,
+    "max_drawdown": 0
+  }
+}

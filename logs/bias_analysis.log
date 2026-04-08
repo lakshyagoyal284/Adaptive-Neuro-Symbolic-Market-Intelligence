@@ -1,0 +1,46 @@
+2026-04-05 20:44:36,596 - INFO - Loaded existing model version 1210
+2026-04-05 20:44:36,597 - INFO - LLM Learning Engine initialized - Model Version: 1210
+2026-04-05 20:44:36,597 - INFO - ================================================================================
+2026-04-05 20:44:36,598 - INFO - LLM LEARNING ENGINE INITIALIZED
+2026-04-05 20:44:36,598 - INFO - Start Time: 2026-04-05 20:44:36.597755
+2026-04-05 20:44:36,598 - INFO - Model Path: models/llm_learning_model.pkl
+2026-04-05 20:44:36,600 - INFO - Initial Model Version: 1210
+2026-04-05 20:44:36,600 - INFO - Learning Rate: 0.3
+2026-04-05 20:44:36,600 - INFO - Reward Scale: 3.0
+2026-04-05 20:44:36,601 - INFO - Punishment Scale: 5.0
+2026-04-05 20:44:36,601 - INFO - ================================================================================
+2026-04-05 20:44:36,754 - INFO - Loading market data for 10minute timeframe...
+2026-04-05 20:44:36,754 - ERROR - Data path not found: c:\Users\laksh\Desktop\adaptive_market_intelligence\temp_data_10minute\10minute
+2026-04-05 20:44:36,754 - INFO - Loading market data for 10minute timeframe...
+2026-04-05 20:44:36,754 - ERROR - Data path not found: c:\Users\laksh\Desktop\adaptive_market_intelligence\temp_data_10minute\10minute
+2026-04-05 20:44:36,755 - INFO - Added rule: High Growth Investment Alert
+2026-04-05 20:44:36,755 - INFO - Added rule: Negative Sentiment Alert
+2026-04-05 20:44:36,755 - INFO - Added rule: Competitor Price Response
+2026-04-05 20:44:36,755 - INFO - Added rule: High Demand Opportunity
+2026-04-05 20:44:36,755 - INFO - Added rule: Low Market Share Alert
+2026-04-05 20:44:36,755 - INFO - Added rule: Positive Sentiment Investment
+2026-04-05 20:44:36,755 - INFO - Added rule: Volatility Risk Alert
+2026-04-05 20:44:36,755 - INFO - Added rule: Competitor Activity Surge
+2026-04-05 20:44:36,755 - INFO - Initialized 8 default rules
+2026-04-05 20:44:36,763 - INFO - Loaded existing model version 1210
+2026-04-05 20:44:36,764 - INFO - LLM Learning Engine initialized - Model Version: 1210
+2026-04-05 20:44:36,764 - INFO - ================================================================================
+2026-04-05 20:44:36,764 - INFO - LLM LEARNING ENGINE INITIALIZED
+2026-04-05 20:44:36,764 - INFO - Start Time: 2026-04-05 20:44:36.764642
+2026-04-05 20:44:36,764 - INFO - Model Path: models/llm_learning_model.pkl
+2026-04-05 20:44:36,764 - INFO - Initial Model Version: 1210
+2026-04-05 20:44:36,764 - INFO - Learning Rate: 0.3
+2026-04-05 20:44:36,764 - INFO - Reward Scale: 3.0
+2026-04-05 20:44:36,764 - INFO - Punishment Scale: 5.0
+2026-04-05 20:44:36,764 - INFO - ================================================================================
+2026-04-05 20:44:36,808 - INFO - Loaded existing model version 1210
+2026-04-05 20:44:36,808 - INFO - LLM Learning Engine initialized - Model Version: 1210
+2026-04-05 20:44:36,810 - INFO - ================================================================================
+2026-04-05 20:44:36,810 - INFO - LLM LEARNING ENGINE INITIALIZED
+2026-04-05 20:44:36,810 - INFO - Start Time: 2026-04-05 20:44:36.810408
+2026-04-05 20:44:36,811 - INFO - Model Path: models/llm_learning_model.pkl
+2026-04-05 20:44:36,811 - INFO - Initial Model Version: 1210
+2026-04-05 20:44:36,811 - INFO - Learning Rate: 0.3
+2026-04-05 20:44:36,811 - INFO - Reward Scale: 3.0
+2026-04-05 20:44:36,811 - INFO - Punishment Scale: 5.0
+2026-04-05 20:44:36,811 - INFO - ================================================================================

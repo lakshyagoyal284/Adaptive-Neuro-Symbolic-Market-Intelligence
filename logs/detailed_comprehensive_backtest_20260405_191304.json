@@ -1,0 +1,70 @@
+{
+  "test_parameters": {
+    "days": 7,
+    "initial_capital": 1000,
+    "test_type": "comprehensive_backtest"
+  },
+  "decisions": [
+    {
+      "date": "2026-03-29 19:13:04.198441",
+      "decision": "Decision(decision_id='decision_20260405_134304_negative_sentiment_alert', decision_type=<DecisionType.MARKETING: 'marketing'>, title='Marketing Action Required: Negative Sentiment Alert', description='Negative market sentiment requires immediate attention', recommendation='Implement marketing improvement strategies. Negative sentiment: 105.5912090747753%', priority=<DecisionPriority.HIGH: 2>, confidence=<ConfidenceLevel.HIGH: 'high'>, confidence_score=0.85, supporting_factors=[], risk_factors=[], data_sources=['market_data', 'sentiment_analysis', 'trend_analysis'], rules_triggered=['negative_sentiment_alert'], timestamp=datetime.datetime(2026, 4, 5, 13, 43, 4, 671957), context_snapshot={'market_growth': -0.42, 'sentiment_score': -0.056, 'trend_demand': 42.1, 'market_volatility': 12.71}, action_items=['Analyze sentiment drivers', 'Develop marketing campaign', 'Monitor competitor responses', 'Measure sentiment improvement'], expected_outcome='Improved brand perception and market sentiment', time_horizon='3-6 months')",
+      "execution": {
+        "success": "True",
+        "return_rate": 6.22,
+        "confidence": 0.6,
+        "decision_type": "marketing",
+        "execution_time": "2026-04-05 19:13:04.671957"
+      }
+    }
+  ],
+  "trades": [
+    {
+      "date": "2026-03-29 19:13:04.198441",
+      "decision_type": "marketing",
+      "decision_title": "Marketing Action Required: Negative Sentiment Alert",
+      "return_rate": 6.22,
+      "capital_change": 62.199999999999996,
+      "capital_before": 1000.0,
+      "capital_after": 1062.2,
+      "success": "True",
+      "confidence": 0.6
+    }
+  ],
+  "portfolio_values": [
+    1000,
+    1062.2,
+    1062.2,
+    1062.2,
+    1062.2,
+    1062.2,
+    1062.2,
+    1062.2
+  ],
+  "metrics": {
+    "total_decisions": 1,
+    "successful_decisions": 1,
+    "failed_decisions": 0,
+    "success_rate": 100.0,
+    "avg_confidence": 0.6,
+    "total_return": 6.220000000000005,
+    "max_drawdown": 0,
+    "sharpe_ratio": 6.48074069840786,
+    "win_rate": 100.0,
+    "avg_win": 6.22,
+    "avg_loss": 0,
+    "profit_factor": 6.22,
+    "total_trades": 1,
+    "winning_trades": 1,
+    "losing_trades": 0
+  },
+  "final_results": {
+    "final_capital": 1062.2,
+    "total_return": 6.220000000000005,
+    "success_rate": 100.0,
+    "total_trades": 1,
+    "win_rate": 100.0,
+    "profit_factor": 6.22,
+    "sharpe_ratio": 6.48074069840786,
+    "max_drawdown": 0
+  }
+}

@@ -1,0 +1,11 @@
+2026-04-05 19:14:51,705 - llm_learning - INFO - Loaded existing model version 844
+2026-04-05 19:14:51,706 - llm_learning - INFO - LLM Learning Engine initialized - Model Version: 844
+2026-04-05 19:14:51,706 - llm_learning - INFO - ================================================================================
+2026-04-05 19:14:51,706 - llm_learning - INFO - LLM LEARNING ENGINE INITIALIZED
+2026-04-05 19:14:51,706 - llm_learning - INFO - Start Time: 2026-04-05 19:14:51.706349
+2026-04-05 19:14:51,706 - llm_learning - INFO - Model Path: models/llm_learning_model.pkl
+2026-04-05 19:14:51,710 - llm_learning - INFO - Initial Model Version: 844
+2026-04-05 19:14:51,710 - llm_learning - INFO - Learning Rate: 0.1
+2026-04-05 19:14:51,710 - llm_learning - INFO - Reward Scale: 1.0
+2026-04-05 19:14:51,710 - llm_learning - INFO - Punishment Scale: 2.0
+2026-04-05 19:14:51,710 - llm_learning - INFO - ================================================================================

@@ -1,0 +1,453 @@
+2026-04-06 15:28:00,269 - backtesting - INFO - ================================================================================
+2026-04-06 15:28:00,269 - backtesting - INFO - MARKET BACKTESTER INITIALIZED
+2026-04-06 15:28:00,269 - backtesting - INFO - Start Time: 2026-04-06 15:28:00.269799
+2026-04-06 15:28:00,269 - backtesting - INFO - Instance ID: 2248771585264
+2026-04-06 15:28:00,269 - backtesting - INFO - ================================================================================
+2026-04-06 15:28:00,269 - backtesting - INFO - 
+============================================================
+2026-04-06 15:28:00,271 - backtesting - INFO - TEST STARTED: COMPREHENSIVE BACKTEST
+2026-04-06 15:28:00,271 - backtesting - INFO - Timestamp: 2026-04-06 15:28:00.271842
+2026-04-06 15:28:00,271 - backtesting - INFO - PARAMETERS:
+2026-04-06 15:28:00,271 - backtesting - INFO -   days: 365
+2026-04-06 15:28:00,271 - backtesting - INFO -   initial_capital: 10000
+2026-04-06 15:28:00,272 - backtesting - INFO -   test_type: comprehensive_backtest
+2026-04-06 15:28:00,272 - backtesting - INFO - ============================================================
+2026-04-06 15:28:00,272 - backtesting - INFO - Starting backtest for 365 days with $10,000.00 initial capital
+2026-04-06 15:28:00,272 - backtesting - INFO - Generating 365 days of historical market data...
+2026-04-06 15:28:00,281 - backtesting - INFO - Generated 365 historical data points
+2026-04-06 15:28:00,770 - symbolic_engine.rules - INFO - Added rule: High Growth Investment Alert
+2026-04-06 15:28:00,770 - symbolic_engine.rules - INFO - Added rule: Negative Sentiment Alert
+2026-04-06 15:28:00,770 - symbolic_engine.rules - INFO - Added rule: Competitor Price Response
+2026-04-06 15:28:00,771 - symbolic_engine.rules - INFO - Added rule: High Demand Opportunity
+2026-04-06 15:28:00,771 - symbolic_engine.rules - INFO - Added rule: Low Market Share Alert
+2026-04-06 15:28:00,771 - symbolic_engine.rules - INFO - Added rule: Positive Sentiment Investment
+2026-04-06 15:28:00,771 - symbolic_engine.rules - INFO - Added rule: Volatility Risk Alert
+2026-04-06 15:28:00,771 - symbolic_engine.rules - INFO - Added rule: Competitor Activity Surge
+2026-04-06 15:28:00,771 - symbolic_engine.rules - INFO - Initialized 8 default rules
+2026-04-06 15:28:00,771 - symbolic_engine.decision_engine - INFO - Making market intelligence decisions...
+2026-04-06 15:28:00,772 - symbolic_engine.rules - INFO - Rule negative_sentiment_alert executed successfully: Suggest marketing improvement strategies. Negative sentiment: 80.93666836075553%
+2026-04-06 15:28:00,772 - symbolic_engine.rules - INFO - Rule low_market_share_alert executed successfully: Analyze competitive position and strategy. Current market share: {market_share}%
+2026-04-06 15:28:00,772 - symbolic_engine.rules - INFO - Evaluated 8 rules, 2 triggered
+2026-04-06 15:28:00,772 - symbolic_engine.decision_engine - INFO - Generated 0 decisions
+2026-04-06 15:28:00,772 - symbolic_engine.decision_engine - INFO - Making market intelligence decisions...
+2026-04-06 15:28:00,772 - symbolic_engine.rules - INFO - Rule negative_sentiment_alert executed successfully: Suggest marketing improvement strategies. Negative sentiment: 47.68779865458587%
+2026-04-06 15:28:00,772 - symbolic_engine.rules - INFO - Rule high_demand_opportunity executed successfully: Highlight market opportunity for expansion. Demand score: 77.3
+2026-04-06 15:28:00,772 - symbolic_engine.rules - INFO - Rule low_market_share_alert executed successfully: Analyze competitive position and strategy. Current market share: {market_share}%
+2026-04-06 15:28:00,772 - symbolic_engine.rules - INFO - Evaluated 8 rules, 3 triggered
+2026-04-06 15:28:00,772 - symbolic_engine.decision_engine - INFO - Generated 0 decisions
+2026-04-06 15:28:00,772 - symbolic_engine.decision_engine - INFO - Making market intelligence decisions...
+2026-04-06 15:28:00,772 - symbolic_engine.rules - INFO - Rule negative_sentiment_alert executed successfully: Suggest marketing improvement strategies. Negative sentiment: 101.55419362284084%
+2026-04-06 15:28:00,774 - symbolic_engine.rules - INFO - Rule low_market_share_alert executed successfully: Analyze competitive position and strategy. Current market share: {market_share}%
+2026-04-06 15:28:00,774 - symbolic_engine.rules - INFO - Evaluated 8 rules, 2 triggered
+2026-04-06 15:28:00,774 - symbolic_engine.decision_engine - INFO - Generated 0 decisions
+2026-04-06 15:28:00,774 - symbolic_engine.decision_engine - INFO - Making market intelligence decisions...
+2026-04-06 15:28:00,774 - symbolic_engine.rules - INFO - Rule negative_sentiment_alert executed successfully: Suggest marketing improvement strategies. Negative sentiment: 58.811801985581646%
+2026-04-06 15:28:00,774 - symbolic_engine.rules - INFO - Rule high_demand_opportunity executed successfully: Highlight market opportunity for expansion. Demand score: 89.5
+2026-04-06 15:28:00,774 - symbolic_engine.rules - INFO - Rule low_market_share_alert executed successfully: Analyze competitive position and strategy. Current market share: {market_share}%
+2026-04-06 15:28:00,774 - symbolic_engine.rules - INFO - Evaluated 8 rules, 3 triggered
+2026-04-06 15:28:00,774 - symbolic_engine.decision_engine - INFO - Generated 0 decisions
+2026-04-06 15:28:00,775 - symbolic_engine.decision_engine - INFO - Making market intelligence decisions...
+2026-04-06 15:28:00,775 - symbolic_engine.rules - INFO - Rule negative_sentiment_alert executed successfully: Suggest marketing improvement strategies. Negative sentiment: 128.32977029831142%
+2026-04-06 15:28:00,775 - symbolic_engine.rules - INFO - Rule high_demand_opportunity executed successfully: Highlight market opportunity for expansion. Demand score: 73.1
+2026-04-06 15:28:00,775 - symbolic_engine.rules - INFO - Rule low_market_share_alert executed successfully: Analyze competitive position and strategy. Current market share: {market_share}%
+2026-04-06 15:28:00,775 - symbolic_engine.rules - INFO - Evaluated 8 rules, 3 triggered
+2026-04-06 15:28:00,775 - symbolic_engine.decision_engine - INFO - Generated 0 decisions
+2026-04-06 15:28:00,775 - symbolic_engine.decision_engine - INFO - Making market intelligence decisions...
+2026-04-06 15:28:00,775 - symbolic_engine.rules - INFO - Rule negative_sentiment_alert executed successfully: Suggest marketing improvement strategies. Negative sentiment: 81.74045870708362%
+2026-04-06 15:28:00,775 - symbolic_engine.rules - INFO - Rule low_market_share_alert executed successfully: Analyze competitive position and strategy. Current market share: {market_share}%
+2026-04-06 15:28:00,775 - symbolic_engine.rules - INFO - Evaluated 8 rules, 2 triggered
+2026-04-06 15:28:00,775 - symbolic_engine.decision_engine - INFO - Generated 0 decisions
+2026-04-06 15:28:00,776 - symbolic_engine.decision_engine - INFO - Making market intelligence decisions...
+2026-04-06 15:28:00,776 - symbolic_engine.rules - INFO - Rule negative_sentiment_alert executed successfully: Suggest marketing improvement strategies. Negative sentiment: 110.50076817430747%
+2026-04-06 15:28:00,776 - symbolic_engine.rules - INFO - Rule high_demand_opportunity executed successfully: Highlight market opportunity for expansion. Demand score: 75.7
+2026-04-06 15:28:00,776 - symbolic_engine.rules - INFO - Rule low_market_share_alert executed successfully: Analyze competitive position and strategy. Current market share: {market_share}%
+2026-04-06 15:28:00,776 - symbolic_engine.rules - INFO - Evaluated 8 rules, 3 triggered
+2026-04-06 15:28:00,776 - symbolic_engine.decision_engine - INFO - Generated 0 decisions
+2026-04-06 15:28:00,776 - symbolic_engine.decision_engine - INFO - Making market intelligence decisions...
+2026-04-06 15:28:00,776 - symbolic_engine.rules - INFO - Rule negative_sentiment_alert executed successfully: Suggest marketing improvement strategies. Negative sentiment: 108.5779577150564%
+2026-04-06 15:28:00,776 - symbolic_engine.rules - INFO - Rule low_market_share_alert executed successfully: Analyze competitive position and strategy. Current market share: {market_share}%
+2026-04-06 15:28:00,776 - symbolic_engine.rules - INFO - Evaluated 8 rules, 2 triggered
+2026-04-06 15:28:00,776 - symbolic_engine.decision_engine - INFO - Generated 0 decisions
+2026-04-06 15:28:00,776 - symbolic_engine.decision_engine - INFO - Making market intelligence decisions...
+2026-04-06 15:28:00,776 - symbolic_engine.rules - INFO - Rule negative_sentiment_alert executed successfully: Suggest marketing improvement strategies. Negative sentiment: 134.5594771598198%
+2026-04-06 15:28:00,776 - symbolic_engine.rules - INFO - Rule high_demand_opportunity executed successfully: Highlight market opportunity for expansion. Demand score: 86.9
+2026-04-06 15:28:00,777 - symbolic_engine.rules - INFO - Rule low_market_share_alert executed successfully: Analyze competitive position and strategy. Current market share: {market_share}%
+2026-04-06 15:28:00,777 - symbolic_engine.rules - INFO - Evaluated 8 rules, 3 triggered
+2026-04-06 15:28:00,777 - symbolic_engine.decision_engine - INFO - Generated 0 decisions
+2026-04-06 15:28:00,777 - symbolic_engine.decision_engine - INFO - Making market intelligence decisions...
+2026-04-06 15:28:00,778 - symbolic_engine.rules - INFO - Rule negative_sentiment_alert executed successfully: Suggest marketing improvement strategies. Negative sentiment: 92.47763171429371%
+2026-04-06 15:28:00,778 - symbolic_engine.rules - INFO - Rule high_demand_opportunity executed successfully: Highlight market opportunity for expansion. Demand score: 83.2
+2026-04-06 15:28:00,778 - symbolic_engine.rules - INFO - Rule low_market_share_alert executed successfully: Analyze competitive position and strategy. Current market share: {market_share}%
+2026-04-06 15:28:00,778 - symbolic_engine.rules - INFO - Evaluated 8 rules, 3 triggered
+2026-04-06 15:28:00,778 - symbolic_engine.decision_engine - INFO - Generated 0 decisions
+2026-04-06 15:28:00,778 - symbolic_engine.decision_engine - INFO - Making market intelligence decisions...
+2026-04-06 15:28:00,778 - symbolic_engine.rules - INFO - Rule negative_sentiment_alert executed successfully: Suggest marketing improvement strategies. Negative sentiment: 95.60341461451554%
+2026-04-06 15:28:00,778 - symbolic_engine.rules - INFO - Rule high_demand_opportunity executed successfully: Highlight market opportunity for expansion. Demand score: 74.9
+2026-04-06 15:28:00,778 - symbolic_engine.rules - INFO - Rule low_market_share_alert executed successfully: Analyze competitive position and strategy. Current market share: {market_share}%
+2026-04-06 15:28:00,778 - symbolic_engine.rules - INFO - Evaluated 8 rules, 3 triggered
+2026-04-06 15:28:00,778 - symbolic_engine.decision_engine - INFO - Generated 0 decisions
+2026-04-06 15:28:00,778 - symbolic_engine.decision_engine - INFO - Making market intelligence decisions...
+2026-04-06 15:28:00,778 - symbolic_engine.rules - INFO - Rule negative_sentiment_alert executed successfully: Suggest marketing improvement strategies. Negative sentiment: 73.7765341420142%
+2026-04-06 15:28:00,778 - symbolic_engine.rules - INFO - Rule high_demand_opportunity executed successfully: Highlight market opportunity for expansion. Demand score: 77.9
+2026-04-06 15:28:00,778 - symbolic_engine.rules - INFO - Rule low_market_share_alert executed successfully: Analyze competitive position and strategy. Current market share: {market_share}%
+2026-04-06 15:28:00,778 - symbolic_engine.rules - INFO - Evaluated 8 rules, 3 triggered
+2026-04-06 15:28:00,778 - symbolic_engine.decision_engine - INFO - Generated 0 decisions
+2026-04-06 15:28:00,778 - symbolic_engine.decision_engine - INFO - Making market intelligence decisions...
+2026-04-06 15:28:00,778 - symbolic_engine.rules - INFO - Rule negative_sentiment_alert executed successfully: Suggest marketing improvement strategies. Negative sentiment: 82.45907475223183%
+2026-04-06 15:28:00,778 - symbolic_engine.rules - INFO - Rule high_demand_opportunity executed successfully: Highlight market opportunity for expansion. Demand score: 73.7
+2026-04-06 15:28:00,780 - symbolic_engine.rules - INFO - Rule low_market_share_alert executed successfully: Analyze competitive position and strategy. Current market share: {market_share}%
+2026-04-06 15:28:00,780 - symbolic_engine.rules - INFO - Evaluated 8 rules, 3 triggered
+2026-04-06 15:28:00,780 - symbolic_engine.decision_engine - INFO - Generated 0 decisions
+2026-04-06 15:28:00,780 - symbolic_engine.decision_engine - INFO - Making market intelligence decisions...
+2026-04-06 15:28:00,780 - symbolic_engine.rules - INFO - Rule low_market_share_alert executed successfully: Analyze competitive position and strategy. Current market share: {market_share}%
+2026-04-06 15:28:00,780 - symbolic_engine.rules - INFO - Evaluated 8 rules, 1 triggered
+2026-04-06 15:28:00,780 - symbolic_engine.decision_engine - INFO - Generated 0 decisions
+2026-04-06 15:28:00,780 - symbolic_engine.decision_engine - INFO - Making market intelligence decisions...
+2026-04-06 15:28:00,780 - symbolic_engine.rules - INFO - Rule negative_sentiment_alert executed successfully: Suggest marketing improvement strategies. Negative sentiment: 77.83501421753299%
+2026-04-06 15:28:00,780 - symbolic_engine.rules - INFO - Rule high_demand_opportunity executed successfully: Highlight market opportunity for expansion. Demand score: 86.4
+2026-04-06 15:28:00,780 - symbolic_engine.rules - INFO - Rule low_market_share_alert executed successfully: Analyze competitive position and strategy. Current market share: {market_share}%
+2026-04-06 15:28:00,781 - symbolic_engine.rules - INFO - Evaluated 8 rules, 3 triggered
+2026-04-06 15:28:00,781 - symbolic_engine.decision_engine - INFO - Generated 0 decisions
+2026-04-06 15:28:00,781 - symbolic_engine.decision_engine - INFO - Making market intelligence decisions...
+2026-04-06 15:28:00,781 - symbolic_engine.rules - INFO - Rule negative_sentiment_alert executed successfully: Suggest marketing improvement strategies. Negative sentiment: 81.45501266188917%
+2026-04-06 15:28:00,781 - symbolic_engine.rules - INFO - Rule low_market_share_alert executed successfully: Analyze competitive position and strategy. Current market share: {market_share}%
+2026-04-06 15:28:00,781 - symbolic_engine.rules - INFO - Evaluated 8 rules, 2 triggered
+2026-04-06 15:28:00,781 - symbolic_engine.decision_engine - INFO - Generated 0 decisions
+2026-04-06 15:28:00,781 - symbolic_engine.decision_engine - INFO - Making market intelligence decisions...
+2026-04-06 15:28:00,781 - symbolic_engine.rules - INFO - Rule negative_sentiment_alert executed successfully: Suggest marketing improvement strategies. Negative sentiment: 149.96679719203746%
+2026-04-06 15:28:00,782 - symbolic_engine.rules - INFO - Rule high_demand_opportunity executed successfully: Highlight market opportunity for expansion. Demand score: 84.8
+2026-04-06 15:28:00,782 - symbolic_engine.rules - INFO - Rule low_market_share_alert executed successfully: Analyze competitive position and strategy. Current market share: {market_share}%
+2026-04-06 15:28:00,782 - symbolic_engine.rules - INFO - Evaluated 8 rules, 3 triggered
+2026-04-06 15:28:00,782 - symbolic_engine.decision_engine - INFO - Generated 0 decisions
+2026-04-06 15:28:00,782 - symbolic_engine.decision_engine - INFO - Making market intelligence decisions...
+2026-04-06 15:28:00,782 - symbolic_engine.rules - INFO - Rule negative_sentiment_alert executed successfully: Suggest marketing improvement strategies. Negative sentiment: 134.0612122994572%
+2026-04-06 15:28:00,782 - symbolic_engine.rules - INFO - Rule low_market_share_alert executed successfully: Analyze competitive position and strategy. Current market share: {market_share}%
+2026-04-06 15:28:00,782 - symbolic_engine.rules - INFO - Evaluated 8 rules, 2 triggered
+2026-04-06 15:28:00,782 - symbolic_engine.decision_engine - INFO - Generated 0 decisions
+2026-04-06 15:28:00,782 - symbolic_engine.decision_engine - INFO - Making market intelligence decisions...
+2026-04-06 15:28:00,783 - symbolic_engine.rules - INFO - Rule volatility_risk_alert executed successfully: High volatility detected. Risk management advised. Volatility: 31.72%
+2026-04-06 15:28:00,783 - symbolic_engine.rules - INFO - Rule negative_sentiment_alert executed successfully: Suggest marketing improvement strategies. Negative sentiment: 68.64256559151363%
+2026-04-06 15:28:00,783 - symbolic_engine.rules - INFO - Rule low_market_share_alert executed successfully: Analyze competitive position and strategy. Current market share: {market_share}%
+2026-04-06 15:28:00,783 - symbolic_engine.rules - INFO - Evaluated 8 rules, 3 triggered
+2026-04-06 15:28:00,783 - symbolic_engine.decision_engine - INFO - Generated 1 decisions
+2026-04-06 15:28:00,783 - backtesting - INFO - DECISION MADE:
+2026-04-06 15:28:00,783 - backtesting - INFO -   date: 2025-08-10 15:28:00.272841
+2026-04-06 15:28:00,783 - backtesting - INFO -   num_decisions: 1
+2026-04-06 15:28:00,783 - backtesting - INFO -   market_growth: -2.36
+2026-04-06 15:28:00,783 - backtesting - INFO -   sentiment_score: 0.314
+2026-04-06 15:28:00,784 - backtesting - INFO - TRADE EXECUTED:
+2026-04-06 15:28:00,784 - backtesting - INFO -   date: 2025-08-10 15:28:00.272841
+2026-04-06 15:28:00,784 - backtesting - INFO -   decision_type: risk_management
+2026-04-06 15:28:00,784 - backtesting - INFO -   decision_title: High Risk Alert: Multiple Negative Indicators
+2026-04-06 15:28:00,784 - backtesting - INFO -   return_rate: -5.36
+2026-04-06 15:28:00,784 - backtesting - INFO -   capital_change: -536.0
+2026-04-06 15:28:00,784 - backtesting - INFO -   capital_before: 10000.0
+2026-04-06 15:28:00,784 - backtesting - INFO -   capital_after: 9464.0
+2026-04-06 15:28:00,784 - backtesting - INFO -   success: False
+2026-04-06 15:28:00,784 - backtesting - INFO -   confidence: 0.65
+2026-04-06 15:28:00,784 - backtesting - INFO - PERFORMANCE UPDATE:
+2026-04-06 15:28:00,784 - backtesting - INFO -   Current Capital: $9,464.00
+2026-04-06 15:28:00,784 - backtesting - INFO -   Trade Count: 1
+2026-04-06 15:28:00,784 - backtesting - INFO -   Win Rate: 0.00%
+2026-04-06 15:28:00,785 - symbolic_engine.decision_engine - INFO - Making market intelligence decisions...
+2026-04-06 15:28:00,785 - symbolic_engine.rules - INFO - Rule negative_sentiment_alert executed successfully: Suggest marketing improvement strategies. Negative sentiment: 91.10134840710201%
+2026-04-06 15:28:00,785 - symbolic_engine.rules - INFO - Rule low_market_share_alert executed successfully: Analyze competitive position and strategy. Current market share: {market_share}%
+2026-04-06 15:28:00,785 - symbolic_engine.rules - INFO - Evaluated 8 rules, 2 triggered
+2026-04-06 15:28:00,785 - symbolic_engine.decision_engine - INFO - Generated 0 decisions
+2026-04-06 15:28:00,785 - symbolic_engine.decision_engine - INFO - Making market intelligence decisions...
+2026-04-06 15:28:00,785 - symbolic_engine.rules - INFO - Rule negative_sentiment_alert executed successfully: Suggest marketing improvement strategies. Negative sentiment: 81.97833803446161%
+2026-04-06 15:28:00,785 - symbolic_engine.rules - INFO - Rule low_market_share_alert executed successfully: Analyze competitive position and strategy. Current market share: {market_share}%
+2026-04-06 15:28:00,785 - symbolic_engine.rules - INFO - Evaluated 8 rules, 2 triggered
+2026-04-06 15:28:00,785 - symbolic_engine.decision_engine - INFO - Generated 0 decisions
+2026-04-06 15:28:00,785 - symbolic_engine.decision_engine - INFO - Making market intelligence decisions...
+2026-04-06 15:28:00,785 - symbolic_engine.rules - INFO - Rule negative_sentiment_alert executed successfully: Suggest marketing improvement strategies. Negative sentiment: 104.96490039296285%
+2026-04-06 15:28:00,785 - symbolic_engine.rules - INFO - Rule high_demand_opportunity executed successfully: Highlight market opportunity for expansion. Demand score: 85.6
+2026-04-06 15:28:00,786 - symbolic_engine.rules - INFO - Rule low_market_share_alert executed successfully: Analyze competitive position and strategy. Current market share: {market_share}%
+2026-04-06 15:28:00,786 - symbolic_engine.rules - INFO - Evaluated 8 rules, 3 triggered
+2026-04-06 15:28:00,786 - symbolic_engine.decision_engine - INFO - Generated 0 decisions
+2026-04-06 15:28:00,786 - symbolic_engine.decision_engine - INFO - Making market intelligence decisions...
+2026-04-06 15:28:00,786 - symbolic_engine.rules - INFO - Rule negative_sentiment_alert executed successfully: Suggest marketing improvement strategies. Negative sentiment: 105.85575350124996%
+2026-04-06 15:28:00,786 - symbolic_engine.rules - INFO - Rule high_demand_opportunity executed successfully: Highlight market opportunity for expansion. Demand score: 84.7
+2026-04-06 15:28:00,786 - symbolic_engine.rules - INFO - Rule low_market_share_alert executed successfully: Analyze competitive position and strategy. Current market share: {market_share}%
+2026-04-06 15:28:00,786 - symbolic_engine.rules - INFO - Evaluated 8 rules, 3 triggered
+2026-04-06 15:28:00,786 - symbolic_engine.decision_engine - INFO - Generated 0 decisions
+2026-04-06 15:28:00,786 - symbolic_engine.decision_engine - INFO - Making market intelligence decisions...
+2026-04-06 15:28:00,786 - symbolic_engine.rules - INFO - Rule negative_sentiment_alert executed successfully: Suggest marketing improvement strategies. Negative sentiment: 118.11177963755864%
+2026-04-06 15:28:00,786 - symbolic_engine.rules - INFO - Rule high_demand_opportunity executed successfully: Highlight market opportunity for expansion. Demand score: 78.4
+2026-04-06 15:28:00,787 - symbolic_engine.rules - INFO - Rule low_market_share_alert executed successfully: Analyze competitive position and strategy. Current market share: {market_share}%
+2026-04-06 15:28:00,787 - symbolic_engine.rules - INFO - Evaluated 8 rules, 3 triggered
+2026-04-06 15:28:00,787 - symbolic_engine.decision_engine - INFO - Generated 0 decisions
+2026-04-06 15:28:00,787 - symbolic_engine.decision_engine - INFO - Making market intelligence decisions...
+2026-04-06 15:28:00,787 - symbolic_engine.rules - INFO - Rule negative_sentiment_alert executed successfully: Suggest marketing improvement strategies. Negative sentiment: 88.3810626278558%
+2026-04-06 15:28:00,787 - symbolic_engine.rules - INFO - Rule high_demand_opportunity executed successfully: Highlight market opportunity for expansion. Demand score: 74.4
+2026-04-06 15:28:00,787 - symbolic_engine.rules - INFO - Rule low_market_share_alert executed successfully: Analyze competitive position and strategy. Current market share: {market_share}%
+2026-04-06 15:28:00,787 - symbolic_engine.rules - INFO - Evaluated 8 rules, 3 triggered
+2026-04-06 15:28:00,787 - symbolic_engine.decision_engine - INFO - Generated 0 decisions
+2026-04-06 15:28:00,787 - symbolic_engine.decision_engine - INFO - Making market intelligence decisions...
+2026-04-06 15:28:00,787 - symbolic_engine.rules - INFO - Rule volatility_risk_alert executed successfully: High volatility detected. Risk management advised. Volatility: 26.9%
+2026-04-06 15:28:00,787 - symbolic_engine.rules - INFO - Rule negative_sentiment_alert executed successfully: Suggest marketing improvement strategies. Negative sentiment: 156.97233679461883%
+2026-04-06 15:28:00,787 - symbolic_engine.rules - INFO - Rule high_demand_opportunity executed successfully: Highlight market opportunity for expansion. Demand score: 78.9
+2026-04-06 15:28:00,787 - symbolic_engine.rules - INFO - Rule low_market_share_alert executed successfully: Analyze competitive position and strategy. Current market share: {market_share}%
+2026-04-06 15:28:00,787 - symbolic_engine.rules - INFO - Evaluated 8 rules, 4 triggered
+2026-04-06 15:28:00,787 - symbolic_engine.decision_engine - INFO - Generated 1 decisions
+2026-04-06 15:28:00,787 - backtesting - INFO - DECISION MADE:
+2026-04-06 15:28:00,787 - backtesting - INFO -   date: 2025-09-28 15:28:00.272841
+2026-04-06 15:28:00,787 - backtesting - INFO -   num_decisions: 1
+2026-04-06 15:28:00,787 - backtesting - INFO -   market_growth: -2.83
+2026-04-06 15:28:00,787 - backtesting - INFO -   sentiment_score: -0.57
+2026-04-06 15:28:00,787 - backtesting - INFO - TRADE EXECUTED:
+2026-04-06 15:28:00,789 - backtesting - INFO -   date: 2025-09-28 15:28:00.272841
+2026-04-06 15:28:00,789 - backtesting - INFO -   decision_type: risk_management
+2026-04-06 15:28:00,789 - backtesting - INFO -   decision_title: High Risk Alert: Multiple Negative Indicators
+2026-04-06 15:28:00,789 - backtesting - INFO -   return_rate: 11.66
+2026-04-06 15:28:00,789 - backtesting - INFO -   capital_change: 1103.5023999999999
+2026-04-06 15:28:00,789 - backtesting - INFO -   capital_before: 9464.0
+2026-04-06 15:28:00,789 - backtesting - INFO -   capital_after: 10567.5024
+2026-04-06 15:28:00,789 - backtesting - INFO -   success: True
+2026-04-06 15:28:00,789 - backtesting - INFO -   confidence: 0.35
+2026-04-06 15:28:00,789 - backtesting - INFO - PERFORMANCE UPDATE:
+2026-04-06 15:28:00,789 - backtesting - INFO -   Current Capital: $10,567.50
+2026-04-06 15:28:00,789 - backtesting - INFO -   Trade Count: 2
+2026-04-06 15:28:00,789 - backtesting - INFO -   Win Rate: 50.00%
+2026-04-06 15:28:00,789 - symbolic_engine.decision_engine - INFO - Making market intelligence decisions...
+2026-04-06 15:28:00,790 - symbolic_engine.rules - INFO - Rule negative_sentiment_alert executed successfully: Suggest marketing improvement strategies. Negative sentiment: 93.18529157117577%
+2026-04-06 15:28:00,790 - symbolic_engine.rules - INFO - Rule low_market_share_alert executed successfully: Analyze competitive position and strategy. Current market share: {market_share}%
+2026-04-06 15:28:00,790 - symbolic_engine.rules - INFO - Evaluated 8 rules, 2 triggered
+2026-04-06 15:28:00,790 - symbolic_engine.decision_engine - INFO - Generated 0 decisions
+2026-04-06 15:28:00,790 - symbolic_engine.decision_engine - INFO - Making market intelligence decisions...
+2026-04-06 15:28:00,790 - symbolic_engine.rules - INFO - Rule negative_sentiment_alert executed successfully: Suggest marketing improvement strategies. Negative sentiment: 127.17629677750352%
+2026-04-06 15:28:00,790 - symbolic_engine.rules - INFO - Rule high_demand_opportunity executed successfully: Highlight market opportunity for expansion. Demand score: 73.2
+2026-04-06 15:28:00,790 - symbolic_engine.rules - INFO - Rule low_market_share_alert executed successfully: Analyze competitive position and strategy. Current market share: {market_share}%
+2026-04-06 15:28:00,791 - symbolic_engine.rules - INFO - Evaluated 8 rules, 3 triggered
+2026-04-06 15:28:00,791 - symbolic_engine.decision_engine - INFO - Generated 0 decisions
+2026-04-06 15:28:00,791 - symbolic_engine.decision_engine - INFO - Making market intelligence decisions...
+2026-04-06 15:28:00,791 - symbolic_engine.rules - INFO - Rule negative_sentiment_alert executed successfully: Suggest marketing improvement strategies. Negative sentiment: 85.49494369642537%
+2026-04-06 15:28:00,791 - symbolic_engine.rules - INFO - Rule low_market_share_alert executed successfully: Analyze competitive position and strategy. Current market share: {market_share}%
+2026-04-06 15:28:00,791 - symbolic_engine.rules - INFO - Evaluated 8 rules, 2 triggered
+2026-04-06 15:28:00,791 - symbolic_engine.decision_engine - INFO - Generated 0 decisions
+2026-04-06 15:28:00,791 - symbolic_engine.decision_engine - INFO - Making market intelligence decisions...
+2026-04-06 15:28:00,791 - symbolic_engine.rules - INFO - Rule negative_sentiment_alert executed successfully: Suggest marketing improvement strategies. Negative sentiment: 46.433414520869434%
+2026-04-06 15:28:00,791 - symbolic_engine.rules - INFO - Rule low_market_share_alert executed successfully: Analyze competitive position and strategy. Current market share: {market_share}%
+2026-04-06 15:28:00,791 - symbolic_engine.rules - INFO - Evaluated 8 rules, 2 triggered
+2026-04-06 15:28:00,791 - symbolic_engine.decision_engine - INFO - Generated 0 decisions
+2026-04-06 15:28:00,791 - symbolic_engine.decision_engine - INFO - Making market intelligence decisions...
+2026-04-06 15:28:00,791 - symbolic_engine.rules - INFO - Rule low_market_share_alert executed successfully: Analyze competitive position and strategy. Current market share: {market_share}%
+2026-04-06 15:28:00,791 - symbolic_engine.rules - INFO - Evaluated 8 rules, 1 triggered
+2026-04-06 15:28:00,791 - symbolic_engine.decision_engine - INFO - Generated 0 decisions
+2026-04-06 15:28:00,791 - symbolic_engine.decision_engine - INFO - Making market intelligence decisions...
+2026-04-06 15:28:00,791 - symbolic_engine.rules - INFO - Rule negative_sentiment_alert executed successfully: Suggest marketing improvement strategies. Negative sentiment: 114.59409810527801%
+2026-04-06 15:28:00,791 - symbolic_engine.rules - INFO - Rule low_market_share_alert executed successfully: Analyze competitive position and strategy. Current market share: {market_share}%
+2026-04-06 15:28:00,793 - symbolic_engine.rules - INFO - Evaluated 8 rules, 2 triggered
+2026-04-06 15:28:00,793 - symbolic_engine.decision_engine - INFO - Generated 0 decisions
+2026-04-06 15:28:00,793 - symbolic_engine.decision_engine - INFO - Making market intelligence decisions...
+2026-04-06 15:28:00,793 - symbolic_engine.rules - INFO - Rule negative_sentiment_alert executed successfully: Suggest marketing improvement strategies. Negative sentiment: 124.35479863844638%
+2026-04-06 15:28:00,793 - symbolic_engine.rules - INFO - Rule low_market_share_alert executed successfully: Analyze competitive position and strategy. Current market share: {market_share}%
+2026-04-06 15:28:00,793 - symbolic_engine.rules - INFO - Evaluated 8 rules, 2 triggered
+2026-04-06 15:28:00,793 - symbolic_engine.decision_engine - INFO - Generated 0 decisions
+2026-04-06 15:28:00,793 - symbolic_engine.decision_engine - INFO - Making market intelligence decisions...
+2026-04-06 15:28:00,793 - symbolic_engine.rules - INFO - Rule volatility_risk_alert executed successfully: High volatility detected. Risk management advised. Volatility: 26.83%
+2026-04-06 15:28:00,793 - symbolic_engine.rules - INFO - Rule negative_sentiment_alert executed successfully: Suggest marketing improvement strategies. Negative sentiment: 131.6850787081004%
+2026-04-06 15:28:00,793 - symbolic_engine.rules - INFO - Rule low_market_share_alert executed successfully: Analyze competitive position and strategy. Current market share: {market_share}%
+2026-04-06 15:28:00,793 - symbolic_engine.rules - INFO - Evaluated 8 rules, 3 triggered
+2026-04-06 15:28:00,794 - symbolic_engine.decision_engine - INFO - Generated 1 decisions
+2026-04-06 15:28:00,794 - backtesting - INFO - DECISION MADE:
+2026-04-06 15:28:00,794 - backtesting - INFO -   date: 2025-11-23 15:28:00.272841
+2026-04-06 15:28:00,794 - backtesting - INFO -   num_decisions: 1
+2026-04-06 15:28:00,794 - backtesting - INFO -   market_growth: 1.6
+2026-04-06 15:28:00,794 - backtesting - INFO -   sentiment_score: -0.317
+2026-04-06 15:28:00,794 - backtesting - INFO - TRADE EXECUTED:
+2026-04-06 15:28:00,794 - backtesting - INFO -   date: 2025-11-23 15:28:00.272841
+2026-04-06 15:28:00,794 - backtesting - INFO -   decision_type: risk_management
+2026-04-06 15:28:00,794 - backtesting - INFO -   decision_title: High Risk Alert: Multiple Negative Indicators
+2026-04-06 15:28:00,794 - backtesting - INFO -   return_rate: -4.11
+2026-04-06 15:28:00,794 - backtesting - INFO -   capital_change: -434.32434864000004
+2026-04-06 15:28:00,794 - backtesting - INFO -   capital_before: 10567.5024
+2026-04-06 15:28:00,794 - backtesting - INFO -   capital_after: 10133.178051359999
+2026-04-06 15:28:00,795 - backtesting - INFO -   success: False
+2026-04-06 15:28:00,795 - backtesting - INFO -   confidence: 0.35
+2026-04-06 15:28:00,795 - backtesting - INFO - PERFORMANCE UPDATE:
+2026-04-06 15:28:00,795 - backtesting - INFO -   Current Capital: $10,133.18
+2026-04-06 15:28:00,795 - backtesting - INFO -   Trade Count: 3
+2026-04-06 15:28:00,795 - backtesting - INFO -   Win Rate: 33.33%
+2026-04-06 15:28:00,795 - symbolic_engine.decision_engine - INFO - Making market intelligence decisions...
+2026-04-06 15:28:00,795 - symbolic_engine.rules - INFO - Rule negative_sentiment_alert executed successfully: Suggest marketing improvement strategies. Negative sentiment: 163.2915803586659%
+2026-04-06 15:28:00,795 - symbolic_engine.rules - INFO - Rule high_demand_opportunity executed successfully: Highlight market opportunity for expansion. Demand score: 72.4
+2026-04-06 15:28:00,795 - symbolic_engine.rules - INFO - Rule low_market_share_alert executed successfully: Analyze competitive position and strategy. Current market share: {market_share}%
+2026-04-06 15:28:00,795 - symbolic_engine.rules - INFO - Evaluated 8 rules, 3 triggered
+2026-04-06 15:28:00,795 - symbolic_engine.decision_engine - INFO - Generated 0 decisions
+2026-04-06 15:28:00,795 - symbolic_engine.decision_engine - INFO - Making market intelligence decisions...
+2026-04-06 15:28:00,796 - symbolic_engine.rules - INFO - Rule negative_sentiment_alert executed successfully: Suggest marketing improvement strategies. Negative sentiment: 99.09319808745902%
+2026-04-06 15:28:00,796 - symbolic_engine.rules - INFO - Rule low_market_share_alert executed successfully: Analyze competitive position and strategy. Current market share: {market_share}%
+2026-04-06 15:28:00,796 - symbolic_engine.rules - INFO - Evaluated 8 rules, 2 triggered
+2026-04-06 15:28:00,796 - symbolic_engine.decision_engine - INFO - Generated 0 decisions
+2026-04-06 15:28:00,796 - symbolic_engine.decision_engine - INFO - Making market intelligence decisions...
+2026-04-06 15:28:00,796 - symbolic_engine.rules - INFO - Rule volatility_risk_alert executed successfully: High volatility detected. Risk management advised. Volatility: 35.65%
+2026-04-06 15:28:00,796 - symbolic_engine.rules - INFO - Rule negative_sentiment_alert executed successfully: Suggest marketing improvement strategies. Negative sentiment: 164.07744174795155%
+2026-04-06 15:28:00,796 - symbolic_engine.rules - INFO - Rule high_demand_opportunity executed successfully: Highlight market opportunity for expansion. Demand score: 76.9
+2026-04-06 15:28:00,796 - symbolic_engine.rules - INFO - Rule low_market_share_alert executed successfully: Analyze competitive position and strategy. Current market share: {market_share}%
+2026-04-06 15:28:00,796 - symbolic_engine.rules - INFO - Evaluated 8 rules, 4 triggered
+2026-04-06 15:28:00,796 - symbolic_engine.decision_engine - INFO - Generated 1 decisions
+2026-04-06 15:28:00,796 - backtesting - INFO - DECISION MADE:
+2026-04-06 15:28:00,796 - backtesting - INFO -   date: 2025-12-14 15:28:00.272841
+2026-04-06 15:28:00,796 - backtesting - INFO -   num_decisions: 1
+2026-04-06 15:28:00,796 - backtesting - INFO -   market_growth: 4.44
+2026-04-06 15:28:00,796 - backtesting - INFO -   sentiment_score: -0.641
+2026-04-06 15:28:00,797 - backtesting - INFO - TRADE EXECUTED:
+2026-04-06 15:28:00,797 - backtesting - INFO -   date: 2025-12-14 15:28:00.272841
+2026-04-06 15:28:00,797 - backtesting - INFO -   decision_type: risk_management
+2026-04-06 15:28:00,797 - backtesting - INFO -   decision_title: High Risk Alert: Multiple Negative Indicators
+2026-04-06 15:28:00,797 - backtesting - INFO -   return_rate: -8.75
+2026-04-06 15:28:00,797 - backtesting - INFO -   capital_change: -886.6530794939998
+2026-04-06 15:28:00,798 - backtesting - INFO -   capital_before: 10133.178051359999
+2026-04-06 15:28:00,798 - backtesting - INFO -   capital_after: 9246.524971866
+2026-04-06 15:28:00,798 - backtesting - INFO -   success: False
+2026-04-06 15:28:00,798 - backtesting - INFO -   confidence: 0.35
+2026-04-06 15:28:00,798 - backtesting - INFO - PERFORMANCE UPDATE:
+2026-04-06 15:28:00,798 - backtesting - INFO -   Current Capital: $9,246.52
+2026-04-06 15:28:00,798 - backtesting - INFO -   Trade Count: 4
+2026-04-06 15:28:00,798 - backtesting - INFO -   Win Rate: 25.00%
+2026-04-06 15:28:00,798 - symbolic_engine.decision_engine - INFO - Making market intelligence decisions...
+2026-04-06 15:28:00,798 - symbolic_engine.rules - INFO - Rule negative_sentiment_alert executed successfully: Suggest marketing improvement strategies. Negative sentiment: 60.42738659352545%
+2026-04-06 15:28:00,798 - symbolic_engine.rules - INFO - Rule low_market_share_alert executed successfully: Analyze competitive position and strategy. Current market share: {market_share}%
+2026-04-06 15:28:00,798 - symbolic_engine.rules - INFO - Evaluated 8 rules, 2 triggered
+2026-04-06 15:28:00,798 - symbolic_engine.decision_engine - INFO - Generated 0 decisions
+2026-04-06 15:28:00,798 - symbolic_engine.decision_engine - INFO - Making market intelligence decisions...
+2026-04-06 15:28:00,798 - symbolic_engine.rules - INFO - Rule negative_sentiment_alert executed successfully: Suggest marketing improvement strategies. Negative sentiment: 114.83290264118516%
+2026-04-06 15:28:00,798 - symbolic_engine.rules - INFO - Rule low_market_share_alert executed successfully: Analyze competitive position and strategy. Current market share: {market_share}%
+2026-04-06 15:28:00,798 - symbolic_engine.rules - INFO - Evaluated 8 rules, 2 triggered
+2026-04-06 15:28:00,798 - symbolic_engine.decision_engine - INFO - Generated 0 decisions
+2026-04-06 15:28:00,799 - symbolic_engine.decision_engine - INFO - Making market intelligence decisions...
+2026-04-06 15:28:00,799 - symbolic_engine.rules - INFO - Rule negative_sentiment_alert executed successfully: Suggest marketing improvement strategies. Negative sentiment: 143.13792531745253%
+2026-04-06 15:28:00,799 - symbolic_engine.rules - INFO - Rule low_market_share_alert executed successfully: Analyze competitive position and strategy. Current market share: {market_share}%
+2026-04-06 15:28:00,799 - symbolic_engine.rules - INFO - Evaluated 8 rules, 2 triggered
+2026-04-06 15:28:00,799 - symbolic_engine.decision_engine - INFO - Generated 0 decisions
+2026-04-06 15:28:00,799 - symbolic_engine.decision_engine - INFO - Making market intelligence decisions...
+2026-04-06 15:28:00,799 - symbolic_engine.rules - INFO - Rule negative_sentiment_alert executed successfully: Suggest marketing improvement strategies. Negative sentiment: 51.464793137971455%
+2026-04-06 15:28:00,799 - symbolic_engine.rules - INFO - Rule high_demand_opportunity executed successfully: Highlight market opportunity for expansion. Demand score: 89.7
+2026-04-06 15:28:00,799 - symbolic_engine.rules - INFO - Rule low_market_share_alert executed successfully: Analyze competitive position and strategy. Current market share: {market_share}%
+2026-04-06 15:28:00,799 - symbolic_engine.rules - INFO - Evaluated 8 rules, 3 triggered
+2026-04-06 15:28:00,799 - symbolic_engine.decision_engine - INFO - Generated 0 decisions
+2026-04-06 15:28:00,800 - symbolic_engine.decision_engine - INFO - Making market intelligence decisions...
+2026-04-06 15:28:00,800 - symbolic_engine.rules - INFO - Rule volatility_risk_alert executed successfully: High volatility detected. Risk management advised. Volatility: 31.13%
+2026-04-06 15:28:00,800 - symbolic_engine.rules - INFO - Rule negative_sentiment_alert executed successfully: Suggest marketing improvement strategies. Negative sentiment: 114.40526207251436%
+2026-04-06 15:28:00,800 - symbolic_engine.rules - INFO - Rule high_demand_opportunity executed successfully: Highlight market opportunity for expansion. Demand score: 70.5
+2026-04-06 15:28:00,800 - symbolic_engine.rules - INFO - Rule low_market_share_alert executed successfully: Analyze competitive position and strategy. Current market share: {market_share}%
+2026-04-06 15:28:00,800 - symbolic_engine.rules - INFO - Evaluated 8 rules, 4 triggered
+2026-04-06 15:28:00,800 - symbolic_engine.decision_engine - INFO - Generated 1 decisions
+2026-04-06 15:28:00,800 - backtesting - INFO - DECISION MADE:
+2026-04-06 15:28:00,800 - backtesting - INFO -   date: 2026-01-18 15:28:00.272841
+2026-04-06 15:28:00,800 - backtesting - INFO -   num_decisions: 1
+2026-04-06 15:28:00,800 - backtesting - INFO -   market_growth: -0.15
+2026-04-06 15:28:00,800 - backtesting - INFO -   sentiment_score: -0.144
+2026-04-06 15:28:00,802 - backtesting - INFO - TRADE EXECUTED:
+2026-04-06 15:28:00,802 - backtesting - INFO -   date: 2026-01-18 15:28:00.272841
+2026-04-06 15:28:00,802 - backtesting - INFO -   decision_type: risk_management
+2026-04-06 15:28:00,802 - backtesting - INFO -   decision_title: High Risk Alert: Multiple Negative Indicators
+2026-04-06 15:28:00,802 - backtesting - INFO -   return_rate: -5.43
+2026-04-06 15:28:00,802 - backtesting - INFO -   capital_change: -502.0863059723237
+2026-04-06 15:28:00,802 - backtesting - INFO -   capital_before: 9246.524971866
+2026-04-06 15:28:00,802 - backtesting - INFO -   capital_after: 8744.438665893676
+2026-04-06 15:28:00,802 - backtesting - INFO -   success: False
+2026-04-06 15:28:00,802 - backtesting - INFO -   confidence: 0.5
+2026-04-06 15:28:00,802 - backtesting - INFO - PERFORMANCE UPDATE:
+2026-04-06 15:28:00,802 - backtesting - INFO -   Current Capital: $8,744.44
+2026-04-06 15:28:00,802 - backtesting - INFO -   Trade Count: 5
+2026-04-06 15:28:00,802 - backtesting - INFO -   Win Rate: 20.00%
+2026-04-06 15:28:00,802 - symbolic_engine.decision_engine - INFO - Making market intelligence decisions...
+2026-04-06 15:28:00,803 - symbolic_engine.rules - INFO - Rule negative_sentiment_alert executed successfully: Suggest marketing improvement strategies. Negative sentiment: 59.40086727546194%
+2026-04-06 15:28:00,803 - symbolic_engine.rules - INFO - Rule low_market_share_alert executed successfully: Analyze competitive position and strategy. Current market share: {market_share}%
+2026-04-06 15:28:00,803 - symbolic_engine.rules - INFO - Evaluated 8 rules, 2 triggered
+2026-04-06 15:28:00,803 - symbolic_engine.decision_engine - INFO - Generated 0 decisions
+2026-04-06 15:28:00,803 - symbolic_engine.decision_engine - INFO - Making market intelligence decisions...
+2026-04-06 15:28:00,803 - symbolic_engine.rules - INFO - Rule negative_sentiment_alert executed successfully: Suggest marketing improvement strategies. Negative sentiment: 58.41618655529479%
+2026-04-06 15:28:00,803 - symbolic_engine.rules - INFO - Rule high_demand_opportunity executed successfully: Highlight market opportunity for expansion. Demand score: 84.7
+2026-04-06 15:28:00,803 - symbolic_engine.rules - INFO - Rule low_market_share_alert executed successfully: Analyze competitive position and strategy. Current market share: {market_share}%
+2026-04-06 15:28:00,803 - symbolic_engine.rules - INFO - Evaluated 8 rules, 3 triggered
+2026-04-06 15:28:00,803 - symbolic_engine.decision_engine - INFO - Generated 0 decisions
+2026-04-06 15:28:00,803 - symbolic_engine.decision_engine - INFO - Making market intelligence decisions...
+2026-04-06 15:28:00,803 - symbolic_engine.rules - INFO - Rule negative_sentiment_alert executed successfully: Suggest marketing improvement strategies. Negative sentiment: 133.62000014133554%
+2026-04-06 15:28:00,803 - symbolic_engine.rules - INFO - Rule high_demand_opportunity executed successfully: Highlight market opportunity for expansion. Demand score: 82.4
+2026-04-06 15:28:00,803 - symbolic_engine.rules - INFO - Rule low_market_share_alert executed successfully: Analyze competitive position and strategy. Current market share: {market_share}%
+2026-04-06 15:28:00,804 - symbolic_engine.rules - INFO - Evaluated 8 rules, 3 triggered
+2026-04-06 15:28:00,804 - symbolic_engine.decision_engine - INFO - Generated 0 decisions
+2026-04-06 15:28:00,804 - symbolic_engine.decision_engine - INFO - Making market intelligence decisions...
+2026-04-06 15:28:00,804 - symbolic_engine.rules - INFO - Rule negative_sentiment_alert executed successfully: Suggest marketing improvement strategies. Negative sentiment: 59.34092754260008%
+2026-04-06 15:28:00,804 - symbolic_engine.rules - INFO - Rule low_market_share_alert executed successfully: Analyze competitive position and strategy. Current market share: {market_share}%
+2026-04-06 15:28:00,804 - symbolic_engine.rules - INFO - Evaluated 8 rules, 2 triggered
+2026-04-06 15:28:00,804 - symbolic_engine.decision_engine - INFO - Generated 0 decisions
+2026-04-06 15:28:00,804 - symbolic_engine.decision_engine - INFO - Making market intelligence decisions...
+2026-04-06 15:28:00,804 - symbolic_engine.rules - INFO - Rule negative_sentiment_alert executed successfully: Suggest marketing improvement strategies. Negative sentiment: 86.0313424727557%
+2026-04-06 15:28:00,804 - symbolic_engine.rules - INFO - Rule low_market_share_alert executed successfully: Analyze competitive position and strategy. Current market share: {market_share}%
+2026-04-06 15:28:00,804 - symbolic_engine.rules - INFO - Evaluated 8 rules, 2 triggered
+2026-04-06 15:28:00,804 - symbolic_engine.decision_engine - INFO - Generated 0 decisions
+2026-04-06 15:28:00,804 - symbolic_engine.decision_engine - INFO - Making market intelligence decisions...
+2026-04-06 15:28:00,804 - symbolic_engine.rules - INFO - Rule negative_sentiment_alert executed successfully: Suggest marketing improvement strategies. Negative sentiment: 74.3059575489648%
+2026-04-06 15:28:00,804 - symbolic_engine.rules - INFO - Rule high_demand_opportunity executed successfully: Highlight market opportunity for expansion. Demand score: 87.8
+2026-04-06 15:28:00,804 - symbolic_engine.rules - INFO - Rule low_market_share_alert executed successfully: Analyze competitive position and strategy. Current market share: {market_share}%
+2026-04-06 15:28:00,804 - symbolic_engine.rules - INFO - Evaluated 8 rules, 3 triggered
+2026-04-06 15:28:00,804 - symbolic_engine.decision_engine - INFO - Generated 0 decisions
+2026-04-06 15:28:00,805 - symbolic_engine.decision_engine - INFO - Making market intelligence decisions...
+2026-04-06 15:28:00,805 - symbolic_engine.rules - INFO - Rule negative_sentiment_alert executed successfully: Suggest marketing improvement strategies. Negative sentiment: 126.60918262542957%
+2026-04-06 15:28:00,805 - symbolic_engine.rules - INFO - Rule low_market_share_alert executed successfully: Analyze competitive position and strategy. Current market share: {market_share}%
+2026-04-06 15:28:00,805 - symbolic_engine.rules - INFO - Evaluated 8 rules, 2 triggered
+2026-04-06 15:28:00,805 - symbolic_engine.decision_engine - INFO - Generated 0 decisions
+2026-04-06 15:28:00,805 - symbolic_engine.decision_engine - INFO - Making market intelligence decisions...
+2026-04-06 15:28:00,805 - symbolic_engine.rules - INFO - Rule negative_sentiment_alert executed successfully: Suggest marketing improvement strategies. Negative sentiment: 140.36834757327588%
+2026-04-06 15:28:00,805 - symbolic_engine.rules - INFO - Rule low_market_share_alert executed successfully: Analyze competitive position and strategy. Current market share: {market_share}%
+2026-04-06 15:28:00,806 - symbolic_engine.rules - INFO - Evaluated 8 rules, 2 triggered
+2026-04-06 15:28:00,806 - symbolic_engine.decision_engine - INFO - Generated 0 decisions
+2026-04-06 15:28:00,806 - symbolic_engine.decision_engine - INFO - Making market intelligence decisions...
+2026-04-06 15:28:00,806 - symbolic_engine.rules - INFO - Rule volatility_risk_alert executed successfully: High volatility detected. Risk management advised. Volatility: 29.66%
+2026-04-06 15:28:00,807 - symbolic_engine.rules - INFO - Rule negative_sentiment_alert executed successfully: Suggest marketing improvement strategies. Negative sentiment: 92.11338695668141%
+2026-04-06 15:28:00,807 - symbolic_engine.rules - INFO - Rule low_market_share_alert executed successfully: Analyze competitive position and strategy. Current market share: {market_share}%
+2026-04-06 15:28:00,807 - symbolic_engine.rules - INFO - Evaluated 8 rules, 3 triggered
+2026-04-06 15:28:00,807 - symbolic_engine.decision_engine - INFO - Generated 1 decisions
+2026-04-06 15:28:00,807 - backtesting - INFO - DECISION MADE:
+2026-04-06 15:28:00,807 - backtesting - INFO -   date: 2026-03-22 15:28:00.272841
+2026-04-06 15:28:00,807 - backtesting - INFO -   num_decisions: 1
+2026-04-06 15:28:00,807 - backtesting - INFO -   market_growth: -4.32
+2026-04-06 15:28:00,807 - backtesting - INFO -   sentiment_score: 0.079
+2026-04-06 15:28:00,807 - backtesting - INFO - TRADE EXECUTED:
+2026-04-06 15:28:00,807 - backtesting - INFO -   date: 2026-03-22 15:28:00.272841
+2026-04-06 15:28:00,807 - backtesting - INFO -   decision_type: risk_management
+2026-04-06 15:28:00,807 - backtesting - INFO -   decision_title: High Risk Alert: Multiple Negative Indicators
+2026-04-06 15:28:00,807 - backtesting - INFO -   return_rate: 6.34
+2026-04-06 15:28:00,807 - backtesting - INFO -   capital_change: 554.3974114176591
+2026-04-06 15:28:00,807 - backtesting - INFO -   capital_before: 8744.438665893676
+2026-04-06 15:28:00,807 - backtesting - INFO -   capital_after: 9298.836077311336
+2026-04-06 15:28:00,807 - backtesting - INFO -   success: True
+2026-04-06 15:28:00,808 - backtesting - INFO -   confidence: 0.5
+2026-04-06 15:28:00,808 - backtesting - INFO - PERFORMANCE UPDATE:
+2026-04-06 15:28:00,808 - backtesting - INFO -   Current Capital: $9,298.84
+2026-04-06 15:28:00,808 - backtesting - INFO -   Trade Count: 6
+2026-04-06 15:28:00,808 - backtesting - INFO -   Win Rate: 33.33%
+2026-04-06 15:28:00,808 - symbolic_engine.decision_engine - INFO - Making market intelligence decisions...
+2026-04-06 15:28:00,808 - symbolic_engine.rules - INFO - Rule negative_sentiment_alert executed successfully: Suggest marketing improvement strategies. Negative sentiment: 109.06790675531465%
+2026-04-06 15:28:00,808 - symbolic_engine.rules - INFO - Rule low_market_share_alert executed successfully: Analyze competitive position and strategy. Current market share: {market_share}%
+2026-04-06 15:28:00,808 - symbolic_engine.rules - INFO - Evaluated 8 rules, 2 triggered
+2026-04-06 15:28:00,808 - symbolic_engine.decision_engine - INFO - Generated 0 decisions
+2026-04-06 15:28:00,808 - symbolic_engine.decision_engine - INFO - Making market intelligence decisions...
+2026-04-06 15:28:00,808 - symbolic_engine.rules - INFO - Rule negative_sentiment_alert executed successfully: Suggest marketing improvement strategies. Negative sentiment: 82.493069566644%
+2026-04-06 15:28:00,808 - symbolic_engine.rules - INFO - Rule high_demand_opportunity executed successfully: Highlight market opportunity for expansion. Demand score: 86.8
+2026-04-06 15:28:00,808 - symbolic_engine.rules - INFO - Rule low_market_share_alert executed successfully: Analyze competitive position and strategy. Current market share: {market_share}%
+2026-04-06 15:28:00,808 - symbolic_engine.rules - INFO - Evaluated 8 rules, 3 triggered
+2026-04-06 15:28:00,808 - symbolic_engine.decision_engine - INFO - Generated 0 decisions
+2026-04-06 15:28:00,810 - backtesting - INFO - 
+============================================================
+2026-04-06 15:28:00,810 - backtesting - INFO - TEST COMPLETED: COMPREHENSIVE BACKTEST
+2026-04-06 15:28:00,810 - backtesting - INFO - Timestamp: 2026-04-06 15:28:00.810042
+2026-04-06 15:28:00,810 - backtesting - INFO - FINAL RESULTS:
+2026-04-06 15:28:00,810 - backtesting - INFO -   final_capital: 9298.8361
+2026-04-06 15:28:00,810 - backtesting - INFO -   total_return: -7.0116
+2026-04-06 15:28:00,810 - backtesting - INFO -   success_rate: 33.3333
+2026-04-06 15:28:00,810 - backtesting - INFO -   total_trades: 6
+2026-04-06 15:28:00,810 - backtesting - INFO -   win_rate: 33.3333
+2026-04-06 15:28:00,811 - backtesting - INFO -   profit_factor: 0.7611
+2026-04-06 15:28:00,811 - backtesting - INFO -   sharpe_ratio: -0.2593
+2026-04-06 15:28:00,811 - backtesting - INFO -   max_drawdown: 17.2516
+2026-04-06 15:28:00,811 - backtesting - INFO - ============================================================
+
+2026-04-06 15:28:00,812 - backtesting - INFO - Detailed log saved to: logs/detailed_comprehensive_backtest_20260406_152800.json
+2026-04-06 15:28:00,812 - backtesting - INFO - Backtest completed. Final capital: $9,298.84
+2026-04-06 15:28:00,813 - backtesting - INFO - Total return: -7.01%
+2026-04-06 15:28:00,813 - backtesting - INFO - Success rate: 33.33%

@@ -1,0 +1,27 @@
+2026-04-05 19:17:24,864 - llm_learning - INFO - Loaded existing model version 844
+2026-04-05 19:17:24,864 - llm_learning - INFO - LLM Learning Engine initialized - Model Version: 844
+2026-04-05 19:17:24,864 - llm_learning - INFO - ================================================================================
+2026-04-05 19:17:24,864 - llm_learning - INFO - LLM LEARNING ENGINE INITIALIZED
+2026-04-05 19:17:24,864 - llm_learning - INFO - Start Time: 2026-04-05 19:17:24.864673
+2026-04-05 19:17:24,864 - llm_learning - INFO - Model Path: models/llm_learning_model.pkl
+2026-04-05 19:17:24,866 - llm_learning - INFO - Initial Model Version: 844
+2026-04-05 19:17:24,866 - llm_learning - INFO - Learning Rate: 0.1
+2026-04-05 19:17:24,866 - llm_learning - INFO - Reward Scale: 1.0
+2026-04-05 19:17:24,866 - llm_learning - INFO - Punishment Scale: 2.0
+2026-04-05 19:17:24,867 - llm_learning - INFO - ================================================================================
+2026-04-05 19:17:24,867 - llm_learning - INFO - LEARNING EVENT - EXPERIENCE_PROCESSED:
+2026-04-05 19:17:24,867 - llm_learning - INFO -   timestamp: 2026-04-05 19:17:24.867782
+2026-04-05 19:17:24,867 - llm_learning - INFO -   decision_type: test_trading
+2026-04-05 19:17:24,867 - llm_learning - INFO -   action_taken: buy
+2026-04-05 19:17:24,867 - llm_learning - INFO -   outcome: incorrect
+2026-04-05 19:17:24,867 - llm_learning - INFO -   reward: 0.0000
+2026-04-05 19:17:24,867 - llm_learning - INFO -   punishment: 5.0000
+2026-04-05 19:17:24,868 - llm_learning - INFO -   confidence: 0.9000
+2026-04-05 19:17:24,868 - llm_learning - INFO -   error_magnitude: 6.0000
+2026-04-05 19:17:24,868 - llm_learning - INFO - LEARNING EVENT - LEARNING_SUMMARY:
+2026-04-05 19:17:24,868 - llm_learning - INFO -   total_experiences: 1001
+2026-04-05 19:17:24,868 - llm_learning - INFO -   decision_type: test_trading
+2026-04-05 19:17:24,869 - llm_learning - INFO -   outcome: incorrect
+2026-04-05 19:17:24,869 - llm_learning - INFO -   reward: 0.0000
+2026-04-05 19:17:24,869 - llm_learning - INFO -   punishment: 5.0000
+2026-04-05 19:17:24,869 - llm_learning - INFO -   model_version: 844

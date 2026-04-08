@@ -1,0 +1,71 @@
+2026-04-05 19:13:04,195 - backtesting - INFO - ================================================================================
+2026-04-05 19:13:04,195 - backtesting - INFO - MARKET BACKTESTER INITIALIZED
+2026-04-05 19:13:04,196 - backtesting - INFO - Start Time: 2026-04-05 19:13:04.195871
+2026-04-05 19:13:04,196 - backtesting - INFO - Instance ID: 3034520176576
+2026-04-05 19:13:04,196 - backtesting - INFO - ================================================================================
+2026-04-05 19:13:04,196 - backtesting - INFO - 
+============================================================
+2026-04-05 19:13:04,197 - backtesting - INFO - TEST STARTED: COMPREHENSIVE BACKTEST
+2026-04-05 19:13:04,197 - backtesting - INFO - Timestamp: 2026-04-05 19:13:04.197935
+2026-04-05 19:13:04,197 - backtesting - INFO - PARAMETERS:
+2026-04-05 19:13:04,197 - backtesting - INFO -   days: 7
+2026-04-05 19:13:04,197 - backtesting - INFO -   initial_capital: 1000
+2026-04-05 19:13:04,197 - backtesting - INFO -   test_type: comprehensive_backtest
+2026-04-05 19:13:04,197 - backtesting - INFO - ============================================================
+2026-04-05 19:13:04,198 - backtesting - INFO - Starting backtest for 7 days with $1,000.00 initial capital
+2026-04-05 19:13:04,198 - backtesting - INFO - Generating 7 days of historical market data...
+2026-04-05 19:13:04,198 - backtesting - INFO - Generated 7 historical data points
+2026-04-05 19:13:04,669 - symbolic_engine.rules - INFO - Added rule: High Growth Investment Alert
+2026-04-05 19:13:04,669 - symbolic_engine.rules - INFO - Added rule: Negative Sentiment Alert
+2026-04-05 19:13:04,669 - symbolic_engine.rules - INFO - Added rule: Competitor Price Response
+2026-04-05 19:13:04,669 - symbolic_engine.rules - INFO - Added rule: High Demand Opportunity
+2026-04-05 19:13:04,669 - symbolic_engine.rules - INFO - Added rule: Low Market Share Alert
+2026-04-05 19:13:04,669 - symbolic_engine.rules - INFO - Added rule: Positive Sentiment Investment
+2026-04-05 19:13:04,669 - symbolic_engine.rules - INFO - Added rule: Volatility Risk Alert
+2026-04-05 19:13:04,669 - symbolic_engine.rules - INFO - Added rule: Competitor Activity Surge
+2026-04-05 19:13:04,670 - symbolic_engine.rules - INFO - Initialized 8 default rules
+2026-04-05 19:13:04,670 - symbolic_engine.decision_engine - INFO - Making market intelligence decisions...
+2026-04-05 19:13:04,670 - symbolic_engine.rules - INFO - Rule negative_sentiment_alert executed successfully: Suggest marketing improvement strategies. Negative sentiment: 105.5912090747753%
+2026-04-05 19:13:04,670 - symbolic_engine.rules - ERROR - Error evaluating rule competitor_price_response: name 'competitor_price_increase' is not defined
+2026-04-05 19:13:04,670 - symbolic_engine.rules - ERROR - Error evaluating rule low_market_share_alert: name 'market_share' is not defined
+2026-04-05 19:13:04,671 - symbolic_engine.rules - ERROR - Error evaluating rule competitor_activity_surge: name 'competitor_activity_count' is not defined
+2026-04-05 19:13:04,671 - symbolic_engine.rules - INFO - Evaluated 8 rules, 1 triggered
+2026-04-05 19:13:04,671 - symbolic_engine.decision_engine - INFO - Generated 1 decisions
+2026-04-05 19:13:04,671 - backtesting - INFO - DECISION MADE:
+2026-04-05 19:13:04,671 - backtesting - INFO -   date: 2026-03-29 19:13:04.198441
+2026-04-05 19:13:04,671 - backtesting - INFO -   num_decisions: 1
+2026-04-05 19:13:04,671 - backtesting - INFO -   market_growth: -0.42
+2026-04-05 19:13:04,671 - backtesting - INFO -   sentiment_score: -0.056
+2026-04-05 19:13:04,671 - backtesting - INFO - TRADE EXECUTED:
+2026-04-05 19:13:04,671 - backtesting - INFO -   date: 2026-03-29 19:13:04.198441
+2026-04-05 19:13:04,671 - backtesting - INFO -   decision_type: marketing
+2026-04-05 19:13:04,671 - backtesting - INFO -   decision_title: Marketing Action Required: Negative Sentiment Alert
+2026-04-05 19:13:04,671 - backtesting - INFO -   return_rate: 6.22
+2026-04-05 19:13:04,671 - backtesting - INFO -   capital_change: 62.199999999999996
+2026-04-05 19:13:04,672 - backtesting - INFO -   capital_before: 1000.0
+2026-04-05 19:13:04,672 - backtesting - INFO -   capital_after: 1062.2
+2026-04-05 19:13:04,672 - backtesting - INFO -   success: True
+2026-04-05 19:13:04,672 - backtesting - INFO -   confidence: 0.6
+2026-04-05 19:13:04,672 - backtesting - INFO - PERFORMANCE UPDATE:
+2026-04-05 19:13:04,672 - backtesting - INFO -   Current Capital: $1,062.20
+2026-04-05 19:13:04,672 - backtesting - INFO -   Trade Count: 1
+2026-04-05 19:13:04,672 - backtesting - INFO -   Win Rate: 100.00%
+2026-04-05 19:13:04,672 - backtesting - INFO - 
+============================================================
+2026-04-05 19:13:04,672 - backtesting - INFO - TEST COMPLETED: COMPREHENSIVE BACKTEST
+2026-04-05 19:13:04,672 - backtesting - INFO - Timestamp: 2026-04-05 19:13:04.672956
+2026-04-05 19:13:04,672 - backtesting - INFO - FINAL RESULTS:
+2026-04-05 19:13:04,672 - backtesting - INFO -   final_capital: 1062.2000
+2026-04-05 19:13:04,673 - backtesting - INFO -   total_return: 6.2200
+2026-04-05 19:13:04,673 - backtesting - INFO -   success_rate: 100.0000
+2026-04-05 19:13:04,673 - backtesting - INFO -   total_trades: 1
+2026-04-05 19:13:04,674 - backtesting - INFO -   win_rate: 100.0000
+2026-04-05 19:13:04,674 - backtesting - INFO -   profit_factor: 6.2200
+2026-04-05 19:13:04,674 - backtesting - INFO -   sharpe_ratio: 6.4807
+2026-04-05 19:13:04,674 - backtesting - INFO -   max_drawdown: 0
+2026-04-05 19:13:04,674 - backtesting - INFO - ============================================================
+
+2026-04-05 19:13:04,675 - backtesting - INFO - Detailed log saved to: logs/detailed_comprehensive_backtest_20260405_191304.json
+2026-04-05 19:13:04,675 - backtesting - INFO - Backtest completed. Final capital: $1,062.20
+2026-04-05 19:13:04,675 - backtesting - INFO - Total return: 6.22%
+2026-04-05 19:13:04,675 - backtesting - INFO - Success rate: 100.00%

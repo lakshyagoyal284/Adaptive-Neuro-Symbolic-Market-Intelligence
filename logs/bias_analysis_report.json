@@ -1,0 +1,49 @@
+{
+  "analysis_timestamp": "2026-04-05T20:44:36.817488",
+  "summary": {
+    "total_biases": 1,
+    "critical_biases": 0,
+    "high_biases": 1,
+    "medium_biases": 0,
+    "low_biases": 0,
+    "bias_counts": {
+      "ALGORITHMIC_BIAS": 1,
+      "DATA_BIAS": 0,
+      "SELECTION_BIAS": 0,
+      "TEMPORAL_BIAS": 0,
+      "MARKET_BIAS": 0,
+      "LEARNING_BIAS": 0,
+      "RISK_BIAS": 0,
+      "EVALUATION_BIAS": 0
+    },
+    "severity_counts": {
+      "CRITICAL": 0,
+      "HIGH": 1,
+      "MEDIUM": 0,
+      "LOW": 0
+    }
+  },
+  "findings": [
+    {
+      "type": "ALGORITHMIC_BIAS",
+      "subtype": "WEIGHT_DISTRIBUTION_BIAS",
+      "severity": "HIGH",
+      "description": "Weight distribution highly concentrated (ratio: 221790792873721056.00)",
+      "evidence": "Max weight: 0.5000, Min weight: 0.0000",
+      "recommendation": "Normalize weight distribution to prevent overemphasis on single features"
+    }
+  ],
+  "recommendations": [
+    {
+      "category": "ALGORITHMIC_BIAS",
+      "priority": "HIGH",
+      "title": "Address Algorithmic Biases",
+      "actions": [
+        "Balance weight distribution in learning system",
+        "Adjust learning rate to prevent overfitting",
+        "Balance reward and punishment scales",
+        "Implement regularization techniques"
+      ]
+    }
+  ]
+}
