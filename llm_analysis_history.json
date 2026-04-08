@@ -1,0 +1,246 @@
+{
+  "analysis_history": [
+    {
+      "timestamp": "2026-04-06T14:35:55.324484",
+      "current_metrics": {
+        "total_return": -2.366761119668354,
+        "win_rate": 40.0,
+        "sharpe_ratio": -0.061774990404121,
+        "profit_factor": 0.9344170403587445
+      },
+      "performance_analysis": {
+        "return_analysis": {
+          "current_return": -2.366761119668354,
+          "target_return": 15.0,
+          "return_gap": 17.366761119668354,
+          "severity": "CRITICAL",
+          "urgency": "IMMEDIATE",
+          "recommendations": [
+            "CRITICAL: Negative returns detected - immediate algorithm overhaul needed",
+            "Increase base success probability by 15-20%",
+            "Double win return ranges",
+            "Reduce loss ranges by 25%"
+          ]
+        },
+        "win_rate_analysis": {
+          "current_win_rate": 40.0,
+          "target_win_rate": 60.0,
+          "win_rate_gap": 20.0,
+          "severity": "HIGH",
+          "urgency": "HIGH",
+          "recommendations": [
+            "Increase decision frequency",
+            "Optimize market condition weighting",
+            "Enhance sentiment analysis"
+          ]
+        },
+        "risk_analysis": {
+          "current_sharpe_ratio": -0.061774990404121,
+          "target_sharpe_ratio": 1.0,
+          "current_profit_factor": 0.9344170403587445,
+          "target_profit_factor": 1.5,
+          "sharpe_gap": 1.061774990404121,
+          "profit_gap": 0.5655829596412555,
+          "severity": "CRITICAL",
+          "urgency": "IMMEDIATE",
+          "recommendations": [
+            "CRITICAL: Poor risk-adjusted returns - reduce losses",
+            "Decrease loss ranges by 20-30%",
+            "Increase win ranges by 10-15%",
+            "Add stop-loss mechanisms"
+          ]
+        },
+        "trade_pattern_analysis": {
+          "total_trades": 5,
+          "winning_trades": 2,
+          "losing_trades": 3,
+          "avg_win_return": 8.335,
+          "avg_loss_return": -5.946666666666666,
+          "max_win": 8.77,
+          "max_loss": -7.14,
+          "return_consistency": 0.4349999999999996,
+          "loss_consistency": 0.8662691395993637,
+          "identified_patterns": []
+        },
+        "decision_analysis": {
+          "decision_performance": {
+            "risk_management": {
+              "trades": 5,
+              "wins": 2,
+              "total_return": -1.1700000000000008,
+              "win_rate": 40.0,
+              "avg_return": -0.23400000000000015
+            }
+          },
+          "best_decision_type": "risk_management",
+          "worst_decision_type": "risk_management"
+        }
+      },
+      "improvement_recommendations": [
+        {
+          "type": "return_optimization",
+          "priority": "HIGH",
+          "action": "increase_base_success_probability",
+          "current_value": 0.6,
+          "new_value": 0.7,
+          "expected_impact": "+5-10% return improvement"
+        },
+        {
+          "type": "return_optimization",
+          "priority": "HIGH",
+          "action": "adjust_return_ranges",
+          "target": "increase_win_magnitude",
+          "adjustment": "+20% to win return ranges"
+        },
+        {
+          "type": "win_rate_optimization",
+          "priority": "HIGH",
+          "action": "increase_decision_frequency",
+          "current_value": 7,
+          "new_value": 5,
+          "expected_impact": "+10-15% win rate improvement"
+        },
+        {
+          "type": "win_rate_optimization",
+          "priority": "HIGH",
+          "action": "adjust_market_sensitivity",
+          "parameter": "market_growth_weight",
+          "current_value": 0.2,
+          "new_value": 0.25,
+          "expected_impact": "+5-8% win rate improvement"
+        },
+        {
+          "type": "risk_optimization",
+          "priority": "HIGH",
+          "action": "reduce_loss_magnitude",
+          "target": "loss_return_ranges",
+          "adjustment": "-15% to loss ranges",
+          "expected_impact": "+0.2-0.5 Sharpe ratio improvement"
+        },
+        {
+          "type": "risk_optimization",
+          "priority": "MEDIUM",
+          "action": "adjust_volatility_sensitivity",
+          "parameter": "volatility_weight",
+          "current_value": 0.1,
+          "new_value": 0.15000000000000002,
+          "expected_impact": "+0.1-0.3 Sharpe ratio improvement"
+        }
+      ],
+      "priority_score": 90
+    }
+  ],
+  "improvement_history": [
+    {
+      "timestamp": "2026-04-06T14:35:55.326136",
+      "applied_improvements": [
+        {
+          "parameter": "base_success_prob",
+          "old_value": 0.6,
+          "new_value": 0.7,
+          "improvement": "Base success probability increased from 0.60 to 0.70"
+        },
+        {
+          "parameter": "return_ranges",
+          "improvement": "Win return ranges increased by 20%"
+        },
+        {
+          "parameter": "decision_frequency",
+          "old_value": 7,
+          "new_value": 5,
+          "improvement": "Decision frequency increased from every 7 days to every 5 days"
+        },
+        {
+          "parameter": "market_growth_weight",
+          "old_value": 0.2,
+          "new_value": 0.25,
+          "improvement": "market_growth_weight increased from 0.20 to 0.25"
+        },
+        {
+          "parameter": "loss_return_ranges",
+          "improvement": "Loss return ranges reduced by 15%"
+        },
+        {
+          "parameter": "volatility_weight",
+          "old_value": 0.1,
+          "new_value": 0.15000000000000002,
+          "improvement": "volatility_weight increased from 0.10 to 0.15"
+        }
+      ],
+      "new_parameters": {
+        "base_success_prob": 0.7,
+        "market_growth_weight": 0.25,
+        "sentiment_weight": 0.15,
+        "volatility_weight": 0.15000000000000002,
+        "decision_frequency": 5,
+        "risk_adjustment_factor": 0.1,
+        "return_ranges": {
+          "investment": {
+            "win_min": 6.0,
+            "win_max": 30.0,
+            "loss_min": -12.75,
+            "loss_max": -4.25
+          },
+          "marketing": {
+            "win_min": 2.4,
+            "win_max": 12.0,
+            "loss_min": -6.8,
+            "loss_max": -1.7
+          },
+          "opportunity": {
+            "win_min": 12.0,
+            "win_max": 36.0,
+            "loss_min": -17.0,
+            "loss_max": -8.5
+          },
+          "risk_management": {
+            "win_min": 3.5999999999999996,
+            "win_max": 18.0,
+            "loss_min": -8.5,
+            "loss_max": -2.55
+          }
+        }
+      }
+    }
+  ],
+  "current_parameters": {
+    "base_success_prob": 0.7,
+    "market_growth_weight": 0.25,
+    "sentiment_weight": 0.15,
+    "volatility_weight": 0.15000000000000002,
+    "decision_frequency": 5,
+    "risk_adjustment_factor": 0.1,
+    "return_ranges": {
+      "investment": {
+        "win_min": 6.0,
+        "win_max": 30.0,
+        "loss_min": -12.75,
+        "loss_max": -4.25
+      },
+      "marketing": {
+        "win_min": 2.4,
+        "win_max": 12.0,
+        "loss_min": -6.8,
+        "loss_max": -1.7
+      },
+      "opportunity": {
+        "win_min": 12.0,
+        "win_max": 36.0,
+        "loss_min": -17.0,
+        "loss_max": -8.5
+      },
+      "risk_management": {
+        "win_min": 3.5999999999999996,
+        "win_max": 18.0,
+        "loss_min": -8.5,
+        "loss_max": -2.55
+      }
+    }
+  },
+  "performance_baseline": {
+    "target_return": 15.0,
+    "target_win_rate": 60.0,
+    "target_sharpe_ratio": 1.0,
+    "target_profit_factor": 1.5
+  }
+}

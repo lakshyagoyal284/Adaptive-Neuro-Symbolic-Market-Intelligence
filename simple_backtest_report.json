@@ -1,0 +1,209 @@
+{
+  "backtest_summary": {
+    "initial_capital": 10000,
+    "final_capital": 11626.012107898197,
+    "total_return": 16.260121078981975,
+    "max_drawdown": 16.692899161600007,
+    "sharpe_ratio": 0.5342972612001916,
+    "backtest_period": "366 days"
+  },
+  "decision_metrics": {
+    "total_decisions": 12,
+    "successful_decisions": 6,
+    "failed_decisions": 6,
+    "success_rate": 50.0,
+    "avg_confidence": 0.4875
+  },
+  "trade_metrics": {
+    "total_trades": 12,
+    "winning_trades": 6,
+    "losing_trades": 6,
+    "win_rate": 50.0,
+    "avg_win": 9.700000000000001,
+    "avg_loss": -6.441666666666667,
+    "profit_factor": 1.5058214747736092
+  },
+  "performance_analysis": {
+    "performance_by_decision_type": {
+      "risk_management": {
+        "trades": 12,
+        "wins": 6,
+        "total_return": 19.550000000000004,
+        "avg_return": 1.629166666666667,
+        "win_rate": 50.0
+      }
+    },
+    "monthly_performance": {
+      "2025-04": {
+        "returns": [
+          9.9,
+          -4.69
+        ],
+        "count": 2,
+        "avg_return": 2.605,
+        "total_return": 5.21
+      },
+      "2025-05": {
+        "returns": [
+          -3.14
+        ],
+        "count": 1,
+        "avg_return": -3.14,
+        "total_return": -3.14
+      },
+      "2025-06": {
+        "returns": [
+          -9.76,
+          14.63
+        ],
+        "count": 2,
+        "avg_return": 2.4350000000000005,
+        "total_return": 4.870000000000001
+      },
+      "2025-08": {
+        "returns": [
+          9.96,
+          -6.15
+        ],
+        "count": 2,
+        "avg_return": 1.9050000000000002,
+        "total_return": 3.8100000000000005
+      },
+      "2025-11": {
+        "returns": [
+          8.83,
+          -9.82
+        ],
+        "count": 2,
+        "avg_return": -0.4950000000000001,
+        "total_return": -0.9900000000000002
+      },
+      "2026-03": {
+        "returns": [
+          -5.09,
+          11.81,
+          3.07
+        ],
+        "count": 3,
+        "avg_return": 3.2633333333333336,
+        "total_return": 9.790000000000001
+      }
+    }
+  },
+  "recommendations": [
+    "Low Sharpe ratio - improve risk-adjusted returns"
+  ],
+  "detailed_trades": [
+    {
+      "date": "2025-04-06 21:56:02.413955",
+      "decision_type": "risk_management",
+      "decision_title": "High Risk Alert: Multiple Negative Indicators",
+      "return_rate": 9.9,
+      "capital_change": 990.0,
+      "capital_before": 10000.0,
+      "capital_after": 10990.0,
+      "success": "True",
+      "confidence": 0.5
+    },
+    {
+      "date": "2025-04-13 21:56:02.413955",
+      "decision_type": "risk_management",
+      "decision_title": "High Risk Alert: Multiple Negative Indicators",
+      "return_rate": -4.69,
+      "capital_change": -515.431,
+      "capital_before": 10990.0,
+      "capital_after": 10474.569,
+      "success": "False",
+      "confidence": 0.35
+    },
+    {
+      "date": "2025-05-11 21:56:02.413955",
+      "decision_type": "risk_management",
+      "decision_title": "High Risk Alert: Multiple Negative Indicators",
+      "return_rate": -3.14,
+      "capital_change": -328.90146660000005,
+      "capital_before": 10474.569,
+      "capital_after": 10145.6675334,
+      "success": "False",
+      "confidence": 0.5
+    },
+    {
+      "date": "2025-06-08 21:56:02.413955",
+      "decision_type": "risk_management",
+      "decision_title": "High Risk Alert: Multiple Negative Indicators",
+      "return_rate": -9.76,
+      "capital_change": -990.2171512598399,
+      "capital_before": 10145.6675334,
+      "capital_after": 9155.45038214016,
+      "success": "False",
+      "confidence": 0.5
+    },
+    {
+      "date": "2025-06-29 21:56:02.413955",
+      "decision_type": "risk_management",
+      "decision_title": "High Risk Alert: Multiple Negative Indicators",
+      "return_rate": 14.63,
+      "capital_change": 1339.4423909071054,
+      "capital_before": 9155.45038214016,
+      "capital_after": 10494.892773047264,
+      "success": "True",
+      "confidence": 0.5
+    },
+    {
+      "date": "2025-08-03 21:56:02.413955",
+      "decision_type": "risk_management",
+      "decision_title": "High Risk Alert: Multiple Negative Indicators",
+      "return_rate": 9.96,
+      "capital_change": 1045.2913201955075,
+      "capital_before": 10494.892773047264,
+      "capital_after": 11540.184093242771,
+      "success": "True",
+      "confidence": 0.5
+    },
+    {
+      "date": "2025-08-17 21:56:02.413955",
+      "decision_type": "risk_management",
+      "decision_title": "High Risk Alert: Multiple Negative Indicators",
+      "return_rate": -6.15,
+      "capital_change": -709.7213217344305,
+      "capital_before": 11540.184093242771,
+      "capital_after": 10830.46277150834,
+      "success": "False",
+      "confidence": 0.5
+    },
+    {
+      "date": "2025-11-02 21:56:02.413955",
+      "decision_type": "risk_management",
+      "decision_title": "High Risk Alert: Multiple Negative Indicators",
+      "return_rate": 8.83,
+      "capital_change": 956.3298627241866,
+      "capital_before": 10830.46277150834,
+      "capital_after": 11786.792634232526,
+      "success": "True",
+      "confidence": 0.5
+    },
+    {
+      "date": "2025-11-30 21:56:02.413955",
+      "decision_type": "risk_management",
+      "decision_title": "High Risk Alert: Multiple Negative Indicators",
+      "return_rate": -9.82,
+      "capital_change": -1157.463036681634,
+      "capital_before": 11786.792634232526,
+      "capital_after": 10629.329597550892,
+      "success": "False",
+      "confidence": 0.5
+    },
+    {
+      "date": "2026-03-01 21:56:02.413955",
+      "decision_type": "risk_management",
+      "decision_title": "High Risk Alert: Multiple Negative Indicators",
+      "return_rate": -5.09,
+      "capital_change": -541.0328765153404,
+      "capital_before": 10629.329597550892,
+      "capital_after": 10088.296721035551,
+      "success": "False",
+      "confidence": 0.5
+    }
+  ],
+  "generated_at": "2026-04-06T21:56:07.181761"
+}

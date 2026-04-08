@@ -1,0 +1,15 @@
+{
+  "initial_capital": 100000,
+  "final_capital": 100000,
+  "total_return": 0,
+  "total_return_pct": 0,
+  "max_drawdown": 0,
+  "sharpe_ratio": 0,
+  "win_rate": 0,
+  "total_trades": 0,
+  "avg_win": 0,
+  "avg_loss": 0,
+  "profit_factor": 0,
+  "learning_enabled": true,
+  "generated_at": "2026-04-05T19:07:02.887442"
+}

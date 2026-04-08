@@ -1,0 +1,205 @@
+{
+  "backtest_summary": {
+    "initial_capital": 100000,
+    "final_capital": 100000.0,
+    "total_return": 0.0,
+    "total_return_pct": 0.0,
+    "max_drawdown": 0,
+    "sharpe_ratio": 0,
+    "backtest_period": "Real Market Data (3 months)"
+  },
+  "performance_metrics": {
+    "total_trades": 8,
+    "winning_trades": 0,
+    "losing_trades": 8,
+    "win_rate": 0.0,
+    "avg_win": 0,
+    "avg_loss": 0,
+    "profit_factor": Infinity
+  },
+  "trade_analysis": {
+    "symbol_performance": {
+      "HDFCBANK": {
+        "trades": 1,
+        "wins": 0,
+        "total_pnl": 0.0,
+        "avg_pnl": 0.0,
+        "win_rate": 0.0
+      },
+      "HINDUNILVR": {
+        "trades": 1,
+        "wins": 0,
+        "total_pnl": 0.0,
+        "avg_pnl": 0.0,
+        "win_rate": 0.0
+      },
+      "ICICIBANK": {
+        "trades": 1,
+        "wins": 0,
+        "total_pnl": 0.0,
+        "avg_pnl": 0.0,
+        "win_rate": 0.0
+      },
+      "INFY": {
+        "trades": 1,
+        "wins": 0,
+        "total_pnl": 0.0,
+        "avg_pnl": 0.0,
+        "win_rate": 0.0
+      },
+      "KOTAKBANK": {
+        "trades": 1,
+        "wins": 0,
+        "total_pnl": 0.0,
+        "avg_pnl": 0.0,
+        "win_rate": 0.0
+      },
+      "RELIANCE": {
+        "trades": 1,
+        "wins": 0,
+        "total_pnl": 0.0,
+        "avg_pnl": 0.0,
+        "win_rate": 0.0
+      },
+      "SBIN": {
+        "trades": 1,
+        "wins": 0,
+        "total_pnl": 0.0,
+        "avg_pnl": 0.0,
+        "win_rate": 0.0
+      },
+      "TCS": {
+        "trades": 1,
+        "wins": 0,
+        "total_pnl": 0.0,
+        "avg_pnl": 0.0,
+        "win_rate": 0.0
+      }
+    },
+    "decision_type_performance": {
+      "opportunity": {
+        "trades": 4,
+        "wins": 0,
+        "total_pnl": 0.0,
+        "win_rate": 0.0
+      },
+      "marketing": {
+        "trades": 4,
+        "wins": 0,
+        "total_pnl": 0.0,
+        "win_rate": 0.0
+      }
+    },
+    "holding_period_stats": {
+      "avg_minutes": 2817461.25,
+      "median_minutes": 2819145.0,
+      "max_minutes": 2825515,
+      "min_minutes": 2796745
+    }
+  },
+  "recommendations": [
+    "\u26a0\ufe0f Negative returns. Strategy needs optimization",
+    "\u274c Low win rate. Review entry/exit criteria",
+    "\ud83d\udcb0 Excellent profit factor. Strong risk/reward ratio",
+    "\ud83c\udf19 Low risk-adjusted returns. Improve consistency"
+  ],
+  "detailed_trades": [
+    {
+      "symbol": "HDFCBANK",
+      "entry_date": "2020-11-24T10:25:00",
+      "exit_date": "2026-04-04T18:30:54.803160",
+      "entry_price": 1426.3,
+      "exit_price": 1426.3,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "decision_type": "opportunity",
+      "confidence": 0.5833333333333333,
+      "holding_period_minutes": 2818565
+    },
+    {
+      "symbol": "HINDUNILVR",
+      "entry_date": "2020-11-24T12:15:00",
+      "exit_date": "2026-04-04T18:30:54.803160",
+      "entry_price": 2158.5,
+      "exit_price": 2158.5,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "decision_type": "opportunity",
+      "confidence": 0.5428571428571428,
+      "holding_period_minutes": 2818455
+    },
+    {
+      "symbol": "ICICIBANK",
+      "entry_date": "2020-11-19T14:35:00",
+      "exit_date": "2026-04-04T18:30:54.803160",
+      "entry_price": 480.75,
+      "exit_price": 480.75,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "decision_type": "marketing",
+      "confidence": 0.7403614457831326,
+      "holding_period_minutes": 2825515
+    },
+    {
+      "symbol": "INFY",
+      "entry_date": "2020-11-19T14:35:00",
+      "exit_date": "2026-04-04T18:30:54.803160",
+      "entry_price": 1097.2,
+      "exit_price": 1097.2,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "decision_type": "marketing",
+      "confidence": 0.7300804828973844,
+      "holding_period_minutes": 2825515
+    },
+    {
+      "symbol": "KOTAKBANK",
+      "entry_date": "2020-11-26T14:25:00",
+      "exit_date": "2026-04-04T18:30:54.803160",
+      "entry_price": 1885.15,
+      "exit_price": 1885.15,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "decision_type": "opportunity",
+      "confidence": 0.5343373493975904,
+      "holding_period_minutes": 2815445
+    },
+    {
+      "symbol": "RELIANCE",
+      "entry_date": "2020-12-09T14:05:00",
+      "exit_date": "2026-04-04T18:30:54.803160",
+      "entry_price": 2033.25,
+      "exit_price": 2033.25,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "decision_type": "opportunity",
+      "confidence": 0.5379807692307692,
+      "holding_period_minutes": 2796745
+    },
+    {
+      "symbol": "SBIN",
+      "entry_date": "2020-11-23T15:05:00",
+      "exit_date": "2026-04-04T18:30:54.803160",
+      "entry_price": 238.9,
+      "exit_price": 238.9,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "decision_type": "marketing",
+      "confidence": 0.7345238095238096,
+      "holding_period_minutes": 2819725
+    },
+    {
+      "symbol": "TCS",
+      "entry_date": "2020-11-23T15:05:00",
+      "exit_date": "2026-04-04T18:30:54.803160",
+      "entry_price": 2725.7,
+      "exit_price": 2725.7,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "decision_type": "marketing",
+      "confidence": 0.7335016835016835,
+      "holding_period_minutes": 2819725
+    }
+  ],
+  "generated_at": "2026-04-05T18:30:55.828551"
+}

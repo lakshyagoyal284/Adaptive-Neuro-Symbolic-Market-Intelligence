@@ -1,0 +1,46 @@
+{
+  "aggressive_trading_summary": {
+    "total_opportunities": 13708,
+    "trades_taken": 3,
+    "trade_participation_pct": 0.021885030639042895,
+    "max_positions_held": 4,
+    "avg_holding_period": 1020233.125
+  },
+  "profitability_metrics": {
+    "win_rate": 66.66666666666666,
+    "profitable_trades": 2,
+    "losing_trades": 1,
+    "total_profit": 1229.45,
+    "total_loss": 177.3499999999999,
+    "net_profit": 1052.1000000000001,
+    "profit_factor": 6.93233718635467
+  },
+  "backtest_performance": {
+    "initial_capital": 100000,
+    "final_capital": 101052.09999999999,
+    "total_return": 1052.0999999999913,
+    "total_return_pct": 1.0520999999999912,
+    "max_drawdown": 0.17735000000000584,
+    "sharpe_ratio": 7.250624751207027
+  },
+  "learning_system": {
+    "model_version": 1475,
+    "learning_events": 265,
+    "accuracy_rate": 0.0,
+    "learning_progress": 0.0
+  },
+  "adaptive_weights": {
+    "market_growth_weight": 0.13154362416084997,
+    "sentiment_weight": 0.10961968680070855,
+    "volatility_weight": 0.08769574944056668,
+    "trend_weight": 0.3355704697989374,
+    "volume_weight": 0.3355704697989374
+  },
+  "recommendations": [
+    "\ud83d\udc22 Low trade participation. Reduce thresholds to generate more trades.",
+    "\ud83c\udf89 Outstanding win rate! Current strategy is highly effective.",
+    "\ud83d\udcb0 Exceptional profit factor! Excellent risk/reward management.",
+    "\ud83d\udca1 Small positive returns. Room for improvement."
+  ],
+  "generated_at": "2026-04-05T20:40:28.717398"
+}

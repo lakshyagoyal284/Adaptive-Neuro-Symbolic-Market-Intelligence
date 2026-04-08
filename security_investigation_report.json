@@ -1,0 +1,100 @@
+{
+  "investigation_timestamp": "2026-04-06T13:47:39.574289",
+  "security_score": 90,
+  "security_level": "EXCELLENT",
+  "security_issues": [
+    "Timeline inconsistency detected"
+  ],
+  "weight_distribution_analysis": {
+    "error": "unexpected indent (llm_learning_engine.py, line 232)"
+  },
+  "learning_parameter_analysis": {
+    "error": "unexpected indent (llm_learning_engine.py, line 232)"
+  },
+  "result_authenticity_analysis": {
+    "total_return": 0,
+    "win_rate": 0,
+    "profit_factor": 0,
+    "unrealistic_return": false,
+    "unrealistic_win_rate": false,
+    "unrealistic_profit_factor": false,
+    "perfect_pattern": false,
+    "suspicious_consistency": false,
+    "fabrication_detected": false,
+    "fabrication_level": "LOW"
+  },
+  "system_integrity_analysis": {
+    "files_checked": 5,
+    "file_integrity_issues": [],
+    "suspicious_files": [
+      "adaptive_backtester_with_learning.py",
+      "aggressive_profit_backtester.py",
+      "authentication_system.py",
+      "bias_analysis.py",
+      "bias_fixes.py",
+      "comprehensive_deep_test.py",
+      "data_integrity.py",
+      "deep_test_round2.py",
+      "demo_llm_learning.py",
+      "direct_bias_fix.py",
+      "error_handling.py",
+      "final_bias_fix_summary.py",
+      "final_verification_test.py",
+      "fix_indentation.py",
+      "fix_weight_bias.py",
+      "generate_sample_data.py",
+      "input_validator.py",
+      "performance_optimization.py",
+      "profit_focused_learning.py",
+      "protected_backtesting.py",
+      "race_condition_fixes.py",
+      "real_market_backtester.py",
+      "security_audit.py",
+      "security_fixes.py",
+      "security_guard.py",
+      "security_investigation.py",
+      "setup.py",
+      "simple_backtest.py",
+      "simple_bias_fix.py",
+      "simple_bias_test.py",
+      "simple_final_test.py",
+      "simple_performance_fix.py",
+      "test_bias_fix.py",
+      "test_bias_fix_verification.py",
+      "test_fixes.py",
+      "trading_logic.py"
+    ],
+    "integrity_breached": false,
+    "integrity_level": "GOOD"
+  },
+  "timeline_consistency_analysis": {
+    "log_files_checked": 30,
+    "timeline_issues": [
+      "Empty log file: backtesting_20260405_192800.log",
+      "Empty log file: backtesting_20260405_193155.log",
+      "Empty log file: backtesting_20260406_000208.log",
+      "Empty log file: backtesting_20260406_134505.log",
+      "Empty log file: backtesting_20260406_134528.log",
+      "Empty log file: llm_learning_20260405_192010.log",
+      "Empty log file: llm_learning_20260405_203256.log",
+      "Empty log file: llm_learning_20260405_204008.log"
+    ],
+    "timeline_consistent": false,
+    "timeline_level": "INCONSISTENT"
+  },
+  "bias_pattern_analysis": {
+    "bias_patterns_detected": [],
+    "bias_count": 0,
+    "bias_present": false,
+    "bias_severity": "LOW"
+  },
+  "overall_assessment": {
+    "biasing_detected": true,
+    "biasing_severity": "MEDIUM",
+    "system_secure": true,
+    "recommendations": [
+      "Investigate timeline anomalies",
+      "Implement proper timestamp validation"
+    ]
+  }
+}

@@ -1,0 +1,2068 @@
+{
+  "trading_performance": {
+    "total_opportunities": 200,
+    "trades_taken": 161,
+    "profitable_trades": 87,
+    "losing_trades": 74,
+    "total_profit": 259.13388024643365,
+    "total_loss": 220.23796401762968,
+    "win_rate": 54.037267080745345,
+    "profit_factor": 1.1766085897238425,
+    "learning_events": [
+      {
+        "opportunity": 1,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 3.745071229516849,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 2,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 2.792603548243223,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 3,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 5.368819223261087,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 4,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 4.151152093729364,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 5,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 3.362943407349051,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 6,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 0.1300796330133034,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 7,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 5.198473153382331,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 8,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 2.6613355492701967,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 9,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 2.0990419651217924,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 10,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 2.562459375310085,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 11,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -1.7661826318452165,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 12,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -4.831265474956533,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 13,
+        "action": "hold",
+        "optimal": "sell",
+        "outcome": "correct",
+        "profit": 0,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 14,
+        "action": "hold",
+        "optimal": "sell",
+        "outcome": "correct",
+        "profit": 0,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 15,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -3.6909581564396814,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 16,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -1.4143166606716264,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 17,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -4.015383000458938,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 18,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -2.082485566738698,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 19,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -4.258826284833958,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 20,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -3.463818563776822,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 21,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 4.218788733591297,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 22,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 5.0343600428562345,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 23,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 2.9462609413350727,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 24,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 5.346965483721009,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 25,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 3.1376411648032536,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 26,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 0.018646628098660578,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 27,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 1.7872595956602186,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 28,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 2.2473644346231954,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 29,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 3.1456163240220607,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 30,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 4.452967485799334,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 31,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -2.555819584403136,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 32,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -2.608417091730166,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 33,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -3.2419285674990137,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 34,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -2.393923714778192,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 35,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -5.878156822948562,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 36,
+        "action": "hold",
+        "optimal": "sell",
+        "outcome": "correct",
+        "profit": 0,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 37,
+        "action": "hold",
+        "optimal": "sell",
+        "outcome": "correct",
+        "profit": 0,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 38,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -2.5476789864995815,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 39,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -1.8134520794354296,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 40,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -4.364081182192108,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 41,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 1.5141955123039674,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 42,
+        "action": "hold",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 0,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 43,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 1.4065444294108427,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 44,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 3.710388645952772,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 45,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 4.220275826054505,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 46,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 1.153703525349067,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 47,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 3.3898241913726355,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 48,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 4.172734307665966,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 49,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 1.9799629176322637,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 50,
+        "action": "hold",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 0,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 51,
+        "action": "hold",
+        "optimal": "sell",
+        "outcome": "correct",
+        "profit": 0,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 52,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -2.2892506186323187,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 53,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -1.5549358061335172,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 54,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -2.3808286095952527,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 55,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -3.1156525641211563,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 56,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -2.488272037775034,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 57,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -2.061498978352491,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 58,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -4.285736334624424,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 59,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -3.335194177988776,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 60,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -1.928999258861862,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 61,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 1.7298094228973926,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 62,
+        "action": "hold",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 0,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 63,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 1.6742138456983005,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 64,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 3.230587658918292,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 65,
+        "action": "hold",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 0,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 66,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 4.5807030780523545,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 67,
+        "action": "hold",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 0,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 68,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 8.779097235982082,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 69,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 1.8407621781936423,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 70,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 2.6447720898899867,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 71,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -3.70789779868415,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 72,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -1.3665741045489508,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 73,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -2.931642240144279,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 74,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -3.9774005214087254,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 75,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -3.9926796971525818,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 76,
+        "action": "hold",
+        "optimal": "sell",
+        "outcome": "correct",
+        "profit": 0,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 77,
+        "action": "hold",
+        "optimal": "sell",
+        "outcome": "correct",
+        "profit": 0,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 78,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -3.5017518537614225,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 79,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": 0.18323429551894987,
+        "reward": 0.0,
+        "punishment": 1.8,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 80,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -1.4513021091732798,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 81,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 3.6657291422193428,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 82,
+        "action": "hold",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 0,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 83,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 5.448616955897453,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 84,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 0.8547879330590509,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 85,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 1.5277370234280736,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 86,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 3.693155211394906,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 87,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 5.379025224218028,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 88,
+        "action": "hold",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 0,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 89,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 3.4214878016025487,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 90,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 2.065950720269109,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 91,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -2.464476771052429,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 92,
+        "action": "hold",
+        "optimal": "sell",
+        "outcome": "correct",
+        "profit": 0,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 93,
+        "action": "hold",
+        "optimal": "sell",
+        "outcome": "correct",
+        "profit": 0,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 94,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -2.084444601849803,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 95,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -3.3265218048408305,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 96,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -1.3518347220192148,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 97,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -1.9770705430575541,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 98,
+        "action": "hold",
+        "optimal": "sell",
+        "outcome": "correct",
+        "profit": 0,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 99,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -2.8545060525109225,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 100,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -2.1072644618446295,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 101,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 3.9361797255782327,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 102,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 3.94251826389642,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 103,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 1.7617542048112327,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 104,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 2.51792123752051,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 105,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 2.293442541572516,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 106,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 3.3480749060364543,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 107,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 1.9223336681213459,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 108,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 2.679829272432229,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 109,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 2.972230296011415,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 110,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 2.5670120416197926,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 111,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -3.1631402226852865,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 112,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -2.3974324168515877,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 113,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -2.663861277284375,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 114,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -2.981111398827308,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 115,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": 0.2297736862673343,
+        "reward": 0.0,
+        "punishment": 1.8,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 116,
+        "action": "hold",
+        "optimal": "sell",
+        "outcome": "correct",
+        "profit": 0,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 117,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": 0.2847043998265084,
+        "reward": 0.0,
+        "punishment": 1.8,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 118,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -4.212447428032727,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 119,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -2.4873660363342607,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 120,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -0.18574374117617065,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 121,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 1.0196501894690368,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 122,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 5.747188148781531,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 123,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 0.430298206363684,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 124,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 5.0308085612481195,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 125,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 3.0078655495772746,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 126,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 3.070470890647113,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 127,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 3.1804434475678485,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 128,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 3.7716582510881236,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 129,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 5.326727963283784,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 130,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 3.1735119514392878,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 131,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -2.0319360756222786,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 132,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -0.9470526637014771,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 133,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -4.774887768998663,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 134,
+        "action": "hold",
+        "optimal": "sell",
+        "outcome": "correct",
+        "profit": 0,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 135,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -5.5550736590327325,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 136,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -3.0833215483449283,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 137,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -2.450102630854728,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 138,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -4.409819679491033,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 139,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -3.795386427558661,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 140,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -4.189309248393516,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 141,
+        "action": "hold",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 0,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 142,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 3.052895327957593,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 143,
+        "action": "hold",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 0,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 144,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 2.6685456007001656,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 145,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 0.7272134067021714,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 146,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 5.050311401166788,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 147,
+        "action": "hold",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 0,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 148,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 4.679362367151866,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 149,
+        "action": "hold",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 0,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 150,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 1.3776779945784074,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 151,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -2.8839475385285724,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 152,
+        "action": "hold",
+        "optimal": "sell",
+        "outcome": "correct",
+        "profit": 0,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 153,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -1.610733678702538,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 154,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -0.13587503929480427,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 155,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -3.9759638536827406,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 156,
+        "action": "hold",
+        "optimal": "sell",
+        "outcome": "correct",
+        "profit": 0,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 157,
+        "action": "hold",
+        "optimal": "sell",
+        "outcome": "correct",
+        "profit": 0,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 158,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -3.0753571641737056,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 159,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -2.248624218563429,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 160,
+        "action": "hold",
+        "optimal": "sell",
+        "outcome": "correct",
+        "profit": 0,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 161,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 1.8551112651862247,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 162,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 0.29267684900322166,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 163,
+        "action": "hold",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 0,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 164,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 1.183475700356315,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 165,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 4.509439213821661,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 166,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 2.134662195715277,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 167,
+        "action": "hold",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 0,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 168,
+        "action": "hold",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 0,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 169,
+        "action": "hold",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 0,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 170,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 2.7664841469118806,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 171,
+        "action": "hold",
+        "optimal": "sell",
+        "outcome": "correct",
+        "profit": 0,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 172,
+        "action": "hold",
+        "optimal": "sell",
+        "outcome": "correct",
+        "profit": 0,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 173,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -6.057186802766781,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 174,
+        "action": "hold",
+        "optimal": "sell",
+        "outcome": "correct",
+        "profit": 0,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 175,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -1.7558916282247663,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 176,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -6.316702963511828,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 177,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -2.492255388758379,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 178,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -3.622931870851202,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 179,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -1.7544962751836315,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 180,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -4.284125738863301,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 181,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 2.595187597059943,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 182,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 1.531854426326539,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 183,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 3.620152354835551,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 184,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 5.815193718837099,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 185,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 3.9815484845310865,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 186,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 2.9166229936343173,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 187,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 3.1640921919073395,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 188,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 4.0886499358480375,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 189,
+        "action": "hold",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 0,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 190,
+        "action": "buy",
+        "optimal": "buy",
+        "outcome": "correct",
+        "profit": 2.2331764853532223,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bullish"
+      },
+      {
+        "opportunity": 191,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -2.916412631566958,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 192,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -1.358712722293577,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 193,
+        "action": "hold",
+        "optimal": "sell",
+        "outcome": "correct",
+        "profit": 0,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 194,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -5.482285007798654,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 195,
+        "action": "hold",
+        "optimal": "sell",
+        "outcome": "correct",
+        "profit": 0,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 196,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -5.2547144296771595,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 197,
+        "action": "hold",
+        "optimal": "sell",
+        "outcome": "correct",
+        "profit": 0,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 198,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -1.310152455678364,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 199,
+        "action": "hold",
+        "optimal": "sell",
+        "outcome": "correct",
+        "profit": 0,
+        "reward": 9.0,
+        "punishment": 0.0,
+        "market_trend": "bearish"
+      },
+      {
+        "opportunity": 200,
+        "action": "sell",
+        "optimal": "sell",
+        "outcome": "incorrect",
+        "profit": -2.9111723489782677,
+        "reward": 0.0,
+        "punishment": 5.4,
+        "market_trend": "bearish"
+      }
+    ]
+  },
+  "learning_metrics": {
+    "model_version": 844,
+    "total_experiences": 400,
+    "adaptive_weights": {
+      "market_growth_weight": 0.3,
+      "sentiment_weight": 0.25,
+      "volatility_weight": 0.2,
+      "trend_weight": 0.15,
+      "volume_weight": 0.1
+    }
+  },
+  "rule_performance": {
+    "high_growth_investment": {
+      "accuracy": 0.9998994981739848,
+      "confidence": 1.0,
+      "usage_count": 106
+    },
+    "negative_sentiment_alert": {
+      "accuracy": 0.00029000904298392765,
+      "confidence": 0.1,
+      "usage_count": 103
+    },
+    "competitor_price_response": {
+      "accuracy": 0.5,
+      "confidence": 0.5,
+      "usage_count": 0
+    },
+    "high_demand_opportunity": {
+      "accuracy": 0.9848593420077496,
+      "confidence": 1.0,
+      "usage_count": 191
+    },
+    "positive_sentiment_investment": {
+      "accuracy": 0.9998994981739848,
+      "confidence": 1.0,
+      "usage_count": 106
+    },
+    "volatility_risk_alert": {
+      "accuracy": 0.00029000904298392765,
+      "confidence": 0.1,
+      "usage_count": 103
+    },
+    "competitor_activity_surge": {
+      "accuracy": 0.5,
+      "confidence": 0.5,
+      "usage_count": 0
+    },
+    "low_market_share_alert": {
+      "accuracy": 0.5,
+      "confidence": 0.5,
+      "usage_count": 0
+    }
+  },
+  "profit_focused_learning_completed": true
+}

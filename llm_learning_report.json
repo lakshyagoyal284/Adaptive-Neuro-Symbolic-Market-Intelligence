@@ -1,0 +1,114 @@
+{
+  "learning_summary": {
+    "model_version": 1,
+    "total_experiences": 3,
+    "learning_metrics": {
+      "total_decisions": 3,
+      "correct_decisions": 0,
+      "incorrect_decisions": 2,
+      "accuracy_rate": 0.0,
+      "avg_reward": 0.06999999999999999,
+      "avg_punishment": 5.5,
+      "learning_progress": 0.0,
+      "adaptation_rate": 1.0,
+      "model_version": 1,
+      "last_update": "2026-04-05 19:01:24.227613"
+    },
+    "last_update": "2026-04-05T19:01:24.227613"
+  },
+  "rule_performance": {
+    "high_growth_investment": {
+      "accuracy": 0.45,
+      "confidence": 0.4,
+      "usage_count": 1
+    },
+    "negative_sentiment_alert": {
+      "accuracy": 0.5,
+      "confidence": 0.5,
+      "usage_count": 1
+    },
+    "competitor_price_response": {
+      "accuracy": 0.5,
+      "confidence": 0.5,
+      "usage_count": 0
+    },
+    "high_demand_opportunity": {
+      "accuracy": 0.45,
+      "confidence": 0.4,
+      "usage_count": 1
+    },
+    "positive_sentiment_investment": {
+      "accuracy": 0.45,
+      "confidence": 0.4,
+      "usage_count": 1
+    },
+    "volatility_risk_alert": {
+      "accuracy": 0.5,
+      "confidence": 0.5,
+      "usage_count": 1
+    },
+    "competitor_activity_surge": {
+      "accuracy": 0.5,
+      "confidence": 0.5,
+      "usage_count": 0
+    },
+    "low_market_share_alert": {
+      "accuracy": 0.5,
+      "confidence": 0.5,
+      "usage_count": 0
+    }
+  },
+  "learning_weights": {
+    "market_growth_weight": 0.3,
+    "sentiment_weight": 0.25,
+    "volatility_weight": 0.2,
+    "trend_weight": 0.15,
+    "volume_weight": 0.1
+  },
+  "context_patterns_count": 3,
+  "top_performing_rules": [
+    {
+      "rule_id": "negative_sentiment_alert",
+      "accuracy": 0.5,
+      "confidence": 0.5,
+      "usage_count": 1,
+      "performance_score": 0.25
+    },
+    {
+      "rule_id": "volatility_risk_alert",
+      "accuracy": 0.5,
+      "confidence": 0.5,
+      "usage_count": 1,
+      "performance_score": 0.25
+    },
+    {
+      "rule_id": "high_growth_investment",
+      "accuracy": 0.45,
+      "confidence": 0.4,
+      "usage_count": 1,
+      "performance_score": 0.18000000000000002
+    },
+    {
+      "rule_id": "high_demand_opportunity",
+      "accuracy": 0.45,
+      "confidence": 0.4,
+      "usage_count": 1,
+      "performance_score": 0.18000000000000002
+    },
+    {
+      "rule_id": "positive_sentiment_investment",
+      "accuracy": 0.45,
+      "confidence": 0.4,
+      "usage_count": 1,
+      "performance_score": 0.18000000000000002
+    }
+  ],
+  "learning_progress": {
+    "status": "insufficient_data"
+  },
+  "recommendations": [
+    "\ud83d\udd34 Low accuracy detected. Consider reviewing decision logic and increasing learning rate.",
+    "\u2696\ufe0f High punishment rate. System may be too risk-averse or making frequent mistakes.",
+    "\u26a1 High adaptation! System learning quickly. Monitor for overfitting."
+  ]
+}

@@ -1,0 +1,966 @@
+{
+  "learning_statistics": {
+    "total_decisions": 100,
+    "correct_decisions": 20,
+    "incorrect_decisions": 77,
+    "partial_decisions": 3,
+    "learning_events": [
+      {
+        "scenario": 1,
+        "optimal_action": "buy",
+        "algorithm_action": "sell",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 3.6,
+        "market_condition": 2.496714153011233
+      },
+      {
+        "scenario": 2,
+        "optimal_action": "buy",
+        "algorithm_action": "sell",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 3.6,
+        "market_condition": 1.8617356988288154
+      },
+      {
+        "scenario": 3,
+        "optimal_action": "buy",
+        "algorithm_action": "sell",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 3.6,
+        "market_condition": 1.5305256140650478
+      },
+      {
+        "scenario": 4,
+        "optimal_action": "buy",
+        "algorithm_action": "sell",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 3.6,
+        "market_condition": 2.5425600435859645
+      },
+      {
+        "scenario": 5,
+        "optimal_action": "hold",
+        "algorithm_action": "buy",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 396.7113328123641,
+        "market_condition": 1.0919759244787892
+      },
+      {
+        "scenario": 6,
+        "optimal_action": "hold",
+        "algorithm_action": "buy",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 215.17066751929508,
+        "market_condition": 0.5876962986647085
+      },
+      {
+        "scenario": 7,
+        "optimal_action": "hold",
+        "algorithm_action": "buy",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 507.3700716292302,
+        "market_condition": 1.399361310081195
+      },
+      {
+        "scenario": 8,
+        "optimal_action": "buy",
+        "algorithm_action": "sell",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 3.6,
+        "market_condition": 1.7083062502067232
+      },
+      {
+        "scenario": 9,
+        "optimal_action": "buy",
+        "algorithm_action": "sell",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 3.6,
+        "market_condition": 2.2088635950047553
+      },
+      {
+        "scenario": 10,
+        "optimal_action": "hold",
+        "algorithm_action": "buy",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 18.118755403280794,
+        "market_condition": 0.04032987612022443
+      },
+      {
+        "scenario": 11,
+        "optimal_action": "buy",
+        "algorithm_action": "sell",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 3.6,
+        "market_condition": 1.8843517176117595
+      },
+      {
+        "scenario": 12,
+        "optimal_action": "buy",
+        "algorithm_action": "sell",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 3.6,
+        "market_condition": 1.6988963044107113
+      },
+      {
+        "scenario": 13,
+        "optimal_action": "hold",
+        "algorithm_action": "buy",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 479.9080798898549,
+        "market_condition": 1.3230779996940414
+      },
+      {
+        "scenario": 14,
+        "optimal_action": "buy",
+        "algorithm_action": "sell",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 3.6,
+        "market_condition": 2.6116762888408678
+      },
+      {
+        "scenario": 15,
+        "optimal_action": "buy",
+        "algorithm_action": "sell",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 3.6,
+        "market_condition": 2.331263431403564
+      },
+      {
+        "scenario": 16,
+        "optimal_action": "buy",
+        "algorithm_action": "sell",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 3.6,
+        "market_condition": 2.975545127122359
+      },
+      {
+        "scenario": 17,
+        "optimal_action": "buy",
+        "algorithm_action": "sell",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 3.6,
+        "market_condition": 2.361636025047634
+      },
+      {
+        "scenario": 18,
+        "optimal_action": "hold",
+        "algorithm_action": "buy",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 491.35688834215523,
+        "market_condition": 1.3548802453948756
+      },
+      {
+        "scenario": 19,
+        "optimal_action": "buy",
+        "algorithm_action": "sell",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 3.6,
+        "market_condition": 2.087047068238171
+      },
+      {
+        "scenario": 20,
+        "optimal_action": "buy",
+        "algorithm_action": "sell",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 3.6,
+        "market_condition": 1.7009926495341325
+      },
+      {
+        "scenario": 21,
+        "optimal_action": "hold",
+        "algorithm_action": "buy",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 432.5423029584524,
+        "market_condition": 1.1915063971068123
+      },
+      {
+        "scenario": 22,
+        "optimal_action": "hold",
+        "algorithm_action": "buy",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 542.9674643095668,
+        "market_condition": 1.4982429564154636
+      },
+      {
+        "scenario": 23,
+        "optimal_action": "hold",
+        "algorithm_action": "buy",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 470.86088620415313,
+        "market_condition": 1.2979469061226476
+      },
+      {
+        "scenario": 24,
+        "optimal_action": "buy",
+        "algorithm_action": "sell",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 3.6,
+        "market_condition": 1.6723378534022317
+      },
+      {
+        "scenario": 25,
+        "optimal_action": "buy",
+        "algorithm_action": "sell",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 3.6,
+        "market_condition": 1.6572854834732305
+      },
+      {
+        "scenario": 26,
+        "optimal_action": "sell",
+        "algorithm_action": "buy",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 3.6,
+        "market_condition": -2.802277269221619
+      },
+      {
+        "scenario": 27,
+        "optimal_action": "sell",
+        "algorithm_action": "buy",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 3.6,
+        "market_condition": -3.9187712152990413
+      },
+      {
+        "scenario": 28,
+        "optimal_action": "sell",
+        "algorithm_action": "buy",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 3.6,
+        "market_condition": -2.0265138754492167
+      },
+      {
+        "scenario": 29,
+        "optimal_action": "sell",
+        "algorithm_action": "buy",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 3.6,
+        "market_condition": -2.0347117697052433
+      },
+      {
+        "scenario": 30,
+        "optimal_action": "sell",
+        "algorithm_action": "buy",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 3.6,
+        "market_condition": -3.1686780376195323
+      },
+      {
+        "scenario": 31,
+        "optimal_action": "hold",
+        "algorithm_action": "buy",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 512.3314462319026,
+        "market_condition": -1.4131429061997296
+      },
+      {
+        "scenario": 32,
+        "optimal_action": "hold",
+        "algorithm_action": "buy",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 72.16402529159227,
+        "market_condition": 0.19045562580997855
+      },
+      {
+        "scenario": 33,
+        "optimal_action": "sell",
+        "algorithm_action": "buy",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 3.6,
+        "market_condition": -3.5506634310661327
+      },
+      {
+        "scenario": 34,
+        "optimal_action": "sell",
+        "algorithm_action": "sell",
+        "outcome": "correct",
+        "reward": 1.8,
+        "punishment": 0.0,
+        "market_condition": -1.9314370251939728
+      },
+      {
+        "scenario": 35,
+        "optimal_action": "hold",
+        "algorithm_action": "buy",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 430.73380174691886,
+        "market_condition": -1.1864827826303301
+      },
+      {
+        "scenario": 36,
+        "optimal_action": "sell",
+        "algorithm_action": "sell",
+        "outcome": "correct",
+        "reward": 1.8,
+        "punishment": 0.0,
+        "market_condition": -3.230864316433955
+      },
+      {
+        "scenario": 37,
+        "optimal_action": "sell",
+        "algorithm_action": "sell",
+        "outcome": "correct",
+        "reward": 1.8,
+        "punishment": 0.0,
+        "market_condition": -3.236950710878082
+      },
+      {
+        "scenario": 38,
+        "optimal_action": "sell",
+        "algorithm_action": "sell",
+        "outcome": "correct",
+        "reward": 1.8,
+        "punishment": 0.0,
+        "market_condition": -3.3204566130842763
+      },
+      {
+        "scenario": 39,
+        "optimal_action": "sell",
+        "algorithm_action": "sell",
+        "outcome": "correct",
+        "reward": 1.8,
+        "punishment": 0.0,
+        "market_condition": -1.7069275267013189
+      },
+      {
+        "scenario": 40,
+        "optimal_action": "sell",
+        "algorithm_action": "sell",
+        "outcome": "correct",
+        "reward": 1.8,
+        "punishment": 0.0,
+        "market_condition": -2.714351418026368
+      },
+      {
+        "scenario": 41,
+        "optimal_action": "hold",
+        "algorithm_action": "hold",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 306.5055915573345,
+        "market_condition": -0.8414044209925959
+      },
+      {
+        "scenario": 42,
+        "optimal_action": "sell",
+        "algorithm_action": "sell",
+        "outcome": "correct",
+        "reward": 1.8,
+        "punishment": 0.0,
+        "market_condition": -2.8206823183517105
+      },
+      {
+        "scenario": 43,
+        "optimal_action": "sell",
+        "algorithm_action": "buy",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 3.6,
+        "market_condition": -2.077101709414104
+      },
+      {
+        "scenario": 44,
+        "optimal_action": "sell",
+        "algorithm_action": "buy",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 3.6,
+        "market_condition": -1.6588480251833562
+      },
+      {
+        "scenario": 45,
+        "optimal_action": "sell",
+        "algorithm_action": "sell",
+        "outcome": "correct",
+        "reward": 1.8,
+        "punishment": 0.0,
+        "market_condition": -3.070892498061112
+      },
+      {
+        "scenario": 46,
+        "optimal_action": "sell",
+        "algorithm_action": "buy",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 3.6,
+        "market_condition": -1.5175275847568148
+      },
+      {
+        "scenario": 47,
+        "optimal_action": "sell",
+        "algorithm_action": "sell",
+        "outcome": "correct",
+        "reward": 1.8,
+        "punishment": 0.0,
+        "market_condition": -2.846793718068405
+      },
+      {
+        "scenario": 48,
+        "optimal_action": "sell",
+        "algorithm_action": "sell",
+        "outcome": "correct",
+        "reward": 1.8,
+        "punishment": 0.0,
+        "market_condition": -3.5148472246858646
+      },
+      {
+        "scenario": 49,
+        "optimal_action": "sell",
+        "algorithm_action": "sell",
+        "outcome": "correct",
+        "reward": 1.8,
+        "punishment": 0.0,
+        "market_condition": -1.9417912815540002
+      },
+      {
+        "scenario": 50,
+        "optimal_action": "sell",
+        "algorithm_action": "buy",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 3.6,
+        "market_condition": -3.1429702978306233
+      },
+      {
+        "scenario": 51,
+        "optimal_action": "hold",
+        "algorithm_action": "hold",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 96.30858353508863,
+        "market_condition": 0.25752384315302396
+      },
+      {
+        "scenario": 52,
+        "optimal_action": "hold",
+        "algorithm_action": "hold",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 697.0916683178499,
+        "market_condition": 1.9263657453273606
+      },
+      {
+        "scenario": 53,
+        "optimal_action": "hold",
+        "algorithm_action": "hold",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 90.96543860923862,
+        "market_condition": -0.24268177391455173
+      },
+      {
+        "scenario": 54,
+        "optimal_action": "hold",
+        "algorithm_action": "hold",
+        "outcome": "correct",
+        "reward": 1.8,
+        "punishment": 0.0,
+        "market_condition": 0.04093706969316128
+      },
+      {
+        "scenario": 55,
+        "optimal_action": "hold",
+        "algorithm_action": "hold",
+        "outcome": "correct",
+        "reward": 1.8,
+        "punishment": 0.0,
+        "market_condition": 0.032140009547731385
+      },
+      {
+        "scenario": 56,
+        "optimal_action": "hold",
+        "algorithm_action": "buy",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 197.5940600272751,
+        "market_condition": -0.5388723889646531
+      },
+      {
+        "scenario": 57,
+        "optimal_action": "hold",
+        "algorithm_action": "buy",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 368.12566559836927,
+        "market_condition": -1.0125712933288036
+      },
+      {
+        "scenario": 58,
+        "optimal_action": "hold",
+        "algorithm_action": "buy",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 37.161776658496976,
+        "market_condition": 0.09322715738471382
+      },
+      {
+        "scenario": 59,
+        "optimal_action": "hold",
+        "algorithm_action": "buy",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 219.65335327003973,
+        "market_condition": -0.6001482035278881
+      },
+      {
+        "scenario": 60,
+        "optimal_action": "hold",
+        "algorithm_action": "hold",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 63.81022245137071,
+        "market_condition": -0.1672506179204742
+      },
+      {
+        "scenario": 61,
+        "optimal_action": "hold",
+        "algorithm_action": "hold",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 385.58811546227395,
+        "market_condition": 1.0610780985063166
+      },
+      {
+        "scenario": 62,
+        "optimal_action": "hold",
+        "algorithm_action": "hold",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 189.44374689920645,
+        "market_condition": 0.5162326302755734
+      },
+      {
+        "scenario": 63,
+        "optimal_action": "hold",
+        "algorithm_action": "hold",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 83.48749706632111,
+        "market_condition": 0.22190971407311422
+      },
+      {
+        "scenario": 64,
+        "optimal_action": "hold",
+        "algorithm_action": "buy",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 143.03412961728063,
+        "market_condition": 0.3873170267146684
+      },
+      {
+        "scenario": 65,
+        "optimal_action": "hold",
+        "algorithm_action": "hold",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 82.80800760545708,
+        "market_condition": -0.22002224334849188
+      },
+      {
+        "scenario": 66,
+        "optimal_action": "hold",
+        "algorithm_action": "hold",
+        "outcome": "partial",
+        "reward": 0.24,
+        "punishment": 0.07999999999999999,
+        "market_condition": 0.06537028864304567
+      },
+      {
+        "scenario": 67,
+        "optimal_action": "hold",
+        "algorithm_action": "hold",
+        "outcome": "correct",
+        "reward": 1.8,
+        "punishment": 0.0,
+        "market_condition": 0.03490104249500946
+      },
+      {
+        "scenario": 68,
+        "optimal_action": "hold",
+        "algorithm_action": "hold",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 72.95644743511683,
+        "market_condition": -0.1926567984308801
+      },
+      {
+        "scenario": 69,
+        "optimal_action": "hold",
+        "algorithm_action": "hold",
+        "outcome": "partial",
+        "reward": 0.24,
+        "punishment": 0.07999999999999999,
+        "market_condition": 0.14049593386751633
+      },
+      {
+        "scenario": 70,
+        "optimal_action": "hold",
+        "algorithm_action": "hold",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 115.68591356770689,
+        "market_condition": -0.3113497599102969
+      },
+      {
+        "scenario": 71,
+        "optimal_action": "hold",
+        "algorithm_action": "hold",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 165.52797757798513,
+        "market_condition": 0.44979993771662535
+      },
+      {
+        "scenario": 72,
+        "optimal_action": "hold",
+        "algorithm_action": "hold",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 58.91391375778968,
+        "market_condition": 0.15364976043830467
+      },
+      {
+        "scenario": 73,
+        "optimal_action": "hold",
+        "algorithm_action": "hold",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 233.57968124191646,
+        "market_condition": 0.6388324478942125
+      },
+      {
+        "scenario": 74,
+        "optimal_action": "hold",
+        "algorithm_action": "hold",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 110.08284999044939,
+        "market_condition": -0.29578569441791497
+      },
+      {
+        "scenario": 75,
+        "optimal_action": "hold",
+        "algorithm_action": "hold",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 238.58618528777924,
+        "market_condition": 0.6527394035771645
+      },
+      {
+        "scenario": 76,
+        "optimal_action": "hold",
+        "algorithm_action": "hold",
+        "outcome": "partial",
+        "reward": 0.24,
+        "punishment": 0.07999999999999999,
+        "market_condition": 0.06301152489827715
+      },
+      {
+        "scenario": 77,
+        "optimal_action": "hold",
+        "algorithm_action": "hold",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 108.35564219213565,
+        "market_condition": 0.2909878949781546
+      },
+      {
+        "scenario": 78,
+        "optimal_action": "hold",
+        "algorithm_action": "hold",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 646.3695874718667,
+        "market_condition": 1.7854710763107409
+      },
+      {
+        "scenario": 79,
+        "optimal_action": "hold",
+        "algorithm_action": "hold",
+        "outcome": "correct",
+        "reward": 1.8,
+        "punishment": 0.0,
+        "market_condition": -0.03674031854074387
+      },
+      {
+        "scenario": 80,
+        "optimal_action": "hold",
+        "algorithm_action": "hold",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 972.6347212046979,
+        "market_condition": -2.6917631144574945
+      },
+      {
+        "scenario": 81,
+        "optimal_action": "sell",
+        "algorithm_action": "sell",
+        "outcome": "correct",
+        "reward": 1.8,
+        "punishment": 0.0,
+        "market_condition": -2.4666611866992945
+      },
+      {
+        "scenario": 82,
+        "optimal_action": "hold",
+        "algorithm_action": "hold",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 266.7821884112653,
+        "market_condition": 0.7310616344757369
+      },
+      {
+        "scenario": 83,
+        "optimal_action": "hold",
+        "algorithm_action": "hold",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 1567.53108881711,
+        "market_condition": -4.344253024491972
+      },
+      {
+        "scenario": 84,
+        "optimal_action": "hold",
+        "algorithm_action": "hold",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 1523.6608763266795,
+        "market_condition": -4.222391323129665
+      },
+      {
+        "scenario": 85,
+        "optimal_action": "hold",
+        "algorithm_action": "hold",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 929.8723930581809,
+        "market_condition": 2.5729788696060583
+      },
+      {
+        "scenario": 86,
+        "optimal_action": "hold",
+        "algorithm_action": "hold",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 176.33361236050126,
+        "market_condition": -0.47981558989028134
+      },
+      {
+        "scenario": 87,
+        "optimal_action": "buy",
+        "algorithm_action": "buy",
+        "outcome": "correct",
+        "reward": 1.8,
+        "punishment": 0.0,
+        "market_condition": 1.5580395427235167
+      },
+      {
+        "scenario": 88,
+        "optimal_action": "hold",
+        "algorithm_action": "hold",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 1658.958026042784,
+        "market_condition": 4.598216739007733
+      },
+      {
+        "scenario": 89,
+        "optimal_action": "hold",
+        "algorithm_action": "hold",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 245.6198803552501,
+        "market_condition": 0.6722774454312503
+      },
+      {
+        "scenario": 90,
+        "optimal_action": "hold",
+        "algorithm_action": "hold",
+        "outcome": "correct",
+        "reward": 1.8,
+        "punishment": 0.0,
+        "market_condition": 0.03777720234538458
+      },
+      {
+        "scenario": 91,
+        "optimal_action": "hold",
+        "algorithm_action": "hold",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 945.7062876583324,
+        "market_condition": 2.6169619101620345
+      },
+      {
+        "scenario": 92,
+        "optimal_action": "hold",
+        "algorithm_action": "hold",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 201.60936619741992,
+        "market_condition": 0.5500260172150553
+      },
+      {
+        "scenario": 93,
+        "optimal_action": "hold",
+        "algorithm_action": "hold",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 2297.407382254591,
+        "market_condition": -6.371687172929421
+      },
+      {
+        "scenario": 94,
+        "optimal_action": "hold",
+        "algorithm_action": "hold",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 571.415423415222,
+        "market_condition": -1.5772650650422833
+      },
+      {
+        "scenario": 95,
+        "optimal_action": "hold",
+        "algorithm_action": "hold",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 973.8878450562266,
+        "market_condition": -2.6952440140450737
+      },
+      {
+        "scenario": 96,
+        "optimal_action": "hold",
+        "algorithm_action": "hold",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 534.8727052270261,
+        "market_condition": 1.4757575145195172
+      },
+      {
+        "scenario": 97,
+        "optimal_action": "buy",
+        "algorithm_action": "buy",
+        "outcome": "correct",
+        "reward": 1.8,
+        "punishment": 0.0,
+        "market_condition": 3.5383203621638613
+      },
+      {
+        "scenario": 98,
+        "optimal_action": "hold",
+        "algorithm_action": "hold",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 510.30970427308114,
+        "market_condition": -1.4075269563141144
+      },
+      {
+        "scenario": 99,
+        "optimal_action": "sell",
+        "algorithm_action": "sell",
+        "outcome": "correct",
+        "reward": 1.8,
+        "punishment": 0.0,
+        "market_condition": -4.783282976383101
+      },
+      {
+        "scenario": 100,
+        "optimal_action": "hold",
+        "algorithm_action": "hold",
+        "outcome": "incorrect",
+        "reward": 0.0,
+        "punishment": 650.9250247900748,
+        "market_condition": -1.7981250688613186
+      }
+    ]
+  },
+  "learning_metrics": {
+    "accuracy_rate": 0.2,
+    "learning_progress": 0.24,
+    "model_version": 563,
+    "total_experiences": 200
+  },
+  "adaptive_weights": {
+    "market_growth_weight": 0.3,
+    "sentiment_weight": 0.25,
+    "volatility_weight": 0.2,
+    "trend_weight": 0.15,
+    "volume_weight": 0.1
+  },
+  "rule_performance": {
+    "high_growth_investment": {
+      "accuracy": 0.2988625583662806,
+      "confidence": 0.2,
+      "usage_count": 22
+    },
+    "negative_sentiment_alert": {
+      "accuracy": 0.9676945905538666,
+      "confidence": 1.0,
+      "usage_count": 26
+    },
+    "competitor_price_response": {
+      "accuracy": 0.5,
+      "confidence": 0.5,
+      "usage_count": 0
+    },
+    "high_demand_opportunity": {
+      "accuracy": 0.07809349096281683,
+      "confidence": 0.1,
+      "usage_count": 152
+    },
+    "positive_sentiment_investment": {
+      "accuracy": 0.2988625583662806,
+      "confidence": 0.2,
+      "usage_count": 22
+    },
+    "volatility_risk_alert": {
+      "accuracy": 0.9676945905538666,
+      "confidence": 1.0,
+      "usage_count": 26
+    },
+    "competitor_activity_surge": {
+      "accuracy": 0.5,
+      "confidence": 0.5,
+      "usage_count": 0
+    },
+    "low_market_share_alert": {
+      "accuracy": 0.5,
+      "confidence": 0.5,
+      "usage_count": 0
+    }
+  },
+  "demonstration_completed": true
+}

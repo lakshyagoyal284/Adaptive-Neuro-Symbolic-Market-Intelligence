@@ -1,0 +1,194 @@
+{
+  "backtest_summary": {
+    "initial_capital": 10000,
+    "final_capital": 12604.251505281183,
+    "total_return": 26.042515052811833,
+    "max_drawdown": 20.795817171599992,
+    "sharpe_ratio": 0.8500201711042032,
+    "backtest_period": "366 days"
+  },
+  "decision_metrics": {
+    "total_decisions": 8,
+    "successful_decisions": 5,
+    "failed_decisions": 3,
+    "success_rate": 62.5,
+    "avg_confidence": 0.5
+  },
+  "trade_metrics": {
+    "total_trades": 8,
+    "winning_trades": 5,
+    "losing_trades": 3,
+    "win_rate": 62.5,
+    "avg_win": 9.748000000000001,
+    "avg_loss": -7.453333333333333,
+    "profit_factor": 2.1797853309481217
+  },
+  "performance_analysis": {
+    "performance_by_decision_type": {
+      "risk_management": {
+        "trades": 8,
+        "wins": 5,
+        "total_return": 26.380000000000003,
+        "avg_return": 3.2975000000000003,
+        "win_rate": 62.5
+      }
+    },
+    "monthly_performance": {
+      "2025-04": {
+        "returns": [
+          7.3
+        ],
+        "count": 1,
+        "avg_return": 7.3,
+        "total_return": 7.3
+      },
+      "2025-06": {
+        "returns": [
+          10.26
+        ],
+        "count": 1,
+        "avg_return": 10.26,
+        "total_return": 10.26
+      },
+      "2025-08": {
+        "returns": [
+          11.68
+        ],
+        "count": 1,
+        "avg_return": 11.68,
+        "total_return": 11.68
+      },
+      "2025-09": {
+        "returns": [
+          10.71
+        ],
+        "count": 1,
+        "avg_return": 10.71,
+        "total_return": 10.71
+      },
+      "2025-10": {
+        "returns": [
+          8.79,
+          -4.61
+        ],
+        "count": 2,
+        "avg_return": 2.0899999999999994,
+        "total_return": 4.179999999999999
+      },
+      "2025-11": {
+        "returns": [
+          -9.63
+        ],
+        "count": 1,
+        "avg_return": -9.63,
+        "total_return": -9.63
+      },
+      "2026-01": {
+        "returns": [
+          -8.12
+        ],
+        "count": 1,
+        "avg_return": -8.12,
+        "total_return": -8.12
+      }
+    }
+  },
+  "recommendations": [
+    "High maximum drawdown detected - consider implementing risk management",
+    "Strong positive returns - strategy is performing well",
+    "Low Sharpe ratio - improve risk-adjusted returns",
+    "Good win rate - strategy is effective",
+    "Excellent profit factor - strategy is profitable"
+  ],
+  "detailed_trades": [
+    {
+      "date": "2025-04-12 23:59:11.327348",
+      "decision_type": "risk_management",
+      "decision_title": "High Risk Alert: Multiple Negative Indicators",
+      "return_rate": 7.3,
+      "capital_change": 730.0,
+      "capital_before": 10000.0,
+      "capital_after": 10730.0,
+      "success": "True",
+      "confidence": 0.5
+    },
+    {
+      "date": "2025-06-07 23:59:11.327348",
+      "decision_type": "risk_management",
+      "decision_title": "High Risk Alert: Multiple Negative Indicators",
+      "return_rate": 10.26,
+      "capital_change": 1100.898,
+      "capital_before": 10730.0,
+      "capital_after": 11830.898,
+      "success": "True",
+      "confidence": 0.5
+    },
+    {
+      "date": "2025-08-09 23:59:11.327348",
+      "decision_type": "risk_management",
+      "decision_title": "High Risk Alert: Multiple Negative Indicators",
+      "return_rate": 11.68,
+      "capital_change": 1381.8488863999999,
+      "capital_before": 11830.898,
+      "capital_after": 13212.746886399998,
+      "success": "True",
+      "confidence": 0.5
+    },
+    {
+      "date": "2025-09-20 23:59:11.327348",
+      "decision_type": "risk_management",
+      "decision_title": "High Risk Alert: Multiple Negative Indicators",
+      "return_rate": 10.71,
+      "capital_change": 1415.08519153344,
+      "capital_before": 13212.746886399998,
+      "capital_after": 14627.832077933439,
+      "success": "True",
+      "confidence": 0.5
+    },
+    {
+      "date": "2025-10-04 23:59:11.327348",
+      "decision_type": "risk_management",
+      "decision_title": "High Risk Alert: Multiple Negative Indicators",
+      "return_rate": 8.79,
+      "capital_change": 1285.7864396503492,
+      "capital_before": 14627.832077933439,
+      "capital_after": 15913.618517583789,
+      "success": "True",
+      "confidence": 0.65
+    },
+    {
+      "date": "2025-10-18 23:59:11.327348",
+      "decision_type": "risk_management",
+      "decision_title": "High Risk Alert: Multiple Negative Indicators",
+      "return_rate": -4.61,
+      "capital_change": -733.6178136606127,
+      "capital_before": 15913.618517583789,
+      "capital_after": 15180.000703923177,
+      "success": "False",
+      "confidence": 0.5
+    },
+    {
+      "date": "2025-11-15 23:59:11.327348",
+      "decision_type": "risk_management",
+      "decision_title": "High Risk Alert: Multiple Negative Indicators",
+      "return_rate": -9.63,
+      "capital_change": -1461.834067787802,
+      "capital_before": 15180.000703923177,
+      "capital_after": 13718.166636135375,
+      "success": "False",
+      "confidence": 0.5
+    },
+    {
+      "date": "2026-01-10 23:59:11.327348",
+      "decision_type": "risk_management",
+      "decision_title": "High Risk Alert: Multiple Negative Indicators",
+      "return_rate": -8.12,
+      "capital_change": -1113.9151308541923,
+      "capital_before": 13718.166636135375,
+      "capital_after": 12604.251505281183,
+      "success": "False",
+      "confidence": 0.35
+    }
+  ],
+  "generated_at": "2026-04-05T23:59:11.850873"
+}

@@ -1,0 +1,409 @@
+{
+  "summary": {
+    "total_stocks_analyzed": 10,
+    "total_trades": 6,
+    "total_winning_trades": 0,
+    "total_losing_trades": 6,
+    "overall_win_rate": 0.0,
+    "total_profit_loss": -4543.07,
+    "profitable_stocks": 0,
+    "unprofitable_stocks": 10,
+    "profitable_stock_ratio": 0.0
+  },
+  "individual_stocks": {
+    "AAPL": {
+      "symbol": "AAPL",
+      "name": "Apple Inc.",
+      "sector": "Technology",
+      "total_trades": 1,
+      "winning_trades": 0,
+      "losing_trades": 1,
+      "win_rate": 0.0,
+      "total_profit_loss": -187.0,
+      "avg_win": 0.0,
+      "avg_loss": -187.0,
+      "max_win": 0.0,
+      "max_loss": -187.0,
+      "profit_factor": 0.0,
+      "performance_rating": "\u26a0\ufe0f SLIGHT LOSS",
+      "detailed_trades": [
+        {
+          "trade_id": "AAPL_1",
+          "date": "2025-08-10 15:28:00.272841",
+          "action": "SELL",
+          "quantity": 55,
+          "entry_price": 63.37,
+          "exit_price": 59.97,
+          "profit_loss": -187.0,
+          "profit_loss_percent": -5.36,
+          "trade_type": "risk_management",
+          "confidence": 0.65,
+          "success": false,
+          "holding_period": 8,
+          "reason": "High Risk Alert: Multiple Negative Indicators"
+        }
+      ]
+    },
+    "GOOGL": {
+      "symbol": "GOOGL",
+      "name": "Alphabet Inc.",
+      "sector": "Technology",
+      "total_trades": 1,
+      "winning_trades": 0,
+      "losing_trades": 1,
+      "win_rate": 0.0,
+      "total_profit_loss": -972.5,
+      "avg_win": 0.0,
+      "avg_loss": -972.5,
+      "max_win": 0.0,
+      "max_loss": -972.5,
+      "profit_factor": 0.0,
+      "performance_rating": "\u274c POOR",
+      "detailed_trades": [
+        {
+          "trade_id": "GOOGL_2",
+          "date": "2025-09-28 15:28:00.272841",
+          "action": "SELL",
+          "quantity": 50,
+          "entry_price": 166.85,
+          "exit_price": 147.4,
+          "profit_loss": -972.5,
+          "profit_loss_percent": 11.66,
+          "trade_type": "risk_management",
+          "confidence": 0.35,
+          "success": false,
+          "holding_period": 6,
+          "reason": "High Risk Alert: Multiple Negative Indicators"
+        }
+      ]
+    },
+    "MSFT": {
+      "symbol": "MSFT",
+      "name": "Microsoft Corp.",
+      "sector": "Technology",
+      "total_trades": 1,
+      "winning_trades": 0,
+      "losing_trades": 1,
+      "win_rate": 0.0,
+      "total_profit_loss": -677.04,
+      "avg_win": 0.0,
+      "avg_loss": -677.04,
+      "max_win": 0.0,
+      "max_loss": -677.04,
+      "profit_factor": 0.0,
+      "performance_rating": "\u274c POOR",
+      "detailed_trades": [
+        {
+          "trade_id": "MSFT_3",
+          "date": "2025-11-23 15:28:00.272841",
+          "action": "SELL",
+          "quantity": 62,
+          "entry_price": 265.61,
+          "exit_price": 254.69,
+          "profit_loss": -677.04,
+          "profit_loss_percent": -4.11,
+          "trade_type": "risk_management",
+          "confidence": 0.35,
+          "success": false,
+          "holding_period": 23,
+          "reason": "High Risk Alert: Multiple Negative Indicators"
+        }
+      ]
+    },
+    "AMZN": {
+      "symbol": "AMZN",
+      "name": "Amazon.com Inc.",
+      "sector": "Consumer Discretionary",
+      "total_trades": 1,
+      "winning_trades": 0,
+      "losing_trades": 1,
+      "win_rate": 0.0,
+      "total_profit_loss": -1638.65,
+      "avg_win": 0.0,
+      "avg_loss": -1638.65,
+      "max_win": 0.0,
+      "max_loss": -1638.65,
+      "profit_factor": 0.0,
+      "performance_rating": "\u274c POOR",
+      "detailed_trades": [
+        {
+          "trade_id": "AMZN_4",
+          "date": "2025-12-14 15:28:00.272841",
+          "action": "SELL",
+          "quantity": 65,
+          "entry_price": 288.07,
+          "exit_price": 262.86,
+          "profit_loss": -1638.65,
+          "profit_loss_percent": -8.75,
+          "trade_type": "risk_management",
+          "confidence": 0.35,
+          "success": false,
+          "holding_period": 25,
+          "reason": "High Risk Alert: Multiple Negative Indicators"
+        }
+      ]
+    },
+    "TSLA": {
+      "symbol": "TSLA",
+      "name": "Tesla Inc.",
+      "sector": "Consumer Discretionary",
+      "total_trades": 1,
+      "winning_trades": 0,
+      "losing_trades": 1,
+      "win_rate": 0.0,
+      "total_profit_loss": -389.64,
+      "avg_win": 0.0,
+      "avg_loss": -389.64,
+      "max_win": 0.0,
+      "max_loss": -389.64,
+      "profit_factor": 0.0,
+      "performance_rating": "\u26a0\ufe0f SLIGHT LOSS",
+      "detailed_trades": [
+        {
+          "trade_id": "TSLA_5",
+          "date": "2026-01-18 15:28:00.272841",
+          "action": "SELL",
+          "quantity": 51,
+          "entry_price": 140.66,
+          "exit_price": 133.02,
+          "profit_loss": -389.64,
+          "profit_loss_percent": -5.43,
+          "trade_type": "risk_management",
+          "confidence": 0.5,
+          "success": false,
+          "holding_period": 2,
+          "reason": "High Risk Alert: Multiple Negative Indicators"
+        }
+      ]
+    },
+    "JPM": {
+      "symbol": "JPM",
+      "name": "JPMorgan Chase",
+      "sector": "Financial",
+      "total_trades": 1,
+      "winning_trades": 0,
+      "losing_trades": 1,
+      "win_rate": 0.0,
+      "total_profit_loss": -678.24,
+      "avg_win": 0.0,
+      "avg_loss": -678.24,
+      "max_win": 0.0,
+      "max_loss": -678.24,
+      "profit_factor": 0.0,
+      "performance_rating": "\u274c POOR",
+      "detailed_trades": [
+        {
+          "trade_id": "JPM_6",
+          "date": "2026-03-22 15:28:00.272841",
+          "action": "SELL",
+          "quantity": 72,
+          "entry_price": 148.6,
+          "exit_price": 139.18,
+          "profit_loss": -678.24,
+          "profit_loss_percent": 6.34,
+          "trade_type": "risk_management",
+          "confidence": 0.5,
+          "success": false,
+          "holding_period": 3,
+          "reason": "High Risk Alert: Multiple Negative Indicators"
+        }
+      ]
+    },
+    "BAC": {
+      "symbol": "BAC",
+      "name": "Bank of America",
+      "sector": "Financial",
+      "total_trades": 0,
+      "winning_trades": 0,
+      "losing_trades": 0,
+      "win_rate": 0.0,
+      "total_profit_loss": 0.0,
+      "avg_win": 0.0,
+      "avg_loss": 0.0,
+      "max_win": 0.0,
+      "max_loss": 0.0,
+      "profit_factor": 0.0,
+      "performance_rating": "\u26a0\ufe0f SLIGHT LOSS",
+      "detailed_trades": []
+    },
+    "WMT": {
+      "symbol": "WMT",
+      "name": "Walmart Inc.",
+      "sector": "Consumer Staples",
+      "total_trades": 0,
+      "winning_trades": 0,
+      "losing_trades": 0,
+      "win_rate": 0.0,
+      "total_profit_loss": 0.0,
+      "avg_win": 0.0,
+      "avg_loss": 0.0,
+      "max_win": 0.0,
+      "max_loss": 0.0,
+      "profit_factor": 0.0,
+      "performance_rating": "\u26a0\ufe0f SLIGHT LOSS",
+      "detailed_trades": []
+    },
+    "JNJ": {
+      "symbol": "JNJ",
+      "name": "Johnson & Johnson",
+      "sector": "Healthcare",
+      "total_trades": 0,
+      "winning_trades": 0,
+      "losing_trades": 0,
+      "win_rate": 0.0,
+      "total_profit_loss": 0.0,
+      "avg_win": 0.0,
+      "avg_loss": 0.0,
+      "max_win": 0.0,
+      "max_loss": 0.0,
+      "profit_factor": 0.0,
+      "performance_rating": "\u26a0\ufe0f SLIGHT LOSS",
+      "detailed_trades": []
+    },
+    "XOM": {
+      "symbol": "XOM",
+      "name": "Exxon Mobil Corp.",
+      "sector": "Energy",
+      "total_trades": 0,
+      "winning_trades": 0,
+      "losing_trades": 0,
+      "win_rate": 0.0,
+      "total_profit_loss": 0.0,
+      "avg_win": 0.0,
+      "avg_loss": 0.0,
+      "max_win": 0.0,
+      "max_loss": 0.0,
+      "profit_factor": 0.0,
+      "performance_rating": "\u26a0\ufe0f SLIGHT LOSS",
+      "detailed_trades": []
+    }
+  },
+  "sector_analysis": {
+    "Technology": {
+      "stocks": [
+        "AAPL",
+        "GOOGL",
+        "MSFT"
+      ],
+      "total_trades": 3,
+      "winning_trades": 0,
+      "total_profit_loss": -1836.54,
+      "win_rate": 0.0,
+      "avg_profit_per_stock": -612.18
+    },
+    "Consumer Discretionary": {
+      "stocks": [
+        "AMZN",
+        "TSLA"
+      ],
+      "total_trades": 2,
+      "winning_trades": 0,
+      "total_profit_loss": -2028.29,
+      "win_rate": 0.0,
+      "avg_profit_per_stock": -1014.145
+    },
+    "Financial": {
+      "stocks": [
+        "JPM",
+        "BAC"
+      ],
+      "total_trades": 1,
+      "winning_trades": 0,
+      "total_profit_loss": -678.24,
+      "win_rate": 0.0,
+      "avg_profit_per_stock": -339.12
+    },
+    "Consumer Staples": {
+      "stocks": [
+        "WMT"
+      ],
+      "total_trades": 0,
+      "winning_trades": 0,
+      "total_profit_loss": 0.0,
+      "win_rate": 0.0,
+      "avg_profit_per_stock": 0.0
+    },
+    "Healthcare": {
+      "stocks": [
+        "JNJ"
+      ],
+      "total_trades": 0,
+      "winning_trades": 0,
+      "total_profit_loss": 0.0,
+      "win_rate": 0.0,
+      "avg_profit_per_stock": 0.0
+    },
+    "Energy": {
+      "stocks": [
+        "XOM"
+      ],
+      "total_trades": 0,
+      "winning_trades": 0,
+      "total_profit_loss": 0.0,
+      "win_rate": 0.0,
+      "avg_profit_per_stock": 0.0
+    }
+  },
+  "top_performers": {
+    "top_performers": [
+      {
+        "symbol": "BAC",
+        "name": "Bank of America",
+        "total_profit_loss": 0.0,
+        "win_rate": 0.0,
+        "total_trades": 0
+      },
+      {
+        "symbol": "WMT",
+        "name": "Walmart Inc.",
+        "total_profit_loss": 0.0,
+        "win_rate": 0.0,
+        "total_trades": 0
+      },
+      {
+        "symbol": "JNJ",
+        "name": "Johnson & Johnson",
+        "total_profit_loss": 0.0,
+        "win_rate": 0.0,
+        "total_trades": 0
+      }
+    ],
+    "worst_performers": [
+      {
+        "symbol": "JPM",
+        "name": "JPMorgan Chase",
+        "total_profit_loss": -678.24,
+        "win_rate": 0.0,
+        "total_trades": 1
+      },
+      {
+        "symbol": "GOOGL",
+        "name": "Alphabet Inc.",
+        "total_profit_loss": -972.5,
+        "win_rate": 0.0,
+        "total_trades": 1
+      },
+      {
+        "symbol": "AMZN",
+        "name": "Amazon.com Inc.",
+        "total_profit_loss": -1638.65,
+        "win_rate": 0.0,
+        "total_trades": 1
+      }
+    ]
+  },
+  "trade_patterns": {
+    "trade_type_performance": {
+      "risk_management": {
+        "count": 6,
+        "total_profit": -4543.07,
+        "wins": 0,
+        "win_rate": 0.0,
+        "avg_profit": -757.1783333333333
+      }
+    },
+    "avg_holding_period": 11.166666666666666,
+    "avg_profit_per_trade": -757.1783333333333,
+    "total_trades_analyzed": 6
+  }
+}
