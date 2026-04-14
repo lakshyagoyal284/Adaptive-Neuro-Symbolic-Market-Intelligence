@@ -1,0 +1,31 @@
+# Ignore large log files
+logs/*.log
+logs/*.json
+
+# Ignore Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignore virtual environments
+venv/
+env/
+
+# Ignore IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore large data files
+*.csv
+*.xlsx
+*.json
+
+# Ignore temporary files
+*.tmp
+*.temp
